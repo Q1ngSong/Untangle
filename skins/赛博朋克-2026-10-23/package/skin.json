@@ -1,0 +1,219 @@
+{
+  "format": "untangle-skin",
+  "formatVersion": 1,
+  "id": "io.untangle.cyberpunk",
+  "version": "1.2.0",
+  "name": { "zh-Hans": "赛博朋克", "en": "Cyberpunk" },
+  "author": "Untangle",
+  "license": "CC0-1.0",
+  "description": {
+    "zh-Hans": "夜色里的霓虹终端：近黑带紫的底、青与洋红撞色、斜切的角和扫描线。",
+    "en": "A neon terminal at night: violet-black deck, cyan and magenta, cut corners and scanlines."
+  },
+  "appearance": "dark",
+
+  "tokens": {
+    "color": {
+      "accent": "#00f0ff",
+      "secondary": "#ff2a6d",
+      "ink": "#e6fbff",
+      "inkMuted": "#e6fbff99",
+      "deckTop": "#1a0f2e",
+      "deckBottom": "#07040d",
+      "tabFace": "#120a20"
+    },
+    "number": { "cut": 10, "barCut": 12, "glow": 0.55, "opacity": 0.94 },
+    "font": {
+      "ui": { "system": true },
+      "mono": { "system": true, "weight": "semibold", "design": "monospaced" }
+    }
+  },
+
+  "editable": [
+    { "token": "color.accent", "label": { "zh-Hans": "强调色", "en": "Accent" } },
+    { "token": "color.secondary", "label": { "zh-Hans": "次要色", "en": "Secondary" } },
+    { "token": "number.cut", "label": { "zh-Hans": "切角", "en": "Cut" }, "range": [0, 16] },
+    { "token": "number.glow", "label": { "zh-Hans": "发光", "en": "Glow" }, "range": [0, 1] },
+    { "token": "number.opacity", "label": { "zh-Hans": "背景不透明度", "en": "Opacity" }, "range": [0.5, 1] }
+  ],
+
+  "roles": {
+    "panel": {
+      "shape": { "kind": "chamfer", "cut": "$number.cut" },
+      "layers": [
+        { "type": "material", "style": "ultraThin" },
+        { "type": "gradient", "kind": "linear", "from": [0, 0], "to": [0, 1],
+          "stops": [[0, "$color.deckTop"], [1, "$color.deckBottom"]], "opacity": "$number.opacity" },
+        { "type": "pattern", "kind": "scanlines", "color": "#ffffff09", "spacing": 3, "size": 1 },
+        { "type": "stroke", "color": { "color": "$color.secondary", "alpha": 0.85 }, "width": 1, "offset": [1.5, 1], "over": true },
+        { "type": "stroke", "color": { "color": "$color.accent", "alpha": 0.55 }, "width": 0.8, "over": true },
+        { "type": "stroke", "color": "$color.accent", "width": 2.5, "segments": "cuts", "over": true },
+        { "type": "box", "anchor": "topLeading", "at": [20, 1], "size": [28, 2], "color": "$color.accent", "over": true },
+        { "type": "box", "anchor": "topLeading", "at": [52, 1], "size": [8, 2], "color": "$color.secondary", "over": true },
+        { "type": "glow", "color": { "color": "$color.accent", "alpha": 0.65 }, "width": 1.5, "radius": 2.2,
+          "opacity": "$number.glow", "over": true }
+      ],
+      "contrast": {
+        "replace": [
+          { "type": "material", "style": "ultraThin" },
+          { "type": "gradient", "kind": "linear", "from": [0, 0], "to": [0, 1],
+            "stops": [[0, "$color.deckTop"], [1, "$color.deckBottom"]], "opacity": "$number.opacity" },
+          { "type": "stroke", "color": "$color.accent", "width": 2, "over": true },
+          { "type": "stroke", "color": "$color.accent", "width": 2.5, "segments": "cuts", "over": true },
+          { "type": "box", "anchor": "topLeading", "at": [20, 1], "size": [28, 2], "color": "$color.accent", "over": true },
+          { "type": "box", "anchor": "topLeading", "at": [52, 1], "size": [8, 2], "color": "$color.secondary", "over": true },
+          { "type": "glow", "color": { "color": "$color.accent", "alpha": 0.65 }, "width": 1.5, "radius": 2.2,
+            "opacity": "$number.glow", "over": true }
+        ]
+      }
+    },
+
+    "tabBar": {
+      "shape": { "kind": "chamfer", "cut": "$number.barCut" },
+      "layers": [
+        { "type": "gradient", "kind": "linear", "from": [0, 0], "to": [0, 1],
+          "stops": [[0, "$color.deckTop"], [1, "$color.deckBottom"]], "opacity": "$number.opacity" },
+        { "type": "pattern", "kind": "scanlines", "color": "#ffffff09", "spacing": 3, "size": 1 },
+        { "type": "stroke", "color": { "color": "$color.secondary", "alpha": 0.85 }, "width": 1, "offset": [1.5, 1], "over": true },
+        { "type": "stroke", "color": { "color": "$color.accent", "alpha": 0.55 }, "width": 0.8, "over": true },
+        { "type": "stroke", "color": "$color.accent", "width": 2.5, "segments": "cuts", "over": true }
+      ],
+      "contrast": {
+        "replace": [
+          { "type": "gradient", "kind": "linear", "from": [0, 0], "to": [0, 1],
+            "stops": [[0, "$color.deckTop"], [1, "$color.deckBottom"]], "opacity": "$number.opacity" },
+          { "type": "stroke", "color": "$color.accent", "width": 2, "over": true },
+          { "type": "stroke", "color": "$color.accent", "width": 2.5, "segments": "cuts", "over": true }
+        ]
+      }
+    },
+
+    "tab": {
+      "shape": { "kind": "chamfer", "cut": "$number.cut" },
+      "layers": [
+        { "type": "fill", "color": "$color.tabFace" },
+        { "type": "stroke", "color": { "color": "$color.accent", "alpha": 0.22 }, "width": 0.6, "over": true }
+      ],
+      "text": { "title": { "color": "$color.ink" } },
+      "states": {
+        "hover": { "add": [
+          { "type": "fill", "color": { "color": "$color.secondary", "alpha": 0.14 } },
+          { "type": "stroke", "color": "$color.secondary", "width": 1, "over": true }
+        ] },
+        "incoming": { "add": [
+          { "type": "fill", "color": { "color": "$color.secondary", "alpha": 0.10 } },
+          { "type": "stroke", "color": "$color.secondary", "width": 1, "dash": [3, 3], "over": true }
+        ], "text": { "title": { "color": "$color.secondary" } } },
+        "active": { "transition": "tabSelect", "add": [
+          { "type": "gradient", "kind": "linear", "from": [0, 0.5], "to": [1, 0.5],
+            "stops": [[0, { "color": "$color.accent", "alpha": 0.32 }], [1, { "color": "$color.accent", "alpha": 0.06 }]] },
+          { "type": "stroke", "color": "$color.accent", "width": 1, "over": true },
+          { "type": "glow", "color": { "color": "$color.accent", "alpha": 0.55 }, "width": 1.5, "radius": 2.2,
+            "opacity": "$number.glow", "over": true },
+          { "type": "stroke", "gradient": { "kind": "linear", "from": [0, 0.5], "to": [1, 0.5],
+            "stops": [[0, "$color.accent"], [1, "$color.secondary"]] },
+            "width": 2, "segments": "bottom", "shape": { "kind": "rect" }, "inset": [0, 14, 1, 14], "over": true }
+        ] }
+      },
+      "contrast": {
+        "replace": [
+          { "type": "fill", "color": "$color.tabFace" },
+          { "type": "stroke", "color": "$color.ink", "width": 0.6, "over": true }
+        ],
+        "states": { "active": { "add": [ { "type": "stroke", "color": "$color.ink", "width": 2, "over": true } ] } }
+      }
+    },
+
+    "card": {
+      "shape": { "kind": "chamfer", "cut": "$number.cut" },
+      "layers": [],
+      "states": {
+        "hover": { "transition": "hover", "add": [
+          { "type": "fill", "color": { "color": "$color.secondary", "alpha": 0.12 } },
+          { "type": "stroke", "color": { "color": "$color.secondary", "alpha": 0.7 }, "width": 1, "over": true }
+        ] },
+        "selected": { "transition": "select", "add": [
+          { "type": "gradient", "kind": "linear", "from": [0, 0.5], "to": [1, 0.5],
+            "stops": [[0, { "color": "$color.accent", "alpha": 0.32 }], [1, { "color": "$color.accent", "alpha": 0.06 }]] },
+          { "type": "stroke", "color": "$color.accent", "width": 1, "over": true },
+          { "type": "glow", "color": { "color": "$color.accent", "alpha": 0.55 }, "width": 1.5, "radius": 2.2,
+            "opacity": "$number.glow", "over": true },
+          { "type": "stroke", "color": "$color.accent", "width": 5, "segments": "leading", "over": true }
+        ] }
+      },
+      "contrast": {
+        "states": { "selected": { "add": [ { "type": "stroke", "color": "$color.ink", "width": 2, "over": true } ] } }
+      }
+    },
+
+    "well": {
+      "shape": { "kind": "rounded", "radius": 3 },
+      "layers": [ { "type": "fill", "color": { "color": "$color.ink", "alpha": 0.06 } } ]
+    },
+
+    "field": {
+      "shape": { "kind": "rect" },
+      "layers": [
+        { "type": "stroke", "gradient": { "kind": "linear", "from": [0, 0.5], "to": [1, 0.5],
+          "stops": [[0, { "color": "$color.accent", "alpha": 0.7 }], [1, { "color": "$color.secondary", "alpha": 0.5 }]] },
+          "width": 1, "segments": "bottom", "inset": [0, 10, 0, 10] }
+      ]
+    },
+
+    "row": {
+      "shape": { "kind": "chamfer", "cut": "$number.cut" },
+      "layers": [],
+      "states": {
+        "selected": { "transition": "select", "add": [
+          { "type": "gradient", "kind": "linear", "from": [0, 0.5], "to": [1, 0.5],
+            "stops": [[0, { "color": "$color.accent", "alpha": 0.32 }], [1, { "color": "$color.accent", "alpha": 0.06 }]] },
+          { "type": "stroke", "color": "$color.accent", "width": 1, "over": true },
+          { "type": "glow", "color": { "color": "$color.accent", "alpha": 0.55 }, "width": 1.5, "radius": 2.2,
+            "opacity": "$number.glow", "over": true },
+          { "type": "stroke", "color": "$color.accent", "width": 5, "segments": "leading", "over": true }
+        ] }
+      },
+      "contrast": {
+        "states": { "selected": { "add": [ { "type": "stroke", "color": "$color.ink", "width": 2, "over": true } ] } }
+      }
+    },
+
+    "chip": {
+      "shape": { "kind": "chamfer", "cut": 6 },
+      "layers": [
+        { "type": "fill", "color": { "color": "$color.accent", "alpha": 0.08 } },
+        { "type": "stroke", "color": { "color": "$color.accent", "alpha": 0.4 }, "width": 0.5, "over": true }
+      ]
+    },
+
+    "control": {
+      "shape": { "kind": "rounded", "radius": 8 },
+      "layers": [ { "type": "fill", "color": { "color": "$color.ink", "alpha": 0.1 } } ],
+      "states": {
+        "hover": { "transition": "hover", "replace": [ { "type": "fill", "color": { "color": "$color.secondary", "alpha": 0.22 } } ] }
+      }
+    },
+
+    "dropTarget": {
+      "shape": { "kind": "chamfer", "cut": "$number.barCut" },
+      "layers": [ { "type": "stroke", "color": "$color.secondary", "width": 2 } ],
+      "contrast": { "replace": [ { "type": "stroke", "color": "$color.secondary", "width": 3 } ] }
+    }
+  },
+
+  "text": {
+    "title": { "font": "$font.ui", "color": "$color.ink" },
+    "body": { "font": "$font.ui", "color": "$color.ink" },
+    "secondary": { "font": "$font.ui", "color": "$color.inkMuted" },
+    "key": { "font": "$font.mono", "color": "$color.accent" },
+    "field": { "font": "$font.ui", "color": "$color.ink" }
+  },
+
+  "motion": {
+    "transitions": {
+      "select": { "curve": "smooth", "duration": 0.18, "slide": true },
+      "tabSelect": { "curve": "smooth", "duration": 0.2, "slide": true },
+      "hover": { "curve": "smooth", "duration": 0.12 }
+    }
+  }
+}

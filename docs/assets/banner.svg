@@ -1,59 +1,44 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
-  <title id="title">Tangler — Your windows. In place.</title>
-  <desc id="desc">A native macOS window manager. Two overlapping glass windows float over flowing blue and violet curves.</desc>
+  <title id="title">Untangle — Your windows. In place.</title>
+  <desc id="desc">A native macOS window manager. On a small desktop, four overlapping windows slide into a left half, two right quarters and a tab group.</desc>
   <defs>
-    <linearGradient id="paper" x2="1" y2="1"><stop stop-color="#fbfcff"/><stop offset=".55" stop-color="#edf3ff"/><stop offset="1" stop-color="#d7e9fa"/></linearGradient>
-    <radialGradient id="halo"><stop stop-color="#c3d3fa" stop-opacity=".8"/><stop offset="1" stop-color="#ccd6ff" stop-opacity="0"/></radialGradient>
-    <linearGradient id="wave" x1=".15" y1="1" x2=".9" y2="0"><stop stop-color="#8498d4"/><stop offset=".36" stop-color="#afb5e8"/><stop offset=".64" stop-color="#d4d9f6"/><stop offset="1" stop-color="#8bccf4"/></linearGradient>
-    <linearGradient id="crest" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#6b86ce"/><stop offset=".47" stop-color="#a6bbef"/><stop offset=".72" stop-color="#b1e2f7"/><stop offset="1" stop-color="#e7f8ff"/></linearGradient>
-    <linearGradient id="veil"><stop stop-color="#f8faff"/><stop offset=".74" stop-color="#f6f9ff" stop-opacity=".92"/><stop offset="1" stop-color="#f5f8ff" stop-opacity="0"/></linearGradient>
-    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffffff" stop-opacity=".65"/><stop offset=".48" stop-color="#f3faff" stop-opacity=".23"/><stop offset="1" stop-color="#96d9fa" stop-opacity=".42"/></linearGradient>
-    <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffffff"/><stop offset=".35" stop-color="#f9fdff" stop-opacity=".95"/><stop offset=".62" stop-color="#ecf7ff" stop-opacity=".35"/><stop offset="1" stop-color="#ffffff" stop-opacity=".9"/></linearGradient>
-    <linearGradient id="refraction" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#6a8ace" stop-opacity=".1"/><stop offset=".45" stop-color="#ffffff" stop-opacity=".88"/><stop offset=".51" stop-color="#c5f3ff" stop-opacity=".8"/><stop offset=".56" stop-color="#6fbdea" stop-opacity=".3"/><stop offset="1" stop-color="#b0b9ea" stop-opacity=".12"/></linearGradient>
-    <filter id="shadow" x="-35%" y="-30%" width="180%" height="200%"><feDropShadow dx="0" dy="15" stdDeviation="17" flood-color="#506bab" flood-opacity=".18"/></filter>
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="20"/></filter>
+    <linearGradient id="night" x2="0" y2="1"><stop stop-color="#1a1d27"/><stop offset="1" stop-color="#0f1117"/></linearGradient>
+    <linearGradient id="smoke" x2="0" y2="1"><stop stop-color="#2a2f40" stop-opacity=".78"/><stop offset="1" stop-color="#161925" stop-opacity=".84"/></linearGradient>
+    <linearGradient id="rim" x2="0" y2="1"><stop stop-color="#ffffff" stop-opacity=".4"/><stop offset=".4" stop-color="#ffffff" stop-opacity="0"/><stop offset=".7" stop-color="#ffffff" stop-opacity="0"/><stop offset="1" stop-color="#ffffff" stop-opacity=".12"/></linearGradient>
+    <linearGradient id="lens-rim" x2="0" y2="1"><stop stop-color="#ffffff" stop-opacity=".8"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".15"/><stop offset="1" stop-color="#ffffff" stop-opacity=".3"/></linearGradient>
+    <linearGradient id="lens-fill" x2="0" y2="1"><stop stop-color="#ffffff" stop-opacity=".22"/><stop offset="1" stop-color="#ffffff" stop-opacity=".1"/></linearGradient>
+    <linearGradient id="window" x2="0" y2="1"><stop stop-color="#262a37"/><stop offset="1" stop-color="#1c1f2a"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="165%"><feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000000" flood-opacity=".45"/></filter>
     <clipPath id="frame"><rect width="1200" height="420" rx="26"/></clipPath>
-    <clipPath id="front"><rect x="790" y="62" width="232" height="232" rx="32"/></clipPath>
+    <clipPath id="screen"><rect x="650" y="46" width="500" height="328" rx="20"/></clipPath>
   </defs>
   <style>
     text { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; }
-    .glass-mark { animation:float 12s ease-in-out infinite; }
-    .reflection { animation:light 12s ease-in-out infinite; }
-    @keyframes float { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-7px); } }
-    @keyframes light { 0%,100% { opacity:.5; transform:translateX(-5px); } 50% { opacity:.9; transform:translateX(9px); } }
+    .win { transform-box:fill-box; transform-origin:center; animation:8s ease-in-out infinite; }
+    .docs { animation-name:docs; } .browser { animation-name:browser; }
+    .notes { animation-name:notes; } .terminal { animation-name:terminal; }
+    .tabs { animation:tabs 8s ease-in-out infinite; }
+    @keyframes docs { 0%,16%,94%,100% { transform:translate(176px,-6px) rotate(5deg) scale(.86); } 38%,80% { transform:none; } }
+    @keyframes browser { 0%,16%,94%,100% { transform:translate(70px,34px) rotate(-6deg) scale(.9); } 34%,80% { transform:none; } }
+    @keyframes notes { 0%,16%,94%,100% { transform:translate(-170px,96px) rotate(4deg); } 30%,80% { transform:none; } }
+    @keyframes terminal { 0%,16%,94%,100% { transform:translate(-120px,-104px) rotate(-3deg); } 32%,80% { transform:none; } }
+    @keyframes tabs { 0%,36%,86%,100% { opacity:0; } 44%,80% { opacity:1; } }
     @media (prefers-reduced-motion:reduce) { * { animation:none !important; } }
   </style>
   <g clip-path="url(#frame)">
-    <rect width="1200" height="420" fill="url(#paper)"/>
-    <ellipse cx="922" cy="180" rx="380" ry="320" fill="url(#halo)"/>
-    <path d="M414 484C656 414 522 114 849 173C1020 204 1114 162 1260-74L1290 474Z" fill="url(#wave)"/>
-    <path d="M414 478C656 408 522 108 849 167C1020 198 1114 156 1260-80" fill="none" stroke="#ffffff" stroke-opacity=".85" stroke-width="1.6"/>
-    <path d="M661 473C729 204 1012 401 1228 71L1280 474Z" fill="url(#crest)"/>
-    <path d="M661 467C729 198 1012 395 1228 65" fill="none" stroke="#f2fbff" stroke-width="2"/>
-    <path d="M681 474C756 219 1022 417 1250 88" fill="none" stroke="#ebf8ff" stroke-opacity=".22" stroke-width="10" filter="url(#glow)"/>
-    <rect width="730" height="420" fill="url(#veil)"/>
-    <text x="62" y="76" fill="#627aa0" font-size="12" font-weight="600" letter-spacing="3">NATIVE MACOS WINDOW MANAGER</text>
-    <text x="57" y="190" fill="#182e50" font-size="88" font-weight="650" letter-spacing="-5">Tangler</text>
-    <text x="62" y="239" fill="#475f83" font-size="26" font-weight="400" letter-spacing="-.5">Your windows. In place.</text>
-    <path d="M63 294H99" stroke="#547dd0" stroke-width="2" stroke-linecap="round"/>
-    <text x="62" y="336" fill="#6e809d" font-size="12" font-weight="500" letter-spacing="1.9">LAYOUTS  /  TAB GROUPS  /  WORKSPACES</text>
-    <g class="glass-mark">
-      <g filter="url(#shadow)">
-        <rect x="700" y="144" width="236" height="228" rx="32" fill="url(#glass)" stroke="url(#rim)" stroke-width="2.2"/>
-        <rect x="706" y="150" width="224" height="216" rx="27" fill="none" stroke="#f4faff" stroke-opacity=".47"/>
-        <path d="M702 192H934" stroke="#e8f5ff" stroke-opacity=".74" stroke-width="1.4"/>
-        <circle cx="723" cy="168" r="3.2" fill="#fbfdff" fill-opacity=".9"/><circle cx="736" cy="168" r="3.2" fill="#fbfdff" fill-opacity=".62"/>
-        <rect x="790" y="62" width="232" height="232" rx="32" fill="url(#glass)" stroke="url(#rim)" stroke-width="2.4"/>
-        <rect x="796" y="68" width="220" height="220" rx="27" fill="none" stroke="#ffffff" stroke-opacity=".64"/>
-      </g>
-      <g clip-path="url(#front)"><g class="reflection">
-        <path d="M750 302C795 211 946 222 1042 62L1091 171C1009 294 886 313 750 333Z" fill="url(#refraction)"/>
-        <path d="M769 305C817 216 968 228 1064 64" fill="none" stroke="#f1fcff" stroke-width="1.4" stroke-opacity=".85"/>
-      </g></g>
-      <path d="M792 112H1020" stroke="#f7fcff" stroke-width="1.5"/>
-      <circle cx="814" cy="86" r="3.5" fill="#ffffff"/><circle cx="829" cy="86" r="3.5" fill="#ffffff" fill-opacity=".8"/><circle cx="844" cy="86" r="3.5" fill="#ffffff" fill-opacity=".6"/>
-      <path d="M806 130V254Q806 278 831 278H988" fill="none" stroke="#ffffff" stroke-opacity=".18" stroke-width="4" stroke-linecap="round"/>
+    <rect width="1200" height="420" fill="url(#night)"/>
+    <text x="62" y="76" fill="#ffffff8c" font-size="12" font-weight="600" letter-spacing="3">NATIVE MACOS WINDOW MANAGER</text>
+    <text x="57" y="190" fill="#ffffff" font-size="88" font-weight="650" letter-spacing="-5">Untangle</text>
+    <text x="62" y="239" fill="#ffffffb3" font-size="26" font-weight="400" letter-spacing="-.5">Your windows. In place.</text>
+    <path d="M63 294H99" stroke="#4c8dff" stroke-width="2" stroke-linecap="round"/>
+    <text x="62" y="336" fill="#ffffff8c" font-size="12" font-weight="500" letter-spacing="1.9">LAYOUTS  /  TAB GROUPS  /  WORKSPACES</text>
+    <rect x="650" y="46" width="500" height="328" rx="20" fill="#ffffff" fill-opacity=".03" stroke="#ffffff" stroke-opacity=".12"/>
+    <g clip-path="url(#screen)">
+      <rect x="650" y="46" width="500" height="18" rx="0" fill="#ffffff" fill-opacity=".05"/>
+      <circle cx="668" cy="55" r="3" fill="#ffffff" fill-opacity=".45"/>
+      <g class="win docs" filter="url(#shadow)"><g transform="translate(662 104)"><rect x="0" y="0" width="233" height="258" rx="10" fill="url(#window)" stroke="#ffffff" stroke-opacity=".14"/><circle cx="13" cy="12" r="3" fill="#fc786e"/><circle cx="23" cy="12" r="3" fill="#efbe53"/><circle cx="33" cy="12" r="3" fill="#63c890"/><text x="44" y="16" font-size="10" fill="#ffffff8c" font-weight="500" >Docs</text><path d="M0 24H233" stroke="#ffffff" stroke-opacity=".08"/><rect x="12" y="38" width="140" height="5" rx="2.5" fill="#4c8dff" fill-opacity="0.7"/><rect x="12" y="53" width="150" height="5" rx="2.5" fill="#ffffff" fill-opacity="0.22"/><rect x="12" y="68" width="180" height="5" rx="2.5" fill="#ffffff" fill-opacity="0.14"/><rect x="12" y="83" width="120" height="5" rx="2.5" fill="#ffffff" fill-opacity="0.14"/><rect x="12" y="98" width="160" height="5" rx="2.5" fill="#ffffff" fill-opacity="0.14"/></g></g><g class="win browser" filter="url(#shadow)"><g transform="translate(662 104)"><rect x="0" y="0" width="233" height="258" rx="10" fill="url(#window)" stroke="#ffffff" stroke-opacity=".14"/><circle cx="13" cy="12" r="3" fill="#fc786e"/><circle cx="23" cy="12" r="3" fill="#efbe53"/><circle cx="33" cy="12" r="3" fill="#63c890"/><text x="44" y="16" font-size="10" fill="#ffffff8c" font-weight="500" >Browser</text><path d="M0 24H233" stroke="#ffffff" stroke-opacity=".08"/><rect x="12" y="38" width="170" height="5" rx="2.5" fill="#9cc0ff" fill-opacity="0.6"/><rect x="12" y="53" width="120" height="5" rx="2.5" fill="#ffffff" fill-opacity="0.14"/><rect x="12" y="68" width="150" height="5" rx="2.5" fill="#ffffff" fill-opacity="0.22"/><rect x="12" y="83" width="180" height="5" rx="2.5" fill="#ffffff" fill-opacity="0.14"/><rect x="12" y="98" width="120" height="5" rx="2.5" fill="#ffffff" fill-opacity="0.14"/><rect x="12" y="113" width="160" height="5" rx="2.5" fill="#ffffff" fill-opacity="0.14"/></g></g><g class="win notes" filter="url(#shadow)"><g transform="translate(905 72)"><rect x="0" y="0" width="233" height="140" rx="10" fill="url(#window)" stroke="#ffffff" stroke-opacity=".14"/><circle cx="13" cy="12" r="3" fill="#fc786e"/><circle cx="23" cy="12" r="3" fill="#efbe53"/><circle cx="33" cy="12" r="3" fill="#63c890"/><text x="44" y="16" font-size="10" fill="#ffffff8c" font-weight="500" >Notes</text><path d="M0 24H233" stroke="#ffffff" stroke-opacity=".08"/><rect x="12" y="38" width="150" height="5" rx="2.5" fill="#ffffff" fill-opacity="0.22"/><rect x="12" y="53" width="180" height="5" rx="2.5" fill="#ffffff" fill-opacity="0.14"/><rect x="12" y="68" width="120" height="5" rx="2.5" fill="#ffffff" fill-opacity="0.14"/><rect x="12" y="83" width="160" height="5" rx="2.5" fill="#ffffff" fill-opacity="0.14"/></g></g><g class="win terminal" filter="url(#shadow)"><g transform="translate(905 222)"><rect x="0" y="0" width="233" height="140" rx="10" fill="#11131a" stroke="#ffffff" stroke-opacity=".14"/><circle cx="13" cy="12" r="3" fill="#fc786e"/><circle cx="23" cy="12" r="3" fill="#efbe53"/><circle cx="33" cy="12" r="3" fill="#63c890"/><text x="44" y="16" font-size="10" fill="#ffffff8c" font-weight="500" >Terminal</text><path d="M0 24H233" stroke="#ffffff" stroke-opacity=".08"/><rect x="12" y="38" width="70" height="5" rx="2.5" fill="#6fd6a8" fill-opacity="0.8"/><rect x="12" y="53" width="110" height="5" rx="2.5" fill="#ffffff" fill-opacity="0.18"/><rect x="12" y="68" width="90" height="5" rx="2.5" fill="#ffffff" fill-opacity="0.18"/></g></g>
+      <g class="tabs"><rect x="662" y="72" width="233" height="26" rx="13" fill="url(#smoke)" stroke="#000000" stroke-opacity=".4" /><rect x="663" y="73" width="231" height="24" rx="12" fill="none" stroke="url(#rim)" stroke-width="1.2"/><g ><rect x="665" y="75" width="113" height="20" rx="10" fill="url(#lens-fill)" stroke="#000000" stroke-opacity=".35"/><rect x="666" y="76" width="111" height="18" rx="9" fill="none" stroke="url(#lens-rim)" stroke-width="1.4"/></g><text x="721" y="89" font-size="10" fill="#ffffffeb" font-weight="600" text-anchor="middle">Browser</text><text x="836" y="89" font-size="10" fill="#ffffff8c" font-weight="500" text-anchor="middle">Docs</text></g>
     </g>
-    <rect x=".75" y=".75" width="1198.5" height="418.5" rx="25.5" fill="none" stroke="#dce6f7" stroke-width="1.5"/>
+    <rect x=".75" y=".75" width="1198.5" height="418.5" rx="25.5" fill="none" stroke="#ffffff" stroke-opacity=".1" stroke-width="1.5"/>
   </g>
 </svg>

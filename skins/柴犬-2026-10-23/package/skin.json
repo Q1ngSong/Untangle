@@ -1,0 +1,662 @@
+{
+  "format": "untangle-skin",
+  "formatVersion": 1,
+  "id": "io.untangle.shiba",
+  "version": "1.0.0",
+  "name": {
+    "zh-Hans": "柴犬",
+    "en": "Shiba"
+  },
+  "author": "Untangle",
+  "license": "CC0-1.0",
+  "description": {
+    "zh-Hans": "柿子橙和奶油白：选中卡片竖起一对立耳，右下角甩出一截卷尾巴。",
+    "en": "Persimmon and cream: pointed ears rise over the selected card and a curly tail wags at its corner."
+  },
+  "appearance": "light",
+  "tokens": {
+    "color": {
+      "panel": "#FFF7EC",
+      "edge": "#ECC9A2",
+      "ink": "#3D2A1D",
+      "muted": "#7F604A",
+      "card": "#FFFFFF",
+      "cardEdge": "#F1DFCB",
+      "cardShade": "#C076301f",
+      "well": "#FAEEDF",
+      "accent": "#DF7524",
+      "sel": "#FFEBD7",
+      "secondary": "#E2A24E",
+      "hoverTint": "#EFBA6E2a",
+      "bar": "#FCEEDD",
+      "tab": "#FFFFFF",
+      "tabEdge": "#ECC9A2",
+      "chip": "#FFF8EE",
+      "chipEdge": "#E9B88A",
+      "chipBottom": "#E8832F",
+      "field": "#FFFFFF",
+      "fieldEdge": "#ECC9A2",
+      "rowSel": "#FFEBD7",
+      "ear": "#E8832F",
+      "earIn": "#FFF0DB",
+      "bone": "#FFF3E2",
+      "boneEdge": "#D9A777",
+      "cardInk": "#3D2A1D",
+      "cardMuted": "#7F604A",
+      "chipInk": "#3D2A1D",
+      "fieldInk": "#3D2A1D",
+      "cardHi": "#ffffffb3"
+    },
+    "font": {
+      "ui": {
+        "system": true,
+        "design": "rounded"
+      }
+    },
+    "image": {
+      "ears": "assets/ears.png",
+      "tail": "assets/tail.png",
+      "tab-ears": "assets/tab-ears.png",
+      "sticker": "assets/sticker.png"
+    }
+  },
+  "editable": [
+    {
+      "token": "color.accent",
+      "label": {
+        "zh-Hans": "选中色",
+        "en": "Selection"
+      }
+    },
+    {
+      "token": "color.secondary",
+      "label": {
+        "zh-Hans": "悬停色",
+        "en": "Hover"
+      }
+    }
+  ],
+  "roles": {
+    "panel": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 18
+      },
+      "layers": [
+        {
+          "type": "fill",
+          "color": "$color.panel"
+        },
+        {
+          "type": "stroke",
+          "color": "$color.edge",
+          "width": 1.5
+        }
+      ]
+    },
+    "panel.hints": {
+      "add": [
+        {
+          "type": "image",
+          "src": "$image.sticker",
+          "mode": "nineSlice",
+          "slice": [
+            36,
+            36,
+            0,
+            0
+          ],
+          "scale": 0.5,
+          "inset": 0,
+          "clip": false,
+          "shape": {
+            "kind": "rect"
+          }
+        }
+      ]
+    },
+    "panel.toast": {
+      "add": [
+        {
+          "type": "image",
+          "src": "$image.sticker",
+          "mode": "nineSlice",
+          "slice": [
+            36,
+            36,
+            0,
+            0
+          ],
+          "scale": 0.5,
+          "inset": 0,
+          "clip": false,
+          "shape": {
+            "kind": "rect"
+          }
+        }
+      ]
+    },
+    "tabBar": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 16
+      },
+      "layers": [
+        {
+          "type": "fill",
+          "color": "$color.bar"
+        },
+        {
+          "type": "stroke",
+          "color": "$color.edge",
+          "width": 1.5
+        }
+      ]
+    },
+    "tab": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 13
+      },
+      "layers": [],
+      "states": {
+        "hover": {
+          "transition": "hover",
+          "add": [
+            {
+              "type": "fill",
+              "color": "$color.hoverTint",
+              "inset": [
+                3,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "incoming": {
+          "add": [
+            {
+              "type": "fill",
+              "color": {
+                "color": "$color.accent",
+                "alpha": 0.12
+              },
+              "inset": [
+                3,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "type": "stroke",
+              "color": "$color.accent",
+              "width": 1.5,
+              "inset": [
+                3,
+                0,
+                0,
+                0
+              ],
+              "dash": [
+                4,
+                3
+              ]
+            }
+          ]
+        },
+        "active": {
+          "transition": "select",
+          "add": [
+            {
+              "type": "image",
+              "src": "$image.tab-ears",
+              "mode": "nineSlice",
+              "slice": [
+                22,
+                52,
+                0,
+                52
+              ],
+              "scale": 0.5,
+              "inset": -3,
+              "clip": false,
+              "shape": {
+                "kind": "rect"
+              },
+              "animate": {
+                "name": "pop",
+                "on": "enter"
+              }
+            },
+            {
+              "type": "fill",
+              "color": "$color.tab",
+              "inset": [
+                3,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "type": "stroke",
+              "color": "$color.tabEdge",
+              "width": 1,
+              "inset": [
+                3,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "card": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 14
+      },
+      "layers": [
+        {
+          "type": "fill",
+          "color": "$color.card",
+          "inset": [
+            6,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "shadow",
+          "color": "$color.cardHi",
+          "radius": 0.5,
+          "offset": [
+            0,
+            1.5
+          ],
+          "inner": true,
+          "inset": [
+            6,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "shadow",
+          "color": "$color.cardShade",
+          "radius": 3,
+          "offset": [
+            0,
+            -2
+          ],
+          "inner": true,
+          "inset": [
+            6,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "stroke",
+          "color": "$color.cardEdge",
+          "width": 1,
+          "inset": [
+            6,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "states": {
+        "hover": {
+          "transition": "hover",
+          "add": [
+            {
+              "type": "fill",
+              "color": "$color.hoverTint",
+              "inset": [
+                6,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "type": "stroke",
+              "color": "$color.secondary",
+              "width": 1.5,
+              "inset": [
+                6,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "selected": {
+          "transition": "select",
+          "add": [
+            {
+              "type": "image",
+              "src": "$image.ears",
+              "mode": "nineSlice",
+              "slice": [
+                20,
+                56,
+                0,
+                56
+              ],
+              "scale": 0.5,
+              "inset": 0,
+              "clip": false,
+              "shape": {
+                "kind": "rect"
+              },
+              "animate": {
+                "name": "pop",
+                "on": "enter"
+              }
+            },
+            {
+              "type": "fill",
+              "color": "$color.sel",
+              "inset": [
+                6,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "type": "stroke",
+              "color": "$color.accent",
+              "width": 2,
+              "inset": [
+                6,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "type": "image",
+              "src": "$image.tail",
+              "mode": "nineSlice",
+              "slice": [
+                0,
+                24,
+                36,
+                0
+              ],
+              "scale": 0.5,
+              "inset": 0,
+              "clip": false,
+              "shape": {
+                "kind": "rect"
+              },
+              "animate": {
+                "name": "wag",
+                "on": "enter"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "well": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 9
+      },
+      "layers": [
+        {
+          "type": "fill",
+          "color": "$color.well"
+        }
+      ]
+    },
+    "field": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 12
+      },
+      "layers": [
+        {
+          "type": "fill",
+          "color": "$color.field",
+          "inset": [
+            8,
+            8,
+            9,
+            8
+          ]
+        },
+        {
+          "type": "stroke",
+          "color": "$color.fieldEdge",
+          "width": 1.25,
+          "inset": [
+            8,
+            8,
+            9,
+            8
+          ]
+        }
+      ]
+    },
+    "row": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 12
+      },
+      "layers": [],
+      "states": {
+        "selected": {
+          "transition": "select",
+          "add": [
+            {
+              "type": "fill",
+              "color": "$color.rowSel"
+            },
+            {
+              "type": "stroke",
+              "color": "$color.accent",
+              "width": 1.5
+            }
+          ]
+        }
+      }
+    },
+    "chip": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 7
+      },
+      "layers": [
+        {
+          "type": "fill",
+          "color": "$color.chip"
+        },
+        {
+          "type": "stroke",
+          "color": "$color.chipEdge",
+          "width": 1.25
+        },
+        {
+          "type": "shadow",
+          "color": "$color.chipBottom",
+          "radius": 0,
+          "offset": [
+            0,
+            -2.5
+          ],
+          "inner": true
+        }
+      ]
+    },
+    "control": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 9
+      },
+      "layers": [
+        {
+          "type": "fill",
+          "color": {
+            "color": "$color.cardInk",
+            "alpha": 0.1
+          }
+        }
+      ],
+      "text": {
+        "title": {
+          "color": "$color.cardInk"
+        }
+      },
+      "states": {
+        "hover": {
+          "transition": "hover",
+          "replace": [
+            {
+              "type": "fill",
+              "color": {
+                "color": "$color.accent",
+                "alpha": 0.25
+              }
+            }
+          ]
+        }
+      }
+    },
+    "dropTarget": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 16
+      },
+      "layers": [
+        {
+          "type": "stroke",
+          "color": "$color.accent",
+          "width": 2
+        }
+      ]
+    }
+  },
+  "text": {
+    "title": {
+      "font": "$font.ui",
+      "color": "$color.ink"
+    },
+    "body": {
+      "font": "$font.ui",
+      "color": "$color.ink"
+    },
+    "secondary": {
+      "font": "$font.ui",
+      "color": "$color.muted"
+    },
+    "key": {
+      "font": "$font.ui",
+      "color": "$color.chipInk"
+    },
+    "field": {
+      "font": "$font.ui",
+      "color": "$color.fieldInk"
+    }
+  },
+  "motion": {
+    "transitions": {
+      "select": {
+        "curve": "spring",
+        "duration": 0.34,
+        "bounce": 0.25,
+        "slide": true
+      },
+      "hover": {
+        "curve": "smooth",
+        "duration": 0.12
+      }
+    },
+    "animations": {
+      "pop": {
+        "duration": 0.38,
+        "keyframes": [
+          {
+            "t": 0,
+            "offset": [
+              0,
+              5
+            ],
+            "opacity": 0
+          },
+          {
+            "t": 0.6,
+            "offset": [
+              0,
+              -1.5
+            ],
+            "opacity": 1
+          },
+          {
+            "t": 1,
+            "offset": [
+              0,
+              0
+            ],
+            "opacity": 1
+          }
+        ]
+      },
+      "wag": {
+        "duration": 0.5,
+        "keyframes": [
+          {
+            "t": 0,
+            "offset": [
+              0,
+              0
+            ]
+          },
+          {
+            "t": 0.25,
+            "offset": [
+              1.2,
+              0
+            ]
+          },
+          {
+            "t": 0.5,
+            "offset": [
+              -1,
+              0
+            ]
+          },
+          {
+            "t": 0.75,
+            "offset": [
+              0.6,
+              0
+            ]
+          },
+          {
+            "t": 1,
+            "offset": [
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

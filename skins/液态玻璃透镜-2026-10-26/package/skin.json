@@ -1,0 +1,610 @@
+{
+  "format": "untangle-skin",
+  "formatVersion": 1,
+  "id": "io.untangle.glass-lens",
+  "version": "1.1.0",
+  "name": {
+    "zh-Hans": "液态玻璃·透镜",
+    "en": "Liquid Glass Lens"
+  },
+  "author": "Untangle",
+  "license": "CC0-1.0",
+  "description": {
+    "zh-Hans": "苹果式的液态玻璃：几乎不加白，双线亮边；选中处浮起一块明亮的透镜，在卡片、行和标签之间弹着滑过去。",
+    "en": "Apple-style Liquid Glass with almost no milk and a two-line rim; a bright lens rises on the selection and springs between items."
+  },
+  "appearance": "light",
+  "tokens": {
+    "color": {
+      "ink": "#000000e0",
+      "muted": "#0000008c",
+      "wash": "#ffffff00",
+      "outer": "#00000029",
+      "rimTop": "#ffffffa6",
+      "rimBottom": "#ffffff4d",
+      "tabHover": "#0000000d",
+      "well": "#0000000a",
+      "field": "#0000000d",
+      "fieldEdge": "#00000014",
+      "chip": "#ffffff26",
+      "chipEdge": "#00000038",
+      "chipInk": "#000000b3",
+      "control": "#00000014",
+      "controlHover": "#00000026",
+      "accent": "#3478f6",
+      "lensFill": "#ffffff5c",
+      "lensEdge": "#00000029",
+      "lensShade": "#00000024",
+      "lensRimTop": "#ffffffff",
+      "lensRimBottom": "#ffffff99",
+      "lensLine": "#00000024"
+    },
+    "font": {
+      "ui": {
+        "system": true
+      }
+    }
+  },
+  "editable": [
+    {
+      "token": "color.wash",
+      "label": {
+        "zh-Hans": "玻璃白雾",
+        "en": "Glass wash"
+      }
+    }
+  ],
+  "roles": {
+    "panel": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 24
+      },
+      "layers": [
+        {
+          "type": "material",
+          "style": "glass"
+        },
+        {
+          "type": "fill",
+          "color": "$color.wash"
+        },
+        {
+          "type": "stroke",
+          "color": "$color.outer",
+          "width": 0.5,
+          "over": true
+        },
+        {
+          "type": "stroke",
+          "width": 1,
+          "inset": 0.5,
+          "blend": "plusLighter",
+          "over": true,
+          "gradient": {
+            "from": [
+              0,
+              0
+            ],
+            "to": [
+              0,
+              1
+            ],
+            "stops": [
+              [
+                0,
+                "$color.rimTop"
+              ],
+              [
+                0.4,
+                "#ffffff00"
+              ],
+              [
+                0.7,
+                "#ffffff00"
+              ],
+              [
+                1,
+                "$color.rimBottom"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "panel.dockPreview": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 22
+      }
+    },
+    "panel.hints": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 18
+      }
+    },
+    "panel.toast": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 18
+      }
+    },
+    "tabBar": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 99
+      },
+      "layers": [
+        {
+          "type": "material",
+          "style": "glass"
+        },
+        {
+          "type": "fill",
+          "color": "$color.wash"
+        },
+        {
+          "type": "stroke",
+          "color": "$color.outer",
+          "width": 0.5,
+          "over": true
+        },
+        {
+          "type": "stroke",
+          "width": 1,
+          "inset": 0.5,
+          "blend": "plusLighter",
+          "over": true,
+          "gradient": {
+            "from": [
+              0,
+              0
+            ],
+            "to": [
+              0,
+              1
+            ],
+            "stops": [
+              [
+                0,
+                "$color.rimTop"
+              ],
+              [
+                0.4,
+                "#ffffff00"
+              ],
+              [
+                0.7,
+                "#ffffff00"
+              ],
+              [
+                1,
+                "$color.rimBottom"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "tab": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 99
+      },
+      "layers": [],
+      "states": {
+        "hover": {
+          "transition": "hover",
+          "add": [
+            {
+              "type": "fill",
+              "color": "$color.tabHover"
+            }
+          ]
+        },
+        "incoming": {
+          "add": [
+            {
+              "type": "fill",
+              "color": {
+                "color": "$color.accent",
+                "alpha": 0.14
+              }
+            },
+            {
+              "type": "stroke",
+              "color": "$color.accent",
+              "width": 1,
+              "dash": [
+                4,
+                3
+              ]
+            }
+          ]
+        },
+        "active": {
+          "transition": "select",
+          "add": [
+            {
+              "type": "fill",
+              "color": "$color.lensFill"
+            },
+            {
+              "type": "shadow",
+              "color": "$color.lensEdge",
+              "radius": 5
+            },
+            {
+              "type": "shadow",
+              "color": "$color.lensShade",
+              "radius": 2,
+              "offset": [
+                -1,
+                -1.5
+              ]
+            },
+            {
+              "type": "stroke",
+              "width": 1.25,
+              "blend": "plusLighter",
+              "gradient": {
+                "from": [
+                  0,
+                  0
+                ],
+                "to": [
+                  0,
+                  1
+                ],
+                "stops": [
+                  [
+                    0,
+                    "$color.lensRimTop"
+                  ],
+                  [
+                    0.5,
+                    "#ffffff00"
+                  ],
+                  [
+                    1,
+                    "$color.lensRimBottom"
+                  ]
+                ]
+              }
+            },
+            {
+              "type": "stroke",
+              "color": "$color.lensLine",
+              "width": 0.5
+            }
+          ]
+        }
+      }
+    },
+    "card": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 14
+      },
+      "layers": [],
+      "states": {
+        "hover": {
+          "transition": "hover",
+          "add": [
+            {
+              "type": "fill",
+              "color": "$color.lensFill",
+              "opacity": 0.6
+            },
+            {
+              "type": "shadow",
+              "color": "$color.lensEdge",
+              "radius": 5,
+              "opacity": 0.6
+            },
+            {
+              "type": "shadow",
+              "color": "$color.lensShade",
+              "radius": 2,
+              "offset": [
+                -1,
+                -1.5
+              ],
+              "opacity": 0.6
+            },
+            {
+              "type": "stroke",
+              "width": 1.25,
+              "blend": "plusLighter",
+              "gradient": {
+                "from": [
+                  0,
+                  0
+                ],
+                "to": [
+                  0,
+                  1
+                ],
+                "stops": [
+                  [
+                    0,
+                    "$color.lensRimTop"
+                  ],
+                  [
+                    0.5,
+                    "#ffffff00"
+                  ],
+                  [
+                    1,
+                    "$color.lensRimBottom"
+                  ]
+                ]
+              },
+              "opacity": 0.6
+            },
+            {
+              "type": "stroke",
+              "color": "$color.lensLine",
+              "width": 0.5,
+              "opacity": 0.6
+            }
+          ]
+        },
+        "selected": {
+          "transition": "select",
+          "add": [
+            {
+              "type": "fill",
+              "color": "$color.lensFill"
+            },
+            {
+              "type": "shadow",
+              "color": "$color.lensEdge",
+              "radius": 5
+            },
+            {
+              "type": "shadow",
+              "color": "$color.lensShade",
+              "radius": 2,
+              "offset": [
+                -1,
+                -1.5
+              ]
+            },
+            {
+              "type": "stroke",
+              "width": 1.25,
+              "blend": "plusLighter",
+              "gradient": {
+                "from": [
+                  0,
+                  0
+                ],
+                "to": [
+                  0,
+                  1
+                ],
+                "stops": [
+                  [
+                    0,
+                    "$color.lensRimTop"
+                  ],
+                  [
+                    0.5,
+                    "#ffffff00"
+                  ],
+                  [
+                    1,
+                    "$color.lensRimBottom"
+                  ]
+                ]
+              }
+            },
+            {
+              "type": "stroke",
+              "color": "$color.lensLine",
+              "width": 0.5
+            }
+          ]
+        }
+      }
+    },
+    "well": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 7
+      },
+      "layers": [
+        {
+          "type": "fill",
+          "color": "$color.well"
+        }
+      ]
+    },
+    "field": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 99
+      },
+      "layers": [
+        {
+          "type": "fill",
+          "color": "$color.field",
+          "inset": [
+            8,
+            8,
+            9,
+            8
+          ]
+        },
+        {
+          "type": "stroke",
+          "color": "$color.fieldEdge",
+          "width": 0.5,
+          "inset": [
+            8,
+            8,
+            9,
+            8
+          ]
+        }
+      ]
+    },
+    "row": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 18
+      },
+      "layers": [],
+      "states": {
+        "selected": {
+          "transition": "select",
+          "add": [
+            {
+              "type": "fill",
+              "color": "$color.lensFill"
+            },
+            {
+              "type": "shadow",
+              "color": "$color.lensEdge",
+              "radius": 5
+            },
+            {
+              "type": "shadow",
+              "color": "$color.lensShade",
+              "radius": 2,
+              "offset": [
+                -1,
+                -1.5
+              ]
+            },
+            {
+              "type": "stroke",
+              "width": 1.25,
+              "blend": "plusLighter",
+              "gradient": {
+                "from": [
+                  0,
+                  0
+                ],
+                "to": [
+                  0,
+                  1
+                ],
+                "stops": [
+                  [
+                    0,
+                    "$color.lensRimTop"
+                  ],
+                  [
+                    0.5,
+                    "#ffffff00"
+                  ],
+                  [
+                    1,
+                    "$color.lensRimBottom"
+                  ]
+                ]
+              }
+            },
+            {
+              "type": "stroke",
+              "color": "$color.lensLine",
+              "width": 0.5
+            }
+          ]
+        }
+      }
+    },
+    "chip": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 7
+      },
+      "layers": [
+        {
+          "type": "fill",
+          "color": "$color.chip"
+        },
+        {
+          "type": "stroke",
+          "color": "$color.chipEdge",
+          "width": 0.75
+        }
+      ]
+    },
+    "control": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 99
+      },
+      "layers": [
+        {
+          "type": "fill",
+          "color": "$color.control"
+        }
+      ],
+      "states": {
+        "hover": {
+          "transition": "hover",
+          "replace": [
+            {
+              "type": "fill",
+              "color": "$color.controlHover"
+            }
+          ]
+        }
+      }
+    },
+    "dropTarget": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 99
+      },
+      "layers": [
+        {
+          "type": "stroke",
+          "color": "$color.accent",
+          "width": 2
+        }
+      ]
+    }
+  },
+  "text": {
+    "title": {
+      "font": "$font.ui",
+      "color": "$color.ink"
+    },
+    "body": {
+      "font": "$font.ui",
+      "color": "$color.ink"
+    },
+    "secondary": {
+      "font": "$font.ui",
+      "color": "$color.muted"
+    },
+    "key": {
+      "font": "$font.ui",
+      "color": "$color.chipInk"
+    },
+    "field": {
+      "font": "$font.ui",
+      "color": "$color.ink"
+    }
+  },
+  "motion": {
+    "transitions": {
+      "select": {
+        "curve": "spring",
+        "duration": 0.38,
+        "bounce": 0.3,
+        "slide": true
+      },
+      "hover": {
+        "curve": "smooth",
+        "duration": 0.12
+      }
+    }
+  }
+}

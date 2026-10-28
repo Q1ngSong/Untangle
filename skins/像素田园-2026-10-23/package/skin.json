@@ -1,0 +1,806 @@
+{
+  "format": "untangle-skin",
+  "formatVersion": 1,
+  "id": "io.untangle.pixel-farm",
+  "version": "1.0.0",
+  "name": {
+    "zh-Hans": "像素·田园",
+    "en": "Pixel Farm"
+  },
+  "author": "Untangle",
+  "license": "皮肤 CC0-1.0；字体 Fusion Pixel，SIL OFL 1.1（见 LICENSE-*.txt）",
+  "description": {
+    "zh-Hans": "农场游戏的木框与羊皮纸：暖黄纸面、木褐色两格粗框、红橙色选中框、奶油色提示纸条。",
+    "en": "Wood and parchment from farm games: warm paper, thick brown frames, a red-orange selection, cream notes."
+  },
+  "appearance": "light",
+  "tokens": {
+    "color": {
+      "accent": "#e2462b",
+      "secondary": "#d97a1b",
+      "ink": "#5b2b0f",
+      "slotInk": "#5b2b0f",
+      "lit": {
+        "color": "#fff4d6",
+        "alpha": 0.3
+      },
+      "tip": "#fbe4b0",
+      "tipFrame": "#5b2b0f",
+      "tipTop": "#c57b2d",
+      "tipBottom": "#8a4a1c",
+      "tipInk": "#5b2b0f",
+      "field": "#fff4d6",
+      "fieldInk": "#5b2b0f",
+      "fieldEdge": "#8a4a1c"
+    },
+    "number": {
+      "cell": 2
+    },
+    "font": {
+      "pixel": {
+        "file": "fonts/FusionPixel-12px-Proportional-zh_hans.otf",
+        "size": 12
+      }
+    },
+    "image": {
+      "panel": "assets/panel.png",
+      "raised": "assets/raised.png",
+      "slot": "assets/slot.png"
+    }
+  },
+  "editable": [
+    {
+      "token": "color.accent",
+      "label": {
+        "zh-Hans": "选中框",
+        "en": "Selection"
+      }
+    },
+    {
+      "token": "color.secondary",
+      "label": {
+        "zh-Hans": "悬停框",
+        "en": "Hover"
+      }
+    }
+  ],
+  "roles": {
+    "panel": {
+      "shape": {
+        "kind": "notched",
+        "cell": "$number.cell"
+      },
+      "layers": [
+        {
+          "type": "image",
+          "src": "$image.panel",
+          "mode": "nineSlice",
+          "slice": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "scale": 2,
+          "filter": "pixel"
+        }
+      ]
+    },
+    "panel.hints": {
+      "shape": {
+        "kind": "notched",
+        "cell": "$number.cell"
+      },
+      "replace": [
+        {
+          "type": "fill",
+          "color": "$color.tip",
+          "inset": 2,
+          "shape": {
+            "kind": "rect"
+          }
+        },
+        {
+          "type": "stroke",
+          "color": "$color.tipFrame",
+          "width": 4,
+          "shape": {
+            "kind": "rect"
+          }
+        },
+        {
+          "type": "stroke",
+          "width": 2,
+          "inset": 4,
+          "shape": {
+            "kind": "rect"
+          },
+          "gradient": {
+            "kind": "linear",
+            "from": [
+              0,
+              0
+            ],
+            "to": [
+              0,
+              1
+            ],
+            "stops": [
+              [
+                0,
+                "$color.tipTop"
+              ],
+              [
+                1,
+                "$color.tipBottom"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "box",
+          "anchor": "topLeading",
+          "at": [
+            0,
+            0
+          ],
+          "size": [
+            2,
+            2
+          ],
+          "color": "$color.tip",
+          "inset": 4
+        },
+        {
+          "type": "box",
+          "anchor": "topTrailing",
+          "at": [
+            0,
+            0
+          ],
+          "size": [
+            2,
+            2
+          ],
+          "color": "$color.tip",
+          "inset": 4
+        },
+        {
+          "type": "box",
+          "anchor": "bottomLeading",
+          "at": [
+            0,
+            0
+          ],
+          "size": [
+            2,
+            2
+          ],
+          "color": "$color.tip",
+          "inset": 4
+        },
+        {
+          "type": "box",
+          "anchor": "bottomTrailing",
+          "at": [
+            0,
+            0
+          ],
+          "size": [
+            2,
+            2
+          ],
+          "color": "$color.tip",
+          "inset": 4
+        }
+      ],
+      "text": {
+        "title": {
+          "color": "$color.tipInk"
+        }
+      },
+      "dimmed": "panel",
+      "contrast": {}
+    },
+    "panel.toast": {
+      "shape": {
+        "kind": "notched",
+        "cell": "$number.cell"
+      },
+      "replace": [
+        {
+          "type": "fill",
+          "color": "$color.tip",
+          "inset": 2,
+          "shape": {
+            "kind": "rect"
+          }
+        },
+        {
+          "type": "stroke",
+          "color": "$color.tipFrame",
+          "width": 4,
+          "shape": {
+            "kind": "rect"
+          }
+        },
+        {
+          "type": "stroke",
+          "width": 2,
+          "inset": 4,
+          "shape": {
+            "kind": "rect"
+          },
+          "gradient": {
+            "kind": "linear",
+            "from": [
+              0,
+              0
+            ],
+            "to": [
+              0,
+              1
+            ],
+            "stops": [
+              [
+                0,
+                "$color.tipTop"
+              ],
+              [
+                1,
+                "$color.tipBottom"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "box",
+          "anchor": "topLeading",
+          "at": [
+            0,
+            0
+          ],
+          "size": [
+            2,
+            2
+          ],
+          "color": "$color.tip",
+          "inset": 4
+        },
+        {
+          "type": "box",
+          "anchor": "topTrailing",
+          "at": [
+            0,
+            0
+          ],
+          "size": [
+            2,
+            2
+          ],
+          "color": "$color.tip",
+          "inset": 4
+        },
+        {
+          "type": "box",
+          "anchor": "bottomLeading",
+          "at": [
+            0,
+            0
+          ],
+          "size": [
+            2,
+            2
+          ],
+          "color": "$color.tip",
+          "inset": 4
+        },
+        {
+          "type": "box",
+          "anchor": "bottomTrailing",
+          "at": [
+            0,
+            0
+          ],
+          "size": [
+            2,
+            2
+          ],
+          "color": "$color.tip",
+          "inset": 4
+        }
+      ],
+      "text": {
+        "title": {
+          "color": "$color.tipInk"
+        }
+      },
+      "contrast": {}
+    },
+    "tabBar": {
+      "shape": {
+        "kind": "notched",
+        "cell": "$number.cell"
+      },
+      "layers": [
+        {
+          "type": "image",
+          "src": "$image.panel",
+          "mode": "nineSlice",
+          "slice": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "scale": 2,
+          "filter": "pixel"
+        }
+      ]
+    },
+    "tab": {
+      "shape": {
+        "kind": "notched",
+        "cell": "$number.cell"
+      },
+      "layers": [
+        {
+          "type": "image",
+          "src": "$image.slot",
+          "mode": "nineSlice",
+          "slice": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "scale": 2,
+          "filter": "pixel",
+          "shape": {
+            "kind": "rect"
+          },
+          "clip": false
+        }
+      ],
+      "text": {
+        "title": {
+          "color": "$color.slotInk"
+        }
+      },
+      "states": {
+        "hover": {
+          "add": [
+            {
+              "type": "stroke",
+              "color": "$color.secondary",
+              "width": 2,
+              "shape": {
+                "kind": "rect"
+              },
+              "over": true
+            }
+          ]
+        },
+        "incoming": {
+          "add": [
+            {
+              "type": "stroke",
+              "color": "$color.secondary",
+              "width": 2,
+              "shape": {
+                "kind": "rect"
+              },
+              "over": true
+            }
+          ]
+        },
+        "active": {
+          "transition": "jump",
+          "replace": [
+            {
+              "type": "image",
+              "src": "$image.raised",
+              "mode": "nineSlice",
+              "slice": [
+                2,
+                2,
+                2,
+                2
+              ],
+              "scale": 2,
+              "filter": "pixel",
+              "shape": {
+                "kind": "rect"
+              },
+              "inset": 2
+            },
+            {
+              "type": "stroke",
+              "color": "$color.accent",
+              "width": 2,
+              "shape": {
+                "kind": "rect"
+              }
+            }
+          ],
+          "text": {
+            "title": {
+              "color": "$color.ink"
+            }
+          }
+        }
+      },
+      "contrast": {
+        "states": {
+          "active": {
+            "replace": [
+              {
+                "type": "image",
+                "src": "$image.raised",
+                "mode": "nineSlice",
+                "slice": [
+                  2,
+                  2,
+                  2,
+                  2
+                ],
+                "scale": 2,
+                "filter": "pixel",
+                "shape": {
+                  "kind": "rect"
+                },
+                "inset": 4
+              },
+              {
+                "type": "stroke",
+                "color": "$color.accent",
+                "width": 4,
+                "shape": {
+                  "kind": "rect"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "card": {
+      "shape": {
+        "kind": "notched",
+        "cell": "$number.cell"
+      },
+      "layers": [
+        {
+          "type": "image",
+          "src": "$image.slot",
+          "mode": "nineSlice",
+          "slice": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "scale": 2,
+          "filter": "pixel",
+          "shape": {
+            "kind": "rect"
+          },
+          "clip": false
+        }
+      ],
+      "text": {
+        "title": {
+          "color": "$color.slotInk"
+        }
+      },
+      "states": {
+        "hover": {
+          "add": [
+            {
+              "type": "stroke",
+              "color": "$color.secondary",
+              "width": 2,
+              "shape": {
+                "kind": "rect"
+              },
+              "over": true
+            }
+          ]
+        },
+        "selected": {
+          "transition": "jump",
+          "add": [
+            {
+              "type": "fill",
+              "color": "$color.lit",
+              "shape": {
+                "kind": "rect"
+              },
+              "clip": false
+            },
+            {
+              "type": "stroke",
+              "color": "$color.accent",
+              "width": 4,
+              "shape": {
+                "kind": "rect"
+              },
+              "over": true
+            }
+          ]
+        }
+      },
+      "contrast": {
+        "states": {
+          "selected": {
+            "replace": [
+              {
+                "type": "image",
+                "src": "$image.slot",
+                "mode": "nineSlice",
+                "slice": [
+                  2,
+                  2,
+                  2,
+                  2
+                ],
+                "scale": 2,
+                "filter": "pixel",
+                "shape": {
+                  "kind": "rect"
+                },
+                "clip": false
+              },
+              {
+                "type": "fill",
+                "color": "$color.lit",
+                "shape": {
+                  "kind": "rect"
+                },
+                "clip": false
+              },
+              {
+                "type": "stroke",
+                "color": "$color.accent",
+                "width": 6,
+                "shape": {
+                  "kind": "rect"
+                },
+                "over": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    "well": {
+      "shape": {
+        "kind": "rect"
+      },
+      "layers": [
+        {
+          "type": "image",
+          "src": "$image.slot",
+          "mode": "nineSlice",
+          "slice": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "scale": 2,
+          "filter": "pixel",
+          "inset": -2,
+          "clip": false
+        }
+      ]
+    },
+    "field": {
+      "shape": {
+        "kind": "rect"
+      },
+      "layers": [
+        {
+          "type": "fill",
+          "color": "$color.field",
+          "inset": [
+            8,
+            8,
+            9,
+            8
+          ]
+        },
+        {
+          "type": "bevel",
+          "light": "$color.fieldEdge",
+          "dark": "$color.fieldEdge",
+          "width": 2,
+          "inset": [
+            8,
+            8,
+            9,
+            8
+          ],
+          "shape": {
+            "kind": "notched",
+            "cell": "$number.cell"
+          }
+        }
+      ],
+      "text": {
+        "title": {
+          "color": "$color.fieldInk"
+        }
+      }
+    },
+    "row": {
+      "shape": {
+        "kind": "notched",
+        "cell": "$number.cell"
+      },
+      "layers": [],
+      "states": {
+        "selected": {
+          "transition": "jump",
+          "add": [
+            {
+              "type": "fill",
+              "color": "$color.lit",
+              "shape": {
+                "kind": "rect"
+              },
+              "clip": false
+            },
+            {
+              "type": "stroke",
+              "color": "$color.accent",
+              "width": 4,
+              "shape": {
+                "kind": "rect"
+              },
+              "over": true
+            }
+          ]
+        }
+      },
+      "contrast": {
+        "states": {
+          "selected": {
+            "replace": [
+              {
+                "type": "fill",
+                "color": "$color.lit",
+                "shape": {
+                  "kind": "rect"
+                },
+                "clip": false
+              },
+              {
+                "type": "stroke",
+                "color": "$color.accent",
+                "width": 6,
+                "shape": {
+                  "kind": "rect"
+                },
+                "over": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    "chip": {
+      "shape": {
+        "kind": "rect"
+      },
+      "layers": [
+        {
+          "type": "image",
+          "src": "$image.slot",
+          "mode": "nineSlice",
+          "slice": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "scale": 2,
+          "filter": "pixel"
+        }
+      ],
+      "text": {
+        "title": {
+          "color": "$color.slotInk"
+        }
+      }
+    },
+    "control": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 9
+      },
+      "layers": [
+        {
+          "type": "fill",
+          "color": {
+            "color": "$color.ink",
+            "alpha": 0.1
+          }
+        }
+      ],
+      "text": {
+        "title": {
+          "color": "$color.ink"
+        }
+      },
+      "states": {
+        "hover": {
+          "replace": [
+            {
+              "type": "fill",
+              "color": {
+                "color": "$color.secondary",
+                "alpha": 0.22
+              }
+            }
+          ]
+        }
+      }
+    },
+    "dropTarget": {
+      "shape": {
+        "kind": "notched",
+        "cell": "$number.cell"
+      },
+      "layers": [
+        {
+          "type": "stroke",
+          "color": "$color.secondary",
+          "width": 4,
+          "shape": {
+            "kind": "rect"
+          }
+        }
+      ],
+      "contrast": {
+        "replace": [
+          {
+            "type": "stroke",
+            "color": "$color.secondary",
+            "width": 6,
+            "shape": {
+              "kind": "rect"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "text": {
+    "title": {
+      "font": "$font.pixel",
+      "color": "$color.ink"
+    },
+    "body": {
+      "font": "$font.pixel"
+    },
+    "secondary": {
+      "font": "$font.pixel"
+    },
+    "key": {
+      "font": "$font.pixel"
+    },
+    "field": {
+      "font": "$font.pixel",
+      "color": "$color.fieldInk"
+    }
+  },
+  "motion": {
+    "transitions": {
+      "jump": {
+        "curve": "steps",
+        "steps": 1
+      }
+    }
+  }
+}

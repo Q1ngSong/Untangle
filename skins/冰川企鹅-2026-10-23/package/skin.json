@@ -1,0 +1,602 @@
+{
+  "format": "untangle-skin",
+  "formatVersion": 1,
+  "id": "io.untangle.glacier-penguin",
+  "version": "1.0.0",
+  "name": {
+    "zh-Hans": "冰川企鹅",
+    "en": "Glacier Penguin"
+  },
+  "author": "Untangle",
+  "license": "CC0-1.0",
+  "description": {
+    "zh-Hans": "冰面白、海军蓝、橙色小脚：选中卡片角上蹲着一只小企鹅，键帽和标签底下露出小脚。",
+    "en": "Ice white, navy and orange feet: a little penguin sits on the selected card, feet peek under keys and tabs."
+  },
+  "appearance": "light",
+  "tokens": {
+    "color": {
+      "panel": "#F2F8FD",
+      "edge": "#C4D8EA",
+      "ink": "#1C2843",
+      "muted": "#4F5F79",
+      "card": "#FFFFFF",
+      "cardEdge": "#D3E2EF",
+      "cardShade": "#1C28431c",
+      "well": "#E6EFF8",
+      "accent": "#E07B0C",
+      "sel": "#FFF1DF",
+      "secondary": "#4FA6DC",
+      "hoverTint": "#8CC9EE2a",
+      "bar": "#E9F2FA",
+      "tab": "#FFFFFF",
+      "tabEdge": "#1C2843",
+      "chip": "#FFFFFF",
+      "chipEdge": "#1C2843",
+      "field": "#FFFFFF",
+      "fieldEdge": "#C4D8EA",
+      "rowSel": "#FFF1DF",
+      "deco": "#7DBDE8",
+      "navy": "#1C2843",
+      "beak": "#F59A23",
+      "cardInk": "#1C2843",
+      "cardMuted": "#4F5F79",
+      "chipInk": "#1C2843",
+      "fieldInk": "#1C2843",
+      "cardHi": "#ffffffb3"
+    },
+    "font": {
+      "ui": {
+        "system": true,
+        "design": "rounded"
+      }
+    },
+    "image": {
+      "badge": "assets/badge.png",
+      "tab-feet": "assets/tab-feet.png",
+      "key-feet": "assets/key-feet.png",
+      "sticker": "assets/sticker.png"
+    }
+  },
+  "editable": [
+    {
+      "token": "color.accent",
+      "label": {
+        "zh-Hans": "选中色",
+        "en": "Selection"
+      }
+    },
+    {
+      "token": "color.secondary",
+      "label": {
+        "zh-Hans": "悬停色",
+        "en": "Hover"
+      }
+    }
+  ],
+  "roles": {
+    "panel": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 18
+      },
+      "layers": [
+        {
+          "type": "fill",
+          "color": "$color.panel"
+        },
+        {
+          "type": "stroke",
+          "color": "$color.edge",
+          "width": 1.5
+        }
+      ]
+    },
+    "panel.hints": {
+      "add": [
+        {
+          "type": "image",
+          "src": "$image.sticker",
+          "mode": "nineSlice",
+          "slice": [
+            36,
+            36,
+            0,
+            0
+          ],
+          "scale": 0.5,
+          "inset": 0,
+          "clip": false,
+          "shape": {
+            "kind": "rect"
+          }
+        }
+      ]
+    },
+    "panel.toast": {
+      "add": [
+        {
+          "type": "image",
+          "src": "$image.sticker",
+          "mode": "nineSlice",
+          "slice": [
+            36,
+            36,
+            0,
+            0
+          ],
+          "scale": 0.5,
+          "inset": 0,
+          "clip": false,
+          "shape": {
+            "kind": "rect"
+          }
+        }
+      ]
+    },
+    "tabBar": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 16
+      },
+      "layers": [
+        {
+          "type": "fill",
+          "color": "$color.bar"
+        },
+        {
+          "type": "stroke",
+          "color": "$color.edge",
+          "width": 1.5
+        }
+      ]
+    },
+    "tab": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 13
+      },
+      "layers": [],
+      "states": {
+        "hover": {
+          "transition": "hover",
+          "add": [
+            {
+              "type": "fill",
+              "color": "$color.hoverTint",
+              "inset": [
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "incoming": {
+          "add": [
+            {
+              "type": "fill",
+              "color": {
+                "color": "$color.accent",
+                "alpha": 0.12
+              },
+              "inset": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "type": "stroke",
+              "color": "$color.accent",
+              "width": 1.5,
+              "inset": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "dash": [
+                4,
+                3
+              ]
+            }
+          ]
+        },
+        "active": {
+          "transition": "select",
+          "add": [
+            {
+              "type": "image",
+              "src": "$image.tab-feet",
+              "mode": "nineSlice",
+              "slice": [
+                0,
+                44,
+                16,
+                44
+              ],
+              "scale": 0.5,
+              "inset": -3,
+              "clip": false,
+              "shape": {
+                "kind": "rect"
+              }
+            },
+            {
+              "type": "fill",
+              "color": "$color.tab",
+              "inset": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "type": "stroke",
+              "color": "$color.tabEdge",
+              "width": 1,
+              "inset": [
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "card": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 14
+      },
+      "layers": [
+        {
+          "type": "fill",
+          "color": "$color.card",
+          "inset": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "shadow",
+          "color": "$color.cardHi",
+          "radius": 0.5,
+          "offset": [
+            0,
+            1.5
+          ],
+          "inner": true,
+          "inset": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "shadow",
+          "color": "$color.cardShade",
+          "radius": 3,
+          "offset": [
+            0,
+            -2
+          ],
+          "inner": true,
+          "inset": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "stroke",
+          "color": "$color.cardEdge",
+          "width": 1,
+          "inset": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "states": {
+        "hover": {
+          "transition": "hover",
+          "add": [
+            {
+              "type": "fill",
+              "color": "$color.hoverTint",
+              "inset": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "type": "stroke",
+              "color": "$color.secondary",
+              "width": 1.5,
+              "inset": [
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "selected": {
+          "transition": "select",
+          "add": [
+            {
+              "type": "fill",
+              "color": "$color.sel",
+              "inset": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "type": "stroke",
+              "color": "$color.accent",
+              "width": 2,
+              "inset": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "type": "image",
+              "src": "$image.badge",
+              "mode": "nineSlice",
+              "slice": [
+                28,
+                32,
+                0,
+                0
+              ],
+              "scale": 0.5,
+              "inset": 0,
+              "clip": false,
+              "shape": {
+                "kind": "rect"
+              },
+              "animate": {
+                "name": "pop",
+                "on": "enter"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "well": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 9
+      },
+      "layers": [
+        {
+          "type": "fill",
+          "color": "$color.well"
+        }
+      ]
+    },
+    "field": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 12
+      },
+      "layers": [
+        {
+          "type": "fill",
+          "color": "$color.field",
+          "inset": [
+            8,
+            8,
+            9,
+            8
+          ]
+        },
+        {
+          "type": "stroke",
+          "color": "$color.fieldEdge",
+          "width": 1.25,
+          "inset": [
+            8,
+            8,
+            9,
+            8
+          ]
+        }
+      ]
+    },
+    "row": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 12
+      },
+      "layers": [],
+      "states": {
+        "selected": {
+          "transition": "select",
+          "add": [
+            {
+              "type": "fill",
+              "color": "$color.rowSel"
+            },
+            {
+              "type": "stroke",
+              "color": "$color.accent",
+              "width": 1.5
+            }
+          ]
+        }
+      }
+    },
+    "chip": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 7
+      },
+      "layers": [
+        {
+          "type": "image",
+          "src": "$image.key-feet",
+          "mode": "nineSlice",
+          "slice": [
+            0,
+            28,
+            16,
+            28
+          ],
+          "scale": 0.5,
+          "inset": -4,
+          "clip": false,
+          "shape": {
+            "kind": "rect"
+          }
+        },
+        {
+          "type": "fill",
+          "color": "$color.chip"
+        },
+        {
+          "type": "stroke",
+          "color": "$color.chipEdge",
+          "width": 1.25
+        }
+      ]
+    },
+    "control": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 9
+      },
+      "layers": [
+        {
+          "type": "fill",
+          "color": {
+            "color": "$color.cardInk",
+            "alpha": 0.1
+          }
+        }
+      ],
+      "text": {
+        "title": {
+          "color": "$color.cardInk"
+        }
+      },
+      "states": {
+        "hover": {
+          "transition": "hover",
+          "replace": [
+            {
+              "type": "fill",
+              "color": {
+                "color": "$color.accent",
+                "alpha": 0.25
+              }
+            }
+          ]
+        }
+      }
+    },
+    "dropTarget": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 16
+      },
+      "layers": [
+        {
+          "type": "stroke",
+          "color": "$color.accent",
+          "width": 2
+        }
+      ]
+    }
+  },
+  "text": {
+    "title": {
+      "font": "$font.ui",
+      "color": "$color.ink"
+    },
+    "body": {
+      "font": "$font.ui",
+      "color": "$color.ink"
+    },
+    "secondary": {
+      "font": "$font.ui",
+      "color": "$color.muted"
+    },
+    "key": {
+      "font": "$font.ui",
+      "color": "$color.chipInk"
+    },
+    "field": {
+      "font": "$font.ui",
+      "color": "$color.fieldInk"
+    }
+  },
+  "motion": {
+    "transitions": {
+      "select": {
+        "curve": "spring",
+        "duration": 0.34,
+        "bounce": 0.25,
+        "slide": true
+      },
+      "hover": {
+        "curve": "smooth",
+        "duration": 0.12
+      }
+    },
+    "animations": {
+      "pop": {
+        "duration": 0.38,
+        "keyframes": [
+          {
+            "t": 0,
+            "offset": [
+              0,
+              5
+            ],
+            "opacity": 0
+          },
+          {
+            "t": 0.6,
+            "offset": [
+              0,
+              -1.5
+            ],
+            "opacity": 1
+          },
+          {
+            "t": 1,
+            "offset": [
+              0,
+              0
+            ],
+            "opacity": 1
+          }
+        ]
+      }
+    }
+  }
+}

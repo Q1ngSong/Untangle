@@ -1,0 +1,684 @@
+{
+  "format": "untangle-skin",
+  "formatVersion": 1,
+  "id": "io.untangle.ink-sketch",
+  "version": "1.0.0",
+  "name": {
+    "zh-Hans": "手绘·钢笔",
+    "en": "Ink Sketch"
+  },
+  "author": "Untangle",
+  "license": "CC0-1.0",
+  "description": {
+    "zh-Hans": "白纸上的钢笔速写：抖动的双线框、交叉的角、斜线排线的选中阴影、铅笔灰的悬停框。",
+    "en": "Pen sketches on white paper: wobbly double lines, crossed corners, hatched selection shadows."
+  },
+  "appearance": "light",
+  "tokens": {
+    "color": {
+      "ink": "#151515",
+      "inkSoft": "#5a5a5a",
+      "paper": "#fdfcf9",
+      "pencil": "#666666"
+    },
+    "number": {
+      "grain": 1,
+      "hatch": 1
+    },
+    "image": {
+      "panel": "assets/panel.png",
+      "bar": "assets/bar.png",
+      "box": "assets/box.png",
+      "pencil": "assets/pencil.png",
+      "hatch": "assets/hatch.png",
+      "grain": "assets/grain.png",
+      "key": "assets/key.png",
+      "circle": "assets/circle.png",
+      "rule": "assets/rule.png",
+      "well": "assets/well.png"
+    }
+  },
+  "editable": [
+    {
+      "token": "number.grain",
+      "label": {
+        "zh-Hans": "纸纹",
+        "en": "Paper grain"
+      },
+      "range": [
+        0,
+        1
+      ]
+    },
+    {
+      "token": "number.hatch",
+      "label": {
+        "zh-Hans": "排线浓淡",
+        "en": "Hatching"
+      },
+      "range": [
+        0,
+        1
+      ]
+    }
+  ],
+  "roles": {
+    "panel": {
+      "shape": {
+        "kind": "rect"
+      },
+      "layers": [
+        {
+          "type": "image",
+          "src": "$image.panel",
+          "mode": "nineSlice",
+          "slice": [
+            32,
+            32,
+            32,
+            32
+          ],
+          "scale": 0.5,
+          "filter": "smooth"
+        },
+        {
+          "type": "image",
+          "src": "$image.grain",
+          "mode": "tile",
+          "scale": 0.5,
+          "filter": "smooth",
+          "inset": 4,
+          "opacity": "$number.grain"
+        }
+      ],
+      "contrast": {
+        "replace": [
+          {
+            "type": "fill",
+            "color": "$color.paper",
+            "inset": 2
+          },
+          {
+            "type": "stroke",
+            "color": "$color.ink",
+            "width": 2,
+            "inset": 2
+          }
+        ]
+      }
+    },
+    "tabBar": {
+      "shape": {
+        "kind": "rect"
+      },
+      "layers": [
+        {
+          "type": "image",
+          "src": "$image.bar",
+          "mode": "nineSlice",
+          "slice": [
+            20,
+            20,
+            20,
+            20
+          ],
+          "scale": 0.5,
+          "filter": "smooth"
+        },
+        {
+          "type": "image",
+          "src": "$image.grain",
+          "mode": "tile",
+          "scale": 0.5,
+          "filter": "smooth",
+          "inset": 3,
+          "opacity": "$number.grain"
+        }
+      ],
+      "contrast": {
+        "replace": [
+          {
+            "type": "fill",
+            "color": "$color.paper",
+            "inset": 1
+          },
+          {
+            "type": "stroke",
+            "color": "$color.ink",
+            "width": 2,
+            "inset": 1
+          }
+        ]
+      }
+    },
+    "tab": {
+      "shape": {
+        "kind": "rect"
+      },
+      "layers": [],
+      "states": {
+        "hover": {
+          "transition": "hover",
+          "add": [
+            {
+              "type": "image",
+              "src": "$image.pencil",
+              "mode": "nineSlice",
+              "slice": [
+                20,
+                20,
+                20,
+                20
+              ],
+              "scale": 0.5,
+              "filter": "smooth"
+            }
+          ]
+        },
+        "incoming": {
+          "add": [
+            {
+              "type": "stroke",
+              "color": "$color.pencil",
+              "width": 1.2,
+              "dash": [
+                3,
+                3
+              ],
+              "inset": 1.5
+            }
+          ]
+        },
+        "active": {
+          "transition": "select",
+          "add": [
+            {
+              "type": "image",
+              "src": "$image.hatch",
+              "mode": "tile",
+              "scale": 0.5,
+              "filter": "smooth",
+              "inset": [
+                4,
+                0,
+                0,
+                4
+              ],
+              "opacity": "$number.hatch"
+            },
+            {
+              "type": "fill",
+              "color": "$color.paper",
+              "inset": [
+                0,
+                3,
+                3,
+                0
+              ]
+            },
+            {
+              "type": "image",
+              "src": "$image.grain",
+              "mode": "tile",
+              "scale": 0.5,
+              "filter": "smooth",
+              "inset": [
+                0,
+                3,
+                3,
+                0
+              ],
+              "opacity": "$number.grain"
+            },
+            {
+              "type": "image",
+              "src": "$image.box",
+              "mode": "nineSlice",
+              "slice": [
+                20,
+                20,
+                20,
+                20
+              ],
+              "scale": 0.5,
+              "filter": "smooth",
+              "inset": [
+                0,
+                3,
+                3,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "contrast": {
+        "states": {
+          "active": {
+            "replace": [
+              {
+                "type": "fill",
+                "color": {
+                  "color": "$color.ink",
+                  "alpha": 0.45
+                },
+                "inset": [
+                  4,
+                  0,
+                  0,
+                  4
+                ]
+              },
+              {
+                "type": "fill",
+                "color": "$color.paper",
+                "inset": [
+                  0,
+                  3,
+                  3,
+                  0
+                ]
+              },
+              {
+                "type": "stroke",
+                "color": "$color.ink",
+                "width": 2,
+                "inset": [
+                  0,
+                  3,
+                  3,
+                  0
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    "card": {
+      "shape": {
+        "kind": "rect"
+      },
+      "layers": [],
+      "states": {
+        "hover": {
+          "transition": "hover",
+          "add": [
+            {
+              "type": "image",
+              "src": "$image.pencil",
+              "mode": "nineSlice",
+              "slice": [
+                20,
+                20,
+                20,
+                20
+              ],
+              "scale": 0.5,
+              "filter": "smooth"
+            }
+          ]
+        },
+        "selected": {
+          "transition": "select",
+          "add": [
+            {
+              "type": "image",
+              "src": "$image.hatch",
+              "mode": "tile",
+              "scale": 0.5,
+              "filter": "smooth",
+              "inset": [
+                5,
+                0,
+                0,
+                5
+              ],
+              "opacity": "$number.hatch"
+            },
+            {
+              "type": "fill",
+              "color": "$color.paper",
+              "inset": [
+                0,
+                4,
+                4,
+                0
+              ]
+            },
+            {
+              "type": "image",
+              "src": "$image.grain",
+              "mode": "tile",
+              "scale": 0.5,
+              "filter": "smooth",
+              "inset": [
+                0,
+                4,
+                4,
+                0
+              ],
+              "opacity": "$number.grain"
+            },
+            {
+              "type": "image",
+              "src": "$image.box",
+              "mode": "nineSlice",
+              "slice": [
+                20,
+                20,
+                20,
+                20
+              ],
+              "scale": 0.5,
+              "filter": "smooth",
+              "inset": [
+                0,
+                4,
+                4,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "contrast": {
+        "states": {
+          "selected": {
+            "replace": [
+              {
+                "type": "fill",
+                "color": {
+                  "color": "$color.ink",
+                  "alpha": 0.45
+                },
+                "inset": [
+                  5,
+                  0,
+                  0,
+                  5
+                ]
+              },
+              {
+                "type": "fill",
+                "color": "$color.paper",
+                "inset": [
+                  0,
+                  4,
+                  4,
+                  0
+                ]
+              },
+              {
+                "type": "stroke",
+                "color": "$color.ink",
+                "width": 2,
+                "inset": [
+                  0,
+                  4,
+                  4,
+                  0
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    "well": {
+      "shape": {
+        "kind": "rect"
+      },
+      "layers": [
+        {
+          "type": "image",
+          "src": "$image.well",
+          "mode": "nineSlice",
+          "slice": [
+            16,
+            16,
+            16,
+            16
+          ],
+          "scale": 0.5,
+          "filter": "smooth",
+          "inset": -3,
+          "clip": false
+        }
+      ]
+    },
+    "field": {
+      "shape": {
+        "kind": "rect"
+      },
+      "layers": [
+        {
+          "type": "image",
+          "src": "$image.rule",
+          "mode": "nineSlice",
+          "slice": [
+            4,
+            24,
+            16,
+            24
+          ],
+          "scale": 0.5,
+          "filter": "smooth",
+          "inset": [
+            0,
+            12,
+            0,
+            12
+          ]
+        }
+      ]
+    },
+    "row": {
+      "shape": {
+        "kind": "rect"
+      },
+      "layers": [],
+      "states": {
+        "selected": {
+          "transition": "select",
+          "add": [
+            {
+              "type": "image",
+              "src": "$image.hatch",
+              "mode": "tile",
+              "scale": 0.5,
+              "filter": "smooth",
+              "inset": [
+                4,
+                0,
+                0,
+                4
+              ],
+              "opacity": "$number.hatch"
+            },
+            {
+              "type": "fill",
+              "color": "$color.paper",
+              "inset": [
+                0,
+                3,
+                3,
+                0
+              ]
+            },
+            {
+              "type": "image",
+              "src": "$image.grain",
+              "mode": "tile",
+              "scale": 0.5,
+              "filter": "smooth",
+              "inset": [
+                0,
+                3,
+                3,
+                0
+              ],
+              "opacity": "$number.grain"
+            },
+            {
+              "type": "image",
+              "src": "$image.box",
+              "mode": "nineSlice",
+              "slice": [
+                20,
+                20,
+                20,
+                20
+              ],
+              "scale": 0.5,
+              "filter": "smooth",
+              "inset": [
+                0,
+                3,
+                3,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "contrast": {
+        "states": {
+          "selected": {
+            "replace": [
+              {
+                "type": "fill",
+                "color": {
+                  "color": "$color.ink",
+                  "alpha": 0.45
+                },
+                "inset": [
+                  4,
+                  0,
+                  0,
+                  4
+                ]
+              },
+              {
+                "type": "fill",
+                "color": "$color.paper",
+                "inset": [
+                  0,
+                  3,
+                  3,
+                  0
+                ]
+              },
+              {
+                "type": "stroke",
+                "color": "$color.ink",
+                "width": 2,
+                "inset": [
+                  0,
+                  3,
+                  3,
+                  0
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    "chip": {
+      "shape": {
+        "kind": "rect"
+      },
+      "layers": [
+        {
+          "type": "image",
+          "src": "$image.key",
+          "mode": "nineSlice",
+          "slice": [
+            14,
+            14,
+            14,
+            14
+          ],
+          "scale": 0.5,
+          "filter": "smooth"
+        }
+      ]
+    },
+    "control": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 9
+      },
+      "layers": [
+        {
+          "type": "image",
+          "src": "$image.circle",
+          "mode": "stretch",
+          "filter": "smooth"
+        }
+      ],
+      "states": {
+        "hover": {
+          "transition": "hover",
+          "add": [
+            {
+              "type": "fill",
+              "color": {
+                "color": "$color.ink",
+                "alpha": 0.14
+              },
+              "inset": 2.5
+            }
+          ]
+        }
+      }
+    },
+    "dropTarget": {
+      "shape": {
+        "kind": "rect"
+      },
+      "layers": [
+        {
+          "type": "stroke",
+          "color": "$color.ink",
+          "width": 1.5,
+          "dash": [
+            5,
+            4
+          ]
+        }
+      ]
+    }
+  },
+  "text": {
+    "title": {
+      "color": "$color.ink"
+    },
+    "body": {
+      "color": "$color.ink"
+    },
+    "secondary": {
+      "color": "$color.inkSoft"
+    },
+    "key": {
+      "color": "$color.ink"
+    },
+    "field": {
+      "color": "$color.ink"
+    }
+  },
+  "motion": {
+    "transitions": {
+      "select": {
+        "curve": "smooth",
+        "duration": 0.18,
+        "slide": true
+      },
+      "hover": {
+        "curve": "smooth",
+        "duration": 0.1
+      }
+    }
+  }
+}

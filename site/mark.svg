@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
-<title id="title">Tangler — Snap to Place</title><desc id="desc">Four rounded window tiles on warm glass. The upper-right tile is snapping into place.</desc>
+<title id="title">Untangle — Snap to Place</title><desc id="desc">Four rounded window tiles on warm glass. The upper-right tile is snapping into place.</desc>
 <defs>
  <linearGradient id="base" x1=".15" y1="0" x2=".83" y2="1"><stop stop-color="#ffd59c"/><stop offset=".48" stop-color="#faac65"/><stop offset="1" stop-color="#e7824e"/></linearGradient>
  <linearGradient id="white" x1=".1" y1="0" x2=".7" y2="1"><stop stop-color="#fff"/><stop offset=".58" stop-color="#f6fbff"/><stop offset="1" stop-color="#dbedff"/></linearGradient>

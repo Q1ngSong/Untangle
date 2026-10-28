@@ -1,0 +1,618 @@
+{
+  "format": "untangle-skin",
+  "formatVersion": 1,
+  "id": "io.untangle.polar-night-penguin",
+  "version": "1.0.0",
+  "name": {
+    "zh-Hans": "极夜企鹅",
+    "en": "Polar Night Penguin"
+  },
+  "author": "Untangle",
+  "license": "CC0-1.0",
+  "description": {
+    "zh-Hans": "冰川企鹅的深色版：面板是企鹅深蓝的背，卡片是白肚皮，飘着很淡的雪点。",
+    "en": "Glacier Penguin after dark: navy panels like a penguin's back, white-belly cards, faint snow."
+  },
+  "appearance": "dark",
+  "tokens": {
+    "color": {
+      "panel": "#15203A",
+      "edge": "#2A3A5D",
+      "ink": "#F2F6FF",
+      "muted": "#A7B5CE",
+      "card": "#FFFFFF",
+      "cardInk": "#1C2843",
+      "cardMuted": "#4F5F79",
+      "cardEdge": "#FFFFFF",
+      "cardShade": "#1C284324",
+      "well": "#E6EFF8",
+      "accent": "#FFA238",
+      "sel": "#FFF1DF",
+      "secondary": "#72BBE8",
+      "hoverTint": "#72BBE81f",
+      "bar": "#15203A",
+      "tab": "#263556",
+      "tabEdge": "#3A4D78",
+      "chip": "#FFFFFF",
+      "chipInk": "#1C2843",
+      "chipEdge": "#0E1628",
+      "field": "#1D2A47",
+      "fieldEdge": "#31446B",
+      "rowSel": "#24345A",
+      "deco": "#FFFFFF",
+      "navy": "#1C2843",
+      "beak": "#FFA238",
+      "snow": "#FFFFFF14",
+      "fieldInk": "#F2F6FF",
+      "cardHi": "#ffffffb3"
+    },
+    "font": {
+      "ui": {
+        "system": true,
+        "design": "rounded"
+      }
+    },
+    "image": {
+      "badge": "assets/badge.png",
+      "tab-feet": "assets/tab-feet.png",
+      "key-feet": "assets/key-feet.png",
+      "sticker": "assets/sticker.png"
+    }
+  },
+  "editable": [
+    {
+      "token": "color.accent",
+      "label": {
+        "zh-Hans": "选中色",
+        "en": "Selection"
+      }
+    },
+    {
+      "token": "color.secondary",
+      "label": {
+        "zh-Hans": "悬停色",
+        "en": "Hover"
+      }
+    }
+  ],
+  "roles": {
+    "panel": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 18
+      },
+      "layers": [
+        {
+          "type": "fill",
+          "color": "$color.panel"
+        },
+        {
+          "type": "pattern",
+          "kind": "dots",
+          "color": "$color.snow",
+          "spacing": 13,
+          "size": 1.2
+        },
+        {
+          "type": "stroke",
+          "color": "$color.edge",
+          "width": 1.5
+        }
+      ]
+    },
+    "panel.hints": {
+      "add": [
+        {
+          "type": "image",
+          "src": "$image.sticker",
+          "mode": "nineSlice",
+          "slice": [
+            36,
+            36,
+            0,
+            0
+          ],
+          "scale": 0.5,
+          "inset": 0,
+          "clip": false,
+          "shape": {
+            "kind": "rect"
+          }
+        }
+      ]
+    },
+    "panel.toast": {
+      "add": [
+        {
+          "type": "image",
+          "src": "$image.sticker",
+          "mode": "nineSlice",
+          "slice": [
+            36,
+            36,
+            0,
+            0
+          ],
+          "scale": 0.5,
+          "inset": 0,
+          "clip": false,
+          "shape": {
+            "kind": "rect"
+          }
+        }
+      ]
+    },
+    "tabBar": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 16
+      },
+      "layers": [
+        {
+          "type": "fill",
+          "color": "$color.bar"
+        },
+        {
+          "type": "stroke",
+          "color": "$color.edge",
+          "width": 1.5
+        }
+      ]
+    },
+    "tab": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 13
+      },
+      "layers": [],
+      "states": {
+        "hover": {
+          "transition": "hover",
+          "add": [
+            {
+              "type": "fill",
+              "color": "$color.hoverTint",
+              "inset": [
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "incoming": {
+          "add": [
+            {
+              "type": "fill",
+              "color": {
+                "color": "$color.accent",
+                "alpha": 0.12
+              },
+              "inset": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "type": "stroke",
+              "color": "$color.accent",
+              "width": 1.5,
+              "inset": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "dash": [
+                4,
+                3
+              ]
+            }
+          ]
+        },
+        "active": {
+          "transition": "select",
+          "add": [
+            {
+              "type": "image",
+              "src": "$image.tab-feet",
+              "mode": "nineSlice",
+              "slice": [
+                0,
+                44,
+                16,
+                44
+              ],
+              "scale": 0.5,
+              "inset": -3,
+              "clip": false,
+              "shape": {
+                "kind": "rect"
+              }
+            },
+            {
+              "type": "fill",
+              "color": "$color.tab",
+              "inset": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "type": "stroke",
+              "color": "$color.tabEdge",
+              "width": 1,
+              "inset": [
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "card": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 14
+      },
+      "layers": [
+        {
+          "type": "fill",
+          "color": "$color.card",
+          "inset": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "shadow",
+          "color": "$color.cardHi",
+          "radius": 0.5,
+          "offset": [
+            0,
+            1.5
+          ],
+          "inner": true,
+          "inset": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "shadow",
+          "color": "$color.cardShade",
+          "radius": 3,
+          "offset": [
+            0,
+            -2
+          ],
+          "inner": true,
+          "inset": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "stroke",
+          "color": "$color.cardEdge",
+          "width": 1,
+          "inset": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "states": {
+        "hover": {
+          "transition": "hover",
+          "add": [
+            {
+              "type": "fill",
+              "color": "$color.hoverTint",
+              "inset": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "type": "stroke",
+              "color": "$color.secondary",
+              "width": 1.5,
+              "inset": [
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "selected": {
+          "transition": "select",
+          "add": [
+            {
+              "type": "fill",
+              "color": "$color.sel",
+              "inset": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "type": "stroke",
+              "color": "$color.accent",
+              "width": 2,
+              "inset": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "type": "image",
+              "src": "$image.badge",
+              "mode": "nineSlice",
+              "slice": [
+                28,
+                32,
+                0,
+                0
+              ],
+              "scale": 0.5,
+              "inset": 0,
+              "clip": false,
+              "shape": {
+                "kind": "rect"
+              },
+              "animate": {
+                "name": "pop",
+                "on": "enter"
+              }
+            }
+          ]
+        }
+      },
+      "text": {
+        "title": {
+          "color": "$color.cardInk"
+        },
+        "secondary": {
+          "color": "$color.cardMuted"
+        }
+      }
+    },
+    "well": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 9
+      },
+      "layers": [
+        {
+          "type": "fill",
+          "color": "$color.well"
+        }
+      ]
+    },
+    "field": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 12
+      },
+      "layers": [
+        {
+          "type": "fill",
+          "color": "$color.field",
+          "inset": [
+            8,
+            8,
+            9,
+            8
+          ]
+        },
+        {
+          "type": "stroke",
+          "color": "$color.fieldEdge",
+          "width": 1.25,
+          "inset": [
+            8,
+            8,
+            9,
+            8
+          ]
+        }
+      ]
+    },
+    "row": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 12
+      },
+      "layers": [],
+      "states": {
+        "selected": {
+          "transition": "select",
+          "add": [
+            {
+              "type": "fill",
+              "color": "$color.rowSel"
+            },
+            {
+              "type": "stroke",
+              "color": "$color.accent",
+              "width": 1.5
+            }
+          ]
+        }
+      }
+    },
+    "chip": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 7
+      },
+      "layers": [
+        {
+          "type": "image",
+          "src": "$image.key-feet",
+          "mode": "nineSlice",
+          "slice": [
+            0,
+            28,
+            16,
+            28
+          ],
+          "scale": 0.5,
+          "inset": -4,
+          "clip": false,
+          "shape": {
+            "kind": "rect"
+          }
+        },
+        {
+          "type": "fill",
+          "color": "$color.chip"
+        },
+        {
+          "type": "stroke",
+          "color": "$color.chipEdge",
+          "width": 1.25
+        }
+      ]
+    },
+    "control": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 9
+      },
+      "layers": [
+        {
+          "type": "fill",
+          "color": {
+            "color": "$color.cardInk",
+            "alpha": 0.1
+          }
+        }
+      ],
+      "text": {
+        "title": {
+          "color": "$color.cardInk"
+        }
+      },
+      "states": {
+        "hover": {
+          "transition": "hover",
+          "replace": [
+            {
+              "type": "fill",
+              "color": {
+                "color": "$color.accent",
+                "alpha": 0.25
+              }
+            }
+          ]
+        }
+      }
+    },
+    "dropTarget": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 16
+      },
+      "layers": [
+        {
+          "type": "stroke",
+          "color": "$color.accent",
+          "width": 2
+        }
+      ]
+    }
+  },
+  "text": {
+    "title": {
+      "font": "$font.ui",
+      "color": "$color.ink"
+    },
+    "body": {
+      "font": "$font.ui",
+      "color": "$color.ink"
+    },
+    "secondary": {
+      "font": "$font.ui",
+      "color": "$color.muted"
+    },
+    "key": {
+      "font": "$font.ui",
+      "color": "$color.chipInk"
+    },
+    "field": {
+      "font": "$font.ui",
+      "color": "$color.fieldInk"
+    }
+  },
+  "motion": {
+    "transitions": {
+      "select": {
+        "curve": "spring",
+        "duration": 0.34,
+        "bounce": 0.25,
+        "slide": true
+      },
+      "hover": {
+        "curve": "smooth",
+        "duration": 0.12
+      }
+    },
+    "animations": {
+      "pop": {
+        "duration": 0.38,
+        "keyframes": [
+          {
+            "t": 0,
+            "offset": [
+              0,
+              5
+            ],
+            "opacity": 0
+          },
+          {
+            "t": 0.6,
+            "offset": [
+              0,
+              -1.5
+            ],
+            "opacity": 1
+          },
+          {
+            "t": 1,
+            "offset": [
+              0,
+              0
+            ],
+            "opacity": 1
+          }
+        ]
+      }
+    }
+  }
+}

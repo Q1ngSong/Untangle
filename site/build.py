@@ -8,7 +8,7 @@ from urllib.parse import urlsplit
 from markdown_it import MarkdownIt
 
 ROOT = Path(__file__).resolve().parents[1]
-REPO = "https://github.com/Q1ngSong/Tangler"
+REPO = "https://github.com/Q1ngSong/Untangle"
 
 
 def rendered_readme():
@@ -50,9 +50,11 @@ def rendered_readme():
             if child.type == "link_open":
                 href = child.attrGet("href")
                 if href and not urlsplit(href).scheme and not href.startswith(("#", "//")):
-                    if not (ROOT / href.split("#")[0]).is_file():
+                    target = ROOT / href.split("#")[0]
+                    if not target.exists():
                         raise ValueError("Missing README link target: " + href)
-                    child.attrSet("href", REPO + "/blob/main/" + href)
+                    # GitHub shows a folder under tree/ and a file under blob/.
+                    child.attrSet("href", REPO + ("/tree/main/" if target.is_dir() else "/blob/main/") + href)
             if child.type == "image":
                 src = child.attrGet("src")
                 if not src.startswith("docs/assets/") or not (ROOT / src).is_file():
@@ -64,12 +66,26 @@ def rendered_readme():
     return html, toc
 
 
+def scenes():
+    """The homepage's illustrated scenes in site/scenes.html, by id, in the order they play."""
+    path = ROOT / "site/scenes.html"
+    if not path.exists():
+        return {}
+    found = re.findall(r"<!-- scene (s\d+) -->\n(.*?)(?=\n<!-- scene |\Z)", path.read_text(encoding="utf-8"), re.S)
+    return {scene: markup.strip() for scene, markup in found}
+
+
 def build(check=False, output=None):
     html, toc = rendered_readme()
+    scene_map = scenes()
     template = (ROOT / "site/index.html").read_text(encoding="utf-8")
     if template.count("__README__") != 1 or template.count("__TOC__") != 1:
         raise ValueError("Website template must contain exactly one content and navigation slot")
     result = template.replace("__README__", html).replace("__TOC__", toc)
+
+    if template.count("__SCENES__") > 1:
+        raise ValueError("Website template must contain at most one scene slot")
+    result = result.replace("__SCENES__", "\n".join(scene_map.values()))
     index = ROOT / "index.html"
     if check:
         if not index.exists() or index.read_text(encoding="utf-8") != result:

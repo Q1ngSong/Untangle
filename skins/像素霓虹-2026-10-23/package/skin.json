@@ -1,0 +1,770 @@
+{
+  "format": "untangle-skin",
+  "formatVersion": 1,
+  "id": "io.untangle.pixel-neon",
+  "version": "2.0.0",
+  "name": {
+    "zh-Hans": "像素·霓虹",
+    "en": "Pixel Neon"
+  },
+  "author": "Untangle",
+  "license": "皮肤 CC0-1.0；字体 Fusion Pixel，SIL OFL 1.1（见 LICENSE-*.txt）",
+  "description": {
+    "zh-Hans": "霓虹地牢：深靛蓝网格底，圆角霓虹灯管做边，选中时灯管闪一下亮起，白色键帽。",
+    "en": "A neon dungeon: indigo grid panels, rounded neon tubes that flicker on, white key caps."
+  },
+  "appearance": "dark",
+  "tokens": {
+    "color": {
+      "abyss": "#140c33",
+      "abyssDeep": "#0a0620",
+      "grid": {
+        "color": "#7a6cff",
+        "alpha": 0.1
+      },
+      "edge": "#3f6dff",
+      "accent": "#3ef4ff",
+      "secondary": "#ff3fd2",
+      "slot": "#1c1448",
+      "slotEdge": "#463b8a",
+      "ink": "#f1ecff",
+      "inkDim": "#a99cff",
+      "tip": {
+        "color": "#0d0a1e",
+        "alpha": 0.96
+      },
+      "tipEdge": "#352b66",
+      "field": "#0a0620",
+      "fieldEdge": "#ff3fd2",
+      "fieldInk": "#3ef4ff",
+      "key": "#f2eeff",
+      "keyShade": "#b4aae0",
+      "keyInk": "#1a1240",
+      "well": "#07041a"
+    },
+    "number": {
+      "cell": 2
+    },
+    "font": {
+      "pixel": {
+        "file": "fonts/FusionPixel-12px-Proportional-zh_hans.otf",
+        "size": 12
+      }
+    },
+    "image": {
+      "plus": "assets/plus.png"
+    }
+  },
+  "editable": [
+    {
+      "token": "color.accent",
+      "label": {
+        "zh-Hans": "选中框",
+        "en": "Selection"
+      }
+    },
+    {
+      "token": "color.secondary",
+      "label": {
+        "zh-Hans": "悬停框",
+        "en": "Hover"
+      }
+    },
+    {
+      "token": "color.edge",
+      "label": {
+        "zh-Hans": "面板边",
+        "en": "Panel edge"
+      }
+    }
+  ],
+  "roles": {
+    "panel": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 6
+      },
+      "layers": [
+        {
+          "type": "gradient",
+          "kind": "linear",
+          "from": [
+            0,
+            0
+          ],
+          "to": [
+            0,
+            1
+          ],
+          "stops": [
+            [
+              0,
+              "$color.abyss"
+            ],
+            [
+              1,
+              "$color.abyssDeep"
+            ]
+          ]
+        },
+        {
+          "type": "pattern",
+          "kind": "grid",
+          "color": "$color.grid",
+          "spacing": 12,
+          "size": 1
+        },
+        {
+          "type": "image",
+          "src": "$image.plus",
+          "mode": "tile",
+          "scale": 1,
+          "filter": "pixel"
+        },
+        {
+          "type": "glow",
+          "color": {
+            "color": "$color.edge",
+            "alpha": 0.35
+          },
+          "width": 3,
+          "radius": 3,
+          "animate": {
+            "name": "flicker",
+            "on": "enter"
+          }
+        },
+        {
+          "type": "stroke",
+          "color": "$color.edge",
+          "width": 2
+        }
+      ],
+      "contrast": {
+        "replace": [
+          {
+            "type": "fill",
+            "color": "$color.abyss"
+          },
+          {
+            "type": "stroke",
+            "color": "$color.edge",
+            "width": 3
+          }
+        ]
+      }
+    },
+    "panel.hints": {
+      "replace": [
+        {
+          "type": "fill",
+          "color": "$color.tip"
+        },
+        {
+          "type": "stroke",
+          "color": "$color.tipEdge",
+          "width": 2
+        }
+      ],
+      "dimmed": "panel",
+      "contrast": {}
+    },
+    "panel.toast": {
+      "replace": [
+        {
+          "type": "fill",
+          "color": "$color.tip"
+        },
+        {
+          "type": "stroke",
+          "color": "$color.tipEdge",
+          "width": 2
+        }
+      ],
+      "contrast": {}
+    },
+    "tabBar": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 6
+      },
+      "layers": [
+        {
+          "type": "gradient",
+          "kind": "linear",
+          "from": [
+            0,
+            0
+          ],
+          "to": [
+            0,
+            1
+          ],
+          "stops": [
+            [
+              0,
+              "$color.abyss"
+            ],
+            [
+              1,
+              "$color.abyssDeep"
+            ]
+          ]
+        },
+        {
+          "type": "pattern",
+          "kind": "grid",
+          "color": "$color.grid",
+          "spacing": 12,
+          "size": 1
+        },
+        {
+          "type": "glow",
+          "color": {
+            "color": "$color.edge",
+            "alpha": 0.35
+          },
+          "width": 3,
+          "radius": 3
+        },
+        {
+          "type": "stroke",
+          "color": "$color.edge",
+          "width": 2
+        }
+      ],
+      "contrast": {
+        "replace": [
+          {
+            "type": "fill",
+            "color": "$color.abyss"
+          },
+          {
+            "type": "stroke",
+            "color": "$color.edge",
+            "width": 3
+          }
+        ]
+      }
+    },
+    "tab": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 4
+      },
+      "layers": [
+        {
+          "type": "fill",
+          "color": "$color.slot"
+        },
+        {
+          "type": "stroke",
+          "color": "$color.slotEdge",
+          "width": 2
+        }
+      ],
+      "states": {
+        "hover": {
+          "replace": [
+            {
+              "type": "fill",
+              "color": "$color.slot"
+            },
+            {
+              "type": "stroke",
+              "color": "$color.secondary",
+              "width": 2
+            },
+            {
+              "type": "glow",
+              "color": {
+                "color": "$color.secondary",
+                "alpha": 0.3
+              },
+              "width": 3,
+              "radius": 3
+            }
+          ]
+        },
+        "incoming": {
+          "replace": [
+            {
+              "type": "fill",
+              "color": "$color.slot"
+            },
+            {
+              "type": "stroke",
+              "color": "$color.secondary",
+              "width": 2
+            }
+          ]
+        },
+        "active": {
+          "transition": "jump",
+          "replace": [
+            {
+              "type": "fill",
+              "color": "$color.slot"
+            },
+            {
+              "type": "fill",
+              "color": {
+                "color": "$color.accent",
+                "alpha": 0.12
+              }
+            },
+            {
+              "type": "stroke",
+              "color": "$color.accent",
+              "width": 2
+            },
+            {
+              "type": "glow",
+              "color": {
+                "color": "$color.accent",
+                "alpha": 0.45
+              },
+              "width": 3,
+              "radius": 3,
+              "animate": {
+                "name": "flicker",
+                "on": "enter"
+              }
+            }
+          ]
+        }
+      },
+      "contrast": {
+        "states": {
+          "active": {
+            "replace": [
+              {
+                "type": "fill",
+                "color": "$color.slot"
+              },
+              {
+                "type": "stroke",
+                "color": "$color.accent",
+                "width": 2
+              },
+              {
+                "type": "stroke",
+                "color": "$color.accent",
+                "width": 2,
+                "inset": 2
+              }
+            ]
+          }
+        }
+      }
+    },
+    "card": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 6
+      },
+      "layers": [
+        {
+          "type": "fill",
+          "color": "$color.slot"
+        },
+        {
+          "type": "stroke",
+          "color": "$color.slotEdge",
+          "width": 2
+        }
+      ],
+      "states": {
+        "hover": {
+          "add": [
+            {
+              "type": "stroke",
+              "color": "$color.secondary",
+              "width": 2
+            },
+            {
+              "type": "glow",
+              "color": {
+                "color": "$color.secondary",
+                "alpha": 0.3
+              },
+              "width": 3,
+              "radius": 3
+            }
+          ]
+        },
+        "selected": {
+          "transition": "jump",
+          "add": [
+            {
+              "type": "fill",
+              "color": {
+                "color": "$color.accent",
+                "alpha": 0.12
+              }
+            },
+            {
+              "type": "stroke",
+              "color": "$color.accent",
+              "width": 2
+            },
+            {
+              "type": "glow",
+              "color": {
+                "color": "$color.accent",
+                "alpha": 0.45
+              },
+              "width": 3,
+              "radius": 3,
+              "animate": {
+                "name": "flicker",
+                "on": "enter"
+              }
+            },
+            {
+              "type": "stroke",
+              "color": {
+                "color": "$color.accent",
+                "alpha": 0.3
+              },
+              "width": 2,
+              "inset": -2,
+              "clip": false,
+              "animate": {
+                "name": "flicker",
+                "on": "enter"
+              }
+            }
+          ]
+        }
+      },
+      "contrast": {
+        "states": {
+          "selected": {
+            "replace": [
+              {
+                "type": "fill",
+                "color": "$color.slot"
+              },
+              {
+                "type": "stroke",
+                "color": "$color.accent",
+                "width": 2
+              },
+              {
+                "type": "stroke",
+                "color": "$color.accent",
+                "width": 2,
+                "inset": 2
+              }
+            ]
+          }
+        }
+      }
+    },
+    "well": {
+      "shape": {
+        "kind": "rect"
+      },
+      "layers": [
+        {
+          "type": "fill",
+          "color": "$color.well",
+          "inset": -2,
+          "clip": false,
+          "shape": {
+            "kind": "rounded",
+            "radius": 7
+          }
+        }
+      ]
+    },
+    "field": {
+      "shape": {
+        "kind": "rect"
+      },
+      "layers": [
+        {
+          "type": "fill",
+          "color": "$color.field",
+          "inset": [
+            8,
+            8,
+            9,
+            8
+          ],
+          "shape": {
+            "kind": "rounded",
+            "radius": 4
+          }
+        },
+        {
+          "type": "stroke",
+          "color": "$color.fieldEdge",
+          "width": 2,
+          "inset": [
+            8,
+            8,
+            9,
+            8
+          ],
+          "shape": {
+            "kind": "rounded",
+            "radius": 4
+          }
+        },
+        {
+          "type": "glow",
+          "color": {
+            "color": "$color.fieldEdge",
+            "alpha": 0.35
+          },
+          "width": 3,
+          "radius": 3,
+          "inset": [
+            8,
+            8,
+            9,
+            8
+          ],
+          "shape": {
+            "kind": "rounded",
+            "radius": 4
+          }
+        }
+      ],
+      "text": {
+        "title": {
+          "color": "$color.fieldInk"
+        }
+      }
+    },
+    "row": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 4
+      },
+      "layers": [],
+      "states": {
+        "selected": {
+          "transition": "jump",
+          "add": [
+            {
+              "type": "fill",
+              "color": {
+                "color": "$color.accent",
+                "alpha": 0.12
+              }
+            },
+            {
+              "type": "stroke",
+              "color": "$color.accent",
+              "width": 2
+            },
+            {
+              "type": "glow",
+              "color": {
+                "color": "$color.accent",
+                "alpha": 0.45
+              },
+              "width": 3,
+              "radius": 3,
+              "animate": {
+                "name": "flicker",
+                "on": "enter"
+              }
+            },
+            {
+              "type": "stroke",
+              "color": {
+                "color": "$color.accent",
+                "alpha": 0.3
+              },
+              "width": 2,
+              "inset": -2,
+              "clip": false,
+              "animate": {
+                "name": "flicker",
+                "on": "enter"
+              }
+            }
+          ]
+        }
+      },
+      "contrast": {
+        "states": {
+          "selected": {
+            "replace": [
+              {
+                "type": "stroke",
+                "color": "$color.accent",
+                "width": 2
+              },
+              {
+                "type": "stroke",
+                "color": "$color.accent",
+                "width": 2,
+                "inset": 2
+              }
+            ]
+          }
+        }
+      }
+    },
+    "chip": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 3
+      },
+      "layers": [
+        {
+          "type": "fill",
+          "color": "$color.key"
+        },
+        {
+          "type": "stroke",
+          "color": "$color.keyShade",
+          "width": 2,
+          "segments": "bottom"
+        }
+      ],
+      "text": {
+        "title": {
+          "color": "$color.keyInk"
+        }
+      }
+    },
+    "control": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 4
+      },
+      "layers": [
+        {
+          "type": "fill",
+          "color": "$color.slot"
+        },
+        {
+          "type": "stroke",
+          "color": "$color.slotEdge",
+          "width": 2
+        }
+      ],
+      "states": {
+        "hover": {
+          "replace": [
+            {
+              "type": "fill",
+              "color": "$color.slot"
+            },
+            {
+              "type": "stroke",
+              "color": "$color.secondary",
+              "width": 2
+            }
+          ]
+        }
+      }
+    },
+    "dropTarget": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 6
+      },
+      "layers": [
+        {
+          "type": "stroke",
+          "color": "$color.secondary",
+          "width": 2
+        },
+        {
+          "type": "glow",
+          "color": {
+            "color": "$color.secondary",
+            "alpha": 0.45
+          },
+          "width": 3,
+          "radius": 3
+        },
+        {
+          "type": "stroke",
+          "color": {
+            "color": "$color.secondary",
+            "alpha": 0.3
+          },
+          "width": 2,
+          "inset": -2,
+          "clip": false
+        }
+      ],
+      "contrast": {
+        "replace": [
+          {
+            "type": "stroke",
+            "color": "$color.secondary",
+            "width": 2
+          },
+          {
+            "type": "stroke",
+            "color": "$color.secondary",
+            "width": 2,
+            "inset": 2
+          }
+        ]
+      }
+    }
+  },
+  "text": {
+    "title": {
+      "font": "$font.pixel",
+      "color": "$color.ink"
+    },
+    "body": {
+      "font": "$font.pixel"
+    },
+    "secondary": {
+      "font": "$font.pixel",
+      "color": "$color.inkDim"
+    },
+    "key": {
+      "font": "$font.pixel"
+    },
+    "field": {
+      "font": "$font.pixel",
+      "color": "$color.fieldInk"
+    }
+  },
+  "motion": {
+    "transitions": {
+      "jump": {
+        "curve": "steps",
+        "steps": 1
+      }
+    },
+    "animations": {
+      "flicker": {
+        "duration": 0.24,
+        "curve": "steps",
+        "steps": 4,
+        "keyframes": [
+          {
+            "t": 0,
+            "opacity": 0.2
+          },
+          {
+            "t": 0.3333,
+            "opacity": 1
+          },
+          {
+            "t": 0.6667,
+            "opacity": 0.4
+          },
+          {
+            "t": 1,
+            "opacity": 1
+          }
+        ]
+      }
+    }
+  }
+}

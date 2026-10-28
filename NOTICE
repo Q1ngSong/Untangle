@@ -1,13 +1,13 @@
-Tangler
+Untangle
 
-Tangler's original code is provided under the PolyForm Noncommercial License
+Untangle's original code is provided under the PolyForm Noncommercial License
 1.0.0 in LICENSE. The license permits noncommercial purposes; it does not
 grant permission for commercial use, including internal business use by
 for-profit companies. The complete license governs, including its specified
 permissions for noncommercial organizations and its fair-use provision.
 
 Third-party components retain their own copyrights and license terms.
-Tangler's noncommercial license does not replace or restrict rights granted
+Untangle's noncommercial license does not replace or restrict rights granted
 under those third-party licenses.
 
 Sparkle 2.10.0
@@ -15,8 +15,76 @@ https://github.com/sparkle-project/Sparkle
 
 Sparkle is resolved separately by Swift Package Manager. The build script
 embeds Sparkle and copies its complete license and third-party notices to
-Tangler.app/Contents/Resources/Sparkle-LICENSE.txt. Preserve that file when
+Untangle.app/Contents/Resources/Sparkle-LICENSE.txt. Preserve that file when
 redistributing the application.
 
-The build also includes Tangler's LICENSE and this NOTICE as
-Tangler-LICENSE.txt and Tangler-NOTICE.txt in the same Resources directory.
+The build also includes Untangle's LICENSE and this NOTICE as
+Untangle-LICENSE.txt and Untangle-NOTICE.txt in the same Resources directory.
+
+Hidden Bar — adapted menu-bar separator mechanism
+https://github.com/dwarvesf/hidden
+Pinned commit: 04d9f3f0df795e4facfa05efd2f96fceb46a0467
+Source: hidden/Features/StatusBar/Engine/LegacyLengthEngine.swift
+Adapted in Sources/WindowKit/MenuBar/MenuBarDivider.swift.
+Changes: Untangle lifecycle, internal zero-length layout spacer without a visible marker or action, saved position, ordering guards, and recovery.
+
+MIT License
+
+Copyright (c) 2019 Dwarves Foundation
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+SaneBar — adapted menu-extra traversal and native reordering
+https://github.com/sane-apps/SaneBar
+Pinned commit: 2311b2379018dd67e4134866b1ce4d599227d457
+Sources: Core/Services/AccessibilityMenuExtraService.swift and
+Core/Services/AccessibilityMenuBarDragService.swift.
+Adapted in Sources/WindowKit/MenuBar/MenuBarInventory.swift and MenuBarMove.swift.
+Changes: per-item identity, bounded asynchronous discovery and native row configuration.
+The earlier AccessibilityClickService adaptation (MenuBarClick.swift) has been removed.
+Command-drag uses horizontal native reordering with cancellation cleanup; membership
+is saved only after position verification.
+The tray design and App integration are original Untangle work.
+
+MIT License
+
+Copyright (c) 2025-2026 SaneApps (hi@saneapps.com)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Marked 17.0.5 — bundled README renderer
+https://github.com/markedjs/marked
+MIT License. The complete license is included at
+Untangle.app/Contents/Resources/Untangle_Untangle.bundle/Help/marked-LICENSE.txt.

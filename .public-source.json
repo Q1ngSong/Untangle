@@ -48,7 +48,7 @@
     },
     "NOTICE": {
       "mode": "100644",
-      "oid": "fcd1da026da55d92ab449c1f266405139e8cce4c"
+      "oid": "ec73706b24c2f980d728425242d7410cb1b42b45"
     },
     "Package.resolved": {
       "mode": "100644",
@@ -60,7 +60,7 @@
     },
     "README.md": {
       "mode": "100644",
-      "oid": "3f9b1d066132790e6f7dd1555e7496d52faf6ec3"
+      "oid": "5fb5088b095300146061d926b6791952245ec47f"
     },
     "Sources/App/AppDelegate.swift": {
       "mode": "100644",
@@ -1468,67 +1468,91 @@
     },
     "docs/COMMANDS.macos.md": {
       "mode": "100644",
-      "oid": "72e8dff992bd4cc4b0cc29239d82c8b3d5901211"
+      "oid": "85fd56f2d300ec4c2c602dbc405af16814ff5ee4"
     },
     "docs/COMMANDS.md": {
       "mode": "100644",
-      "oid": "4ff9aa51ddbe889d4dd9b46453f21a8a4679bfa2"
+      "oid": "a60450328f96f055dc513bee33bca417ab09e747"
     },
     "docs/README.zh-CN.md": {
       "mode": "100644",
-      "oid": "33c96a4c28a8665d290fa8b53f1401bd3767e51c"
+      "oid": "c96b8474d07144a0bf31761f5c101da50b1746db"
     },
     "docs/assets/badge-commands.svg": {
       "mode": "100644",
-      "oid": "311f9d764a8fee9f398aa4bacc8ec63ada1a4228"
+      "oid": "704edefdcdabaf98d3f70be61bb61faf2e06f371"
     },
     "docs/assets/badge-download.svg": {
       "mode": "100644",
-      "oid": "5429c7fce0838db2c7080c599ee2b39ca353f2a3"
+      "oid": "7f4a6bf0716939ce88195bbbee79a2a16a2bc318"
     },
     "docs/assets/badge-license.svg": {
       "mode": "100644",
-      "oid": "0ce442ec21f40dbcd81b2c10ab4b3256938e97e2"
+      "oid": "a462bcbc4e3cba120e396f5f7ec40e688ec207a6"
     },
     "docs/assets/badge-macos.svg": {
       "mode": "100644",
-      "oid": "f07a639f5374c3a410ef75baf30b78d0e599b2ba"
+      "oid": "3048ba77c4a8cc1ae2c3671e790403853a3d2e9e"
     },
     "docs/assets/badge-quick-start.svg": {
       "mode": "100644",
-      "oid": "be03d28cc44b8ad252d2dd86cdbaca7073769289"
+      "oid": "037c15f282a97bb756d99157f3d30cab560ccf7b"
     },
     "docs/assets/badge-releases.svg": {
       "mode": "100644",
-      "oid": "48349c45d8a0e0c39fd4d3c53cd8b343fdeded76"
+      "oid": "7464a7ecce7cff80fc8af1bd2271f302f1f5ba9d"
     },
     "docs/assets/badge-swift.svg": {
       "mode": "100644",
-      "oid": "af2628c6b43e100cf0c2a8edae05e57ca7857c49"
+      "oid": "b37cefc3c4d2cc15ec6ee36744a0d514b0451d88"
     },
     "docs/assets/badge-website.svg": {
       "mode": "100644",
-      "oid": "a3e7314fc8858e710a1ab4f922ce7669d410e92a"
+      "oid": "2700cf582fafdcd13821ca486bd06197b68736d3"
     },
     "docs/assets/banner.svg": {
       "mode": "100644",
-      "oid": "6367df53dcacfb9af1d648a991f5b55acc0bac21"
+      "oid": "844521189fb44a89ab132c1af56cc3baef0d146f"
+    },
+    "docs/assets/desktops-demo.svg": {
+      "mode": "100644",
+      "oid": "11ece9b79dfbc8d00dc87a8afe2229ebf9a3702b"
+    },
+    "docs/assets/dock-demo.svg": {
+      "mode": "100644",
+      "oid": "eb05f6865fa9187b67cebbc6430372676842fcc6"
     },
     "docs/assets/layout-demo.svg": {
       "mode": "100644",
-      "oid": "e863f8e6721918b569c93dc846bbd5a43e1285ee"
+      "oid": "8d35700e5d2ee8d586d5c770dc4fd86c07a5d4e9"
+    },
+    "docs/assets/menubar-demo.svg": {
+      "mode": "100644",
+      "oid": "f08fd6943f88e6f8261a0b86501cfcdd7deda03c"
+    },
+    "docs/assets/search-demo.svg": {
+      "mode": "100644",
+      "oid": "98319822f77c90082dafb8213ca133632a8e909c"
+    },
+    "docs/assets/skins-demo.svg": {
+      "mode": "100644",
+      "oid": "d4e70d0da3dd393f6c59e40d3919d5f984db3a8c"
+    },
+    "docs/assets/switcher-demo.svg": {
+      "mode": "100644",
+      "oid": "437c2a29c9cb5df75ab45a946f03c52bd6448961"
     },
     "docs/assets/tabs-demo.svg": {
       "mode": "100644",
-      "oid": "00852255812d9673ec562e5bbc6903ab7a168d7a"
+      "oid": "c68c5e1d6048204da34a2564b8b991f9bef127ca"
     },
     "docs/assets/workspace-demo.svg": {
       "mode": "100644",
-      "oid": "740a84414e9343aab30bc40dc21aff3e54c3cd89"
+      "oid": "b32232b1a39724306dc3aceb5e902e7d8fb5f648"
     },
     "index.html": {
       "mode": "100644",
-      "oid": "98ed97ccb39f5c8cc7b7b0ad93989748a9071c0c"
+      "oid": "2983332d9bb72cf06428fd52d59614d82781ef16"
     },
     "scripts/build-app.sh": {
       "mode": "100755",
@@ -1560,27 +1584,1491 @@
     },
     "site/build.py": {
       "mode": "100644",
-      "oid": "989a585d82058fe9e93f81df074474b6a9e264e6"
+      "oid": "cc21db875261443d5269be1607397ed51da73384"
     },
     "site/index.html": {
       "mode": "100644",
-      "oid": "f5a818907eb828e748ac36ad77047535a7c3b826"
+      "oid": "37713dce571673462e1baf9948b733b86fd921cd"
     },
     "site/main.js": {
       "mode": "100644",
-      "oid": "54d8efead9d7e4e7c0977b2c66b71096c0bd4b81"
+      "oid": "8e88e82d259c03ad7bb06078a009ac9cad833a92"
     },
     "site/mark.svg": {
       "mode": "100644",
-      "oid": "a8cde190f6a6af2c7b984a8f6626c02c8c59d08a"
+      "oid": "eef0048e12107bd8a303ad197a2ebfd6d05d10c5"
     },
     "site/requirements.txt": {
       "mode": "100644",
       "oid": "6bbc8459c27e834c9186cdb4364ae873ed12d25a"
     },
+    "site/scenes.html": {
+      "mode": "100644",
+      "oid": "05293440b45a791d7701cd6ce32279d842276ea3"
+    },
     "site/style.css": {
       "mode": "100644",
-      "oid": "e9a547dd89fbb4b00525add9db08c7f7d8894d31"
+      "oid": "f627cb4381b0bba76d3ec31c2fd76a2eafa3b8e1"
+    },
+    "skins/FORMAT.zh-CN.md": {
+      "mode": "100644",
+      "oid": "3ae3feca5f15e2f4cf3a590b679632e9145cf020"
+    },
+    "skins/README.md": {
+      "mode": "100644",
+      "oid": "23f3f604ca6af7400d977af2cedaba25e8cb0cbc"
+    },
+    "skins/像素方块-2026-10-23/README.md": {
+      "mode": "100644",
+      "oid": "68bbcf0cdc0f06ebb5c03e4f069fc8a77354357e"
+    },
+    "skins/像素方块-2026-10-23/package/LICENSE-OFL.txt": {
+      "mode": "100644",
+      "oid": "0427d1db87f97040016b5954b4892790878beeaa"
+    },
+    "skins/像素方块-2026-10-23/package/LICENSE-ark-pixel-OFL.txt": {
+      "mode": "100644",
+      "oid": "264873a297a50e965af4875a4aa552fe594dd731"
+    },
+    "skins/像素方块-2026-10-23/package/LICENSE-cubic-11-OFL.txt": {
+      "mode": "100644",
+      "oid": "4e863313ebd22ae0b44ea5f9538142b6b10e8f29"
+    },
+    "skins/像素方块-2026-10-23/package/LICENSE-galmuri.txt": {
+      "mode": "100644",
+      "oid": "ae34182f091c835710bef170e50059794377e3c4"
+    },
+    "skins/像素方块-2026-10-23/package/README.md": {
+      "mode": "100644",
+      "oid": "1995c52229743ae1f14f6947236145fa8c0ad826"
+    },
+    "skins/像素方块-2026-10-23/package/assets/panel.png": {
+      "mode": "100644",
+      "oid": "cf75a4f646dec6db0ec5e4ad5a89e806b6436abf"
+    },
+    "skins/像素方块-2026-10-23/package/assets/raised.png": {
+      "mode": "100644",
+      "oid": "f336848faeb86cc8e797353a3951f8a083f9401c"
+    },
+    "skins/像素方块-2026-10-23/package/assets/slot.png": {
+      "mode": "100644",
+      "oid": "da85316d208538cfe7b00bdfe918828f705df518"
+    },
+    "skins/像素方块-2026-10-23/package/fonts/FusionPixel-12px-Proportional-zh_hans.otf": {
+      "mode": "100644",
+      "oid": "82f289d04db9729b7aded020782114320f59075f"
+    },
+    "skins/像素方块-2026-10-23/package/previews/card.png": {
+      "mode": "100644",
+      "oid": "0ddd7d912edd693b7f7bca9533fa09111bb38302"
+    },
+    "skins/像素方块-2026-10-23/package/previews/dock-preview.png": {
+      "mode": "100644",
+      "oid": "de5ec39bb3518f70327483b23503565f97821a3a"
+    },
+    "skins/像素方块-2026-10-23/package/previews/hints.png": {
+      "mode": "100644",
+      "oid": "c818130cbec75bc218aadfb893e39554b55cadf3"
+    },
+    "skins/像素方块-2026-10-23/package/previews/palette.png": {
+      "mode": "100644",
+      "oid": "af1c17845a9a0260c6d06bf5df0de534f66381fa"
+    },
+    "skins/像素方块-2026-10-23/package/previews/switcher.png": {
+      "mode": "100644",
+      "oid": "faf80b81eb749fa4c48584e29c3b5d375ece8aab"
+    },
+    "skins/像素方块-2026-10-23/package/previews/tab-bar.png": {
+      "mode": "100644",
+      "oid": "aaf18335a870b13970416da2181c44cf92811a3e"
+    },
+    "skins/像素方块-2026-10-23/package/previews/toasts.png": {
+      "mode": "100644",
+      "oid": "63b3e98085ae49558098358deb6c2763d629a28d"
+    },
+    "skins/像素方块-2026-10-23/package/skin.json": {
+      "mode": "100644",
+      "oid": "d6790ca52abca006a916a35fe56c3bbf712b9efb"
+    },
+    "skins/像素方块-2026-10-23/pixel-blocks.untangle-theme.json": {
+      "mode": "100644",
+      "oid": "4cf0d290c3e09e5129fb6c8a98ce26395aec3460"
+    },
+    "skins/像素方块-2026-10-23/previews/dock-preview.png": {
+      "mode": "100644",
+      "oid": "de5ec39bb3518f70327483b23503565f97821a3a"
+    },
+    "skins/像素方块-2026-10-23/previews/hints.png": {
+      "mode": "100644",
+      "oid": "c818130cbec75bc218aadfb893e39554b55cadf3"
+    },
+    "skins/像素方块-2026-10-23/previews/package-render.png": {
+      "mode": "100644",
+      "oid": "8e846a612dacde333e43f2aad10e070c8b14f0a1"
+    },
+    "skins/像素方块-2026-10-23/previews/palette.png": {
+      "mode": "100644",
+      "oid": "af1c17845a9a0260c6d06bf5df0de534f66381fa"
+    },
+    "skins/像素方块-2026-10-23/previews/switcher.png": {
+      "mode": "100644",
+      "oid": "faf80b81eb749fa4c48584e29c3b5d375ece8aab"
+    },
+    "skins/像素方块-2026-10-23/previews/tab-bar.png": {
+      "mode": "100644",
+      "oid": "aaf18335a870b13970416da2181c44cf92811a3e"
+    },
+    "skins/像素方块-2026-10-23/previews/toasts.png": {
+      "mode": "100644",
+      "oid": "63b3e98085ae49558098358deb6c2763d629a28d"
+    },
+    "skins/像素方块夜-2026-10-23/README.md": {
+      "mode": "100644",
+      "oid": "ede4f94d0a34b77dd0e035998860b639af427f22"
+    },
+    "skins/像素方块夜-2026-10-23/pixel-blocks-night.untangle-theme.json": {
+      "mode": "100644",
+      "oid": "a91e02b388a3af74b36cedb18bb4f990ebf71444"
+    },
+    "skins/像素方块夜-2026-10-23/previews/dock-preview.png": {
+      "mode": "100644",
+      "oid": "87d6fd9753b0043c1942d02bc717a1c0b7ba888b"
+    },
+    "skins/像素方块夜-2026-10-23/previews/hints.png": {
+      "mode": "100644",
+      "oid": "12948b8f02e774545122b45ea74112a5ade9c005"
+    },
+    "skins/像素方块夜-2026-10-23/previews/palette.png": {
+      "mode": "100644",
+      "oid": "5d93e03a1ddc2f8e4703e8cc8a1c0a6c9591f913"
+    },
+    "skins/像素方块夜-2026-10-23/previews/switcher.png": {
+      "mode": "100644",
+      "oid": "be23da7427335017515944032893b162fd49b2f3"
+    },
+    "skins/像素方块夜-2026-10-23/previews/tab-bar.png": {
+      "mode": "100644",
+      "oid": "a19e1f87c107c92442f194ca946991e535458971"
+    },
+    "skins/像素方块夜-2026-10-23/previews/toasts.png": {
+      "mode": "100644",
+      "oid": "72981434f49e59921cda4aadef1aae8682ff2bec"
+    },
+    "skins/像素田园-2026-10-23/README.md": {
+      "mode": "100644",
+      "oid": "e9c56343dc67d1d8e82ae0b923c04e18f4801eec"
+    },
+    "skins/像素田园-2026-10-23/package/LICENSE-OFL.txt": {
+      "mode": "100644",
+      "oid": "0427d1db87f97040016b5954b4892790878beeaa"
+    },
+    "skins/像素田园-2026-10-23/package/LICENSE-ark-pixel-OFL.txt": {
+      "mode": "100644",
+      "oid": "264873a297a50e965af4875a4aa552fe594dd731"
+    },
+    "skins/像素田园-2026-10-23/package/LICENSE-cubic-11-OFL.txt": {
+      "mode": "100644",
+      "oid": "4e863313ebd22ae0b44ea5f9538142b6b10e8f29"
+    },
+    "skins/像素田园-2026-10-23/package/LICENSE-galmuri.txt": {
+      "mode": "100644",
+      "oid": "ae34182f091c835710bef170e50059794377e3c4"
+    },
+    "skins/像素田园-2026-10-23/package/README.md": {
+      "mode": "100644",
+      "oid": "61eee8f4410d3063ae7695e497423c13e7a9c11c"
+    },
+    "skins/像素田园-2026-10-23/package/assets/panel.png": {
+      "mode": "100644",
+      "oid": "b97eb5fcb3e54ced96698c90f0f9cf180384f58a"
+    },
+    "skins/像素田园-2026-10-23/package/assets/raised.png": {
+      "mode": "100644",
+      "oid": "948ead585fe55dc56f0a2f83502600b91868ad43"
+    },
+    "skins/像素田园-2026-10-23/package/assets/slot.png": {
+      "mode": "100644",
+      "oid": "10e394a1f6e07dc21abe6986ccdcc17663a3aad9"
+    },
+    "skins/像素田园-2026-10-23/package/fonts/FusionPixel-12px-Proportional-zh_hans.otf": {
+      "mode": "100644",
+      "oid": "82f289d04db9729b7aded020782114320f59075f"
+    },
+    "skins/像素田园-2026-10-23/package/previews/card.png": {
+      "mode": "100644",
+      "oid": "b668e3c338a4fa71a74b669faea537440e82abf6"
+    },
+    "skins/像素田园-2026-10-23/package/previews/dock-preview.png": {
+      "mode": "100644",
+      "oid": "c746fb13fe2979e480c6b9e8a5c705d234eae0a9"
+    },
+    "skins/像素田园-2026-10-23/package/previews/hints.png": {
+      "mode": "100644",
+      "oid": "a479d05caa2d5cc4475d252c8aadb509ceddfaca"
+    },
+    "skins/像素田园-2026-10-23/package/previews/palette.png": {
+      "mode": "100644",
+      "oid": "cec8f2cd9f17922a812391927ddd24e6eeff87b6"
+    },
+    "skins/像素田园-2026-10-23/package/previews/switcher.png": {
+      "mode": "100644",
+      "oid": "bb4e0f0265d281760b8e6f4eb19b819a64195c20"
+    },
+    "skins/像素田园-2026-10-23/package/previews/tab-bar.png": {
+      "mode": "100644",
+      "oid": "c604502fd82389c76316c27690463335599c985a"
+    },
+    "skins/像素田园-2026-10-23/package/previews/toasts.png": {
+      "mode": "100644",
+      "oid": "23fe8c873d2a23a152a1f017ea080ec70a26df35"
+    },
+    "skins/像素田园-2026-10-23/package/skin.json": {
+      "mode": "100644",
+      "oid": "c3d59be856770380db9b387afa5cd3d23f23e301"
+    },
+    "skins/像素田园-2026-10-23/pixel-farm.untangle-theme.json": {
+      "mode": "100644",
+      "oid": "7991e50f3bfded47577c396a8f9494c5d4b3bc4f"
+    },
+    "skins/像素田园-2026-10-23/previews/dock-preview.png": {
+      "mode": "100644",
+      "oid": "37e24e3d6415e13526b7e1b8471b7656f5862281"
+    },
+    "skins/像素田园-2026-10-23/previews/hints.png": {
+      "mode": "100644",
+      "oid": "3cc21666f9e6697e0f6128dd5e49829d52bb236e"
+    },
+    "skins/像素田园-2026-10-23/previews/package-render.png": {
+      "mode": "100644",
+      "oid": "c8ddcfb234ffde0f864d4e871556425d25676baf"
+    },
+    "skins/像素田园-2026-10-23/previews/palette.png": {
+      "mode": "100644",
+      "oid": "291b3909511dd893de704757572bf6e96d88cc28"
+    },
+    "skins/像素田园-2026-10-23/previews/switcher.png": {
+      "mode": "100644",
+      "oid": "0fac9ec948c2ae4e2e58b804d159ea2d90adbe97"
+    },
+    "skins/像素田园-2026-10-23/previews/tab-bar.png": {
+      "mode": "100644",
+      "oid": "1f5d8fe3d7741c317fc53d9beeb3209bcae02774"
+    },
+    "skins/像素田园-2026-10-23/previews/toasts.png": {
+      "mode": "100644",
+      "oid": "7e38a3056bbc5dcc92706fb51f6455d94f436d98"
+    },
+    "skins/像素霓虹-2026-10-23/README.md": {
+      "mode": "100644",
+      "oid": "51ca655f01c959e4b1bb47bd36cf055558cd4d14"
+    },
+    "skins/像素霓虹-2026-10-23/package/LICENSE-OFL.txt": {
+      "mode": "100644",
+      "oid": "0427d1db87f97040016b5954b4892790878beeaa"
+    },
+    "skins/像素霓虹-2026-10-23/package/LICENSE-ark-pixel-OFL.txt": {
+      "mode": "100644",
+      "oid": "264873a297a50e965af4875a4aa552fe594dd731"
+    },
+    "skins/像素霓虹-2026-10-23/package/LICENSE-cubic-11-OFL.txt": {
+      "mode": "100644",
+      "oid": "4e863313ebd22ae0b44ea5f9538142b6b10e8f29"
+    },
+    "skins/像素霓虹-2026-10-23/package/LICENSE-galmuri.txt": {
+      "mode": "100644",
+      "oid": "ae34182f091c835710bef170e50059794377e3c4"
+    },
+    "skins/像素霓虹-2026-10-23/package/README.md": {
+      "mode": "100644",
+      "oid": "7f25814d2deec3324544d1fdd42306c3d287e719"
+    },
+    "skins/像素霓虹-2026-10-23/package/assets/plus.png": {
+      "mode": "100644",
+      "oid": "81f6ec8f621480ac6f9f837bbaa0ba142723afb4"
+    },
+    "skins/像素霓虹-2026-10-23/package/fonts/FusionPixel-12px-Proportional-zh_hans.otf": {
+      "mode": "100644",
+      "oid": "82f289d04db9729b7aded020782114320f59075f"
+    },
+    "skins/像素霓虹-2026-10-23/package/previews/card.png": {
+      "mode": "100644",
+      "oid": "f2fe72b362174a20478b6761035b42d1cd35152f"
+    },
+    "skins/像素霓虹-2026-10-23/package/previews/dock-preview.png": {
+      "mode": "100644",
+      "oid": "19ff68cdf0ec0b5999ee6b7df2a44d9b8508e87c"
+    },
+    "skins/像素霓虹-2026-10-23/package/previews/hints.png": {
+      "mode": "100644",
+      "oid": "be385272cdcb47786e7c63dfd5d4da01d4daa3dc"
+    },
+    "skins/像素霓虹-2026-10-23/package/previews/palette.png": {
+      "mode": "100644",
+      "oid": "27ce863b7961503cf89a2b069180956e3233c5e1"
+    },
+    "skins/像素霓虹-2026-10-23/package/previews/switcher.png": {
+      "mode": "100644",
+      "oid": "c549d896c0e00cd68df77372d448c08634188fdb"
+    },
+    "skins/像素霓虹-2026-10-23/package/previews/tab-bar.png": {
+      "mode": "100644",
+      "oid": "9820629c66fcda1d11fe46ac18e252b17a1eab54"
+    },
+    "skins/像素霓虹-2026-10-23/package/previews/toasts.png": {
+      "mode": "100644",
+      "oid": "e98b0605679ca21a289daab25a3b7138d9693022"
+    },
+    "skins/像素霓虹-2026-10-23/package/skin.json": {
+      "mode": "100644",
+      "oid": "5737c670d2e544e5f4b813951907d008cf3164a2"
+    },
+    "skins/像素霓虹-2026-10-23/pixel-neon.untangle-theme.json": {
+      "mode": "100644",
+      "oid": "61e344e55cef56c5e2b3ec62213aa315d27afbfd"
+    },
+    "skins/像素霓虹-2026-10-23/previews/dock-preview.png": {
+      "mode": "100644",
+      "oid": "5fd3b915b4c03c3119c626f57219a23a6187f4ff"
+    },
+    "skins/像素霓虹-2026-10-23/previews/hints.png": {
+      "mode": "100644",
+      "oid": "b7f67316ca93d39ff1426a0f45c0436c9ccc5c03"
+    },
+    "skins/像素霓虹-2026-10-23/previews/package-render.png": {
+      "mode": "100644",
+      "oid": "ec0cb639912d6a474cdd101d01fc16106f58033b"
+    },
+    "skins/像素霓虹-2026-10-23/previews/palette.png": {
+      "mode": "100644",
+      "oid": "5b30a4cd154fec2bd94617c9190a98eb359a58ac"
+    },
+    "skins/像素霓虹-2026-10-23/previews/switcher.png": {
+      "mode": "100644",
+      "oid": "fe06556e5c7ba7a2481fcc7988e1075fd5b622e0"
+    },
+    "skins/像素霓虹-2026-10-23/previews/tab-bar.png": {
+      "mode": "100644",
+      "oid": "bdf444d07d3bee91d380bdf2b59dd576f1fa4dea"
+    },
+    "skins/像素霓虹-2026-10-23/previews/toasts.png": {
+      "mode": "100644",
+      "oid": "dcdce72053563279d4e2bed998f9e544df04000e"
+    },
+    "skins/冰川企鹅-2026-10-23/README.md": {
+      "mode": "100644",
+      "oid": "93a21d8cb5f963a7ee1654c0b466491b0c71e2d9"
+    },
+    "skins/冰川企鹅-2026-10-23/package/README.md": {
+      "mode": "100644",
+      "oid": "7ac074f3631c4c46a0c33f25eb43073fe5d319dd"
+    },
+    "skins/冰川企鹅-2026-10-23/package/assets/badge.png": {
+      "mode": "100644",
+      "oid": "c46815e4f4e4a5396eb8992f2b9e36adf89e0318"
+    },
+    "skins/冰川企鹅-2026-10-23/package/assets/key-feet.png": {
+      "mode": "100644",
+      "oid": "165253af9e449ce2a1a0356cec472dfef1bcbe50"
+    },
+    "skins/冰川企鹅-2026-10-23/package/assets/sticker.png": {
+      "mode": "100644",
+      "oid": "ab6620f27cad60315bba0cebd84e5d4263a3a29f"
+    },
+    "skins/冰川企鹅-2026-10-23/package/assets/tab-feet.png": {
+      "mode": "100644",
+      "oid": "dbbf283f98aefa2be0feed475569e7fac7656450"
+    },
+    "skins/冰川企鹅-2026-10-23/package/previews/card.png": {
+      "mode": "100644",
+      "oid": "5f7e1499cc95ec8872b005458bc0e9d7ae6be412"
+    },
+    "skins/冰川企鹅-2026-10-23/package/skin.json": {
+      "mode": "100644",
+      "oid": "fde1eb53437c0a3109ec57f16a82a34f71a3e336"
+    },
+    "skins/冰川企鹅-2026-10-23/previews/dock-preview.png": {
+      "mode": "100644",
+      "oid": "e6851f6b1f87690521eee3a58528f51ee40e0074"
+    },
+    "skins/冰川企鹅-2026-10-23/previews/hints.png": {
+      "mode": "100644",
+      "oid": "a511cf21be40636d46b52bbc48fd91857b698557"
+    },
+    "skins/冰川企鹅-2026-10-23/previews/package-render.png": {
+      "mode": "100644",
+      "oid": "f5900916cad2654f50e064c96d853e42e6c742c5"
+    },
+    "skins/冰川企鹅-2026-10-23/previews/palette.png": {
+      "mode": "100644",
+      "oid": "89c1c7f23ff2f6b884f1ab3d39bf60b8bea1cf15"
+    },
+    "skins/冰川企鹅-2026-10-23/previews/switcher.png": {
+      "mode": "100644",
+      "oid": "cb7ec917f3f71a0c9f4d9fe9308d0bdeab938a5e"
+    },
+    "skins/冰川企鹅-2026-10-23/previews/tab-bar.png": {
+      "mode": "100644",
+      "oid": "7fc9983b2beec4fe847130014743052f43a8801a"
+    },
+    "skins/冰川企鹅-2026-10-23/previews/toasts.png": {
+      "mode": "100644",
+      "oid": "6d2b6ec5cd516aafcbe2934496c591a5e458b915"
+    },
+    "skins/可可熊-2026-10-23/README.md": {
+      "mode": "100644",
+      "oid": "916d0962e552873406a00b06482fc344dc60be7d"
+    },
+    "skins/可可熊-2026-10-23/package/README.md": {
+      "mode": "100644",
+      "oid": "bb5759c521c62662f7bed779bb4cc14141a97ce0"
+    },
+    "skins/可可熊-2026-10-23/package/assets/comb.png": {
+      "mode": "100644",
+      "oid": "5a0fa15973feece1905a06bf7353b859c117195e"
+    },
+    "skins/可可熊-2026-10-23/package/assets/glaze.png": {
+      "mode": "100644",
+      "oid": "3ea7a56ab62562e9ec9fee2a253bb8c8f98c20b9"
+    },
+    "skins/可可熊-2026-10-23/package/assets/sticker.png": {
+      "mode": "100644",
+      "oid": "2b7fea1f117fb2a08f7668ccd19b227c6d138490"
+    },
+    "skins/可可熊-2026-10-23/package/previews/card.png": {
+      "mode": "100644",
+      "oid": "70b4e49bb542cc7635f1dc65ef9d9ce7dcc6b608"
+    },
+    "skins/可可熊-2026-10-23/package/skin.json": {
+      "mode": "100644",
+      "oid": "6aa524f03d44550594c1b59cc02d27178843dae7"
+    },
+    "skins/可可熊-2026-10-23/previews/dock-preview.png": {
+      "mode": "100644",
+      "oid": "49e840acb2fef6d61b67a2e061ef07156ec70df3"
+    },
+    "skins/可可熊-2026-10-23/previews/hints.png": {
+      "mode": "100644",
+      "oid": "175dff8d70cf9b17f277aa1d02d2075c7d60f8da"
+    },
+    "skins/可可熊-2026-10-23/previews/package-render.png": {
+      "mode": "100644",
+      "oid": "bc95a859bb344961ecfd971f32d088f3ab4f18f9"
+    },
+    "skins/可可熊-2026-10-23/previews/palette.png": {
+      "mode": "100644",
+      "oid": "3d1af03b7c9eb2411c7ee5e5782ae1f44abc4c96"
+    },
+    "skins/可可熊-2026-10-23/previews/switcher.png": {
+      "mode": "100644",
+      "oid": "ff7fc42d7e9cad37665af256332d189e97fa1ddc"
+    },
+    "skins/可可熊-2026-10-23/previews/tab-bar.png": {
+      "mode": "100644",
+      "oid": "46a2cdc755c715aa1af7ac30104e6f4604329a08"
+    },
+    "skins/可可熊-2026-10-23/previews/toasts.png": {
+      "mode": "100644",
+      "oid": "2c81b87cfe41477d4f6b1d64cfbbf4d0d4fc3c8f"
+    },
+    "skins/垂耳兔-2026-10-23/README.md": {
+      "mode": "100644",
+      "oid": "95420e8244d0c56d73ee228068bc1f188341eb8a"
+    },
+    "skins/垂耳兔-2026-10-23/package/README.md": {
+      "mode": "100644",
+      "oid": "88d74d5e5cea64fd4672622af8c4cfa6ab33c779"
+    },
+    "skins/垂耳兔-2026-10-23/package/assets/dots.png": {
+      "mode": "100644",
+      "oid": "896eb0d8488868a8bc4f05e8e3170b9308f375d2"
+    },
+    "skins/垂耳兔-2026-10-23/package/assets/ears.png": {
+      "mode": "100644",
+      "oid": "0c682032dcd68d8719e9dda360c6cff5bac3c418"
+    },
+    "skins/垂耳兔-2026-10-23/package/assets/sticker.png": {
+      "mode": "100644",
+      "oid": "8f9cc1c3eb73de1457c8db11f5ddd59ba8547525"
+    },
+    "skins/垂耳兔-2026-10-23/package/assets/tab-ears.png": {
+      "mode": "100644",
+      "oid": "98808a30e9af70ca229da376d1c6f5782c3481e9"
+    },
+    "skins/垂耳兔-2026-10-23/package/previews/card.png": {
+      "mode": "100644",
+      "oid": "a3e91f3e8352a216c2f2ad325f0d2a36ffd38a6d"
+    },
+    "skins/垂耳兔-2026-10-23/package/skin.json": {
+      "mode": "100644",
+      "oid": "f09d94fb08eca8c7292ed61cd95c195304819e31"
+    },
+    "skins/垂耳兔-2026-10-23/previews/dock-preview.png": {
+      "mode": "100644",
+      "oid": "9df084f803af9b1bcb8ad75f06b0ede28f0b53ce"
+    },
+    "skins/垂耳兔-2026-10-23/previews/hints.png": {
+      "mode": "100644",
+      "oid": "1cbf404ee21f3bea84e91f93f5d1c9c5a2b3f499"
+    },
+    "skins/垂耳兔-2026-10-23/previews/package-render.png": {
+      "mode": "100644",
+      "oid": "8ef7309e615de6da18ee0c13bc7c27a4252967ef"
+    },
+    "skins/垂耳兔-2026-10-23/previews/palette.png": {
+      "mode": "100644",
+      "oid": "02053ecf0811a1bd33a7f0e2bbd3819bf6de9694"
+    },
+    "skins/垂耳兔-2026-10-23/previews/switcher.png": {
+      "mode": "100644",
+      "oid": "21ad7a24f2116fd8dca1352b104b0094000c9814"
+    },
+    "skins/垂耳兔-2026-10-23/previews/tab-bar.png": {
+      "mode": "100644",
+      "oid": "ce817a1cb71705c71f029cb21bf1a93d020dbaab"
+    },
+    "skins/垂耳兔-2026-10-23/previews/toasts.png": {
+      "mode": "100644",
+      "oid": "2faba952d49f2e1bcb01b201b40ad47a23cf60ca"
+    },
+    "skins/夜猫-2026-10-23/README.md": {
+      "mode": "100644",
+      "oid": "eec86595bb3837c6df3994b927443059b85682fc"
+    },
+    "skins/夜猫-2026-10-23/package/README.md": {
+      "mode": "100644",
+      "oid": "a490f6a2c9a7d79f758d50137a4ddd624e3427ab"
+    },
+    "skins/夜猫-2026-10-23/package/assets/ears.png": {
+      "mode": "100644",
+      "oid": "bd9e8b114e1f525f927d97e569f459258414a192"
+    },
+    "skins/夜猫-2026-10-23/package/assets/key-ears.png": {
+      "mode": "100644",
+      "oid": "55b9842fb07eb252911428c7a3fb2bc2bb5c94c2"
+    },
+    "skins/夜猫-2026-10-23/package/assets/sticker.png": {
+      "mode": "100644",
+      "oid": "b0ba077ded07ba2f9f1929a0aaced593b58e6800"
+    },
+    "skins/夜猫-2026-10-23/package/assets/tab-ears.png": {
+      "mode": "100644",
+      "oid": "210d2141bd5a14902e48b3614f8e5ce70d6d2526"
+    },
+    "skins/夜猫-2026-10-23/package/previews/card.png": {
+      "mode": "100644",
+      "oid": "f1c31eddd3d2dcc8993f093aa163cb44f4333227"
+    },
+    "skins/夜猫-2026-10-23/package/skin.json": {
+      "mode": "100644",
+      "oid": "9da63a09c5204627fa03a369c41a66f580bd9309"
+    },
+    "skins/夜猫-2026-10-23/previews/dock-preview.png": {
+      "mode": "100644",
+      "oid": "20aa8af6b0e37eb34c152618300c3e446d1ea8d4"
+    },
+    "skins/夜猫-2026-10-23/previews/hints.png": {
+      "mode": "100644",
+      "oid": "67cc2c0776801c7d928f8584023a39cefff43a98"
+    },
+    "skins/夜猫-2026-10-23/previews/package-render.png": {
+      "mode": "100644",
+      "oid": "32b64a8038d8abdad3d4616efe4712ca94dd4640"
+    },
+    "skins/夜猫-2026-10-23/previews/palette.png": {
+      "mode": "100644",
+      "oid": "22b1be2200f1c8812b414c6b6b533c11247cd81f"
+    },
+    "skins/夜猫-2026-10-23/previews/switcher.png": {
+      "mode": "100644",
+      "oid": "f4192f4ab5498127e8e1b9b44aba172fad459bd3"
+    },
+    "skins/夜猫-2026-10-23/previews/tab-bar.png": {
+      "mode": "100644",
+      "oid": "503ba10cf344bcf4dc703f8f9ba8862492549dda"
+    },
+    "skins/夜猫-2026-10-23/previews/toasts.png": {
+      "mode": "100644",
+      "oid": "601c35a64086adbcc6aa71bc32beac0f980ef49e"
+    },
+    "skins/奶油猫-2026-10-23/README.md": {
+      "mode": "100644",
+      "oid": "2878eec9282edb48e5530bb1992d97fd140d7ff2"
+    },
+    "skins/奶油猫-2026-10-23/package/README.md": {
+      "mode": "100644",
+      "oid": "4d3056e46b2efd585249b48ca8589b284256f342"
+    },
+    "skins/奶油猫-2026-10-23/package/assets/ears.png": {
+      "mode": "100644",
+      "oid": "2ba6d588341bd6e7fcceb9a05fd028e5cfea2c4c"
+    },
+    "skins/奶油猫-2026-10-23/package/assets/key-ears.png": {
+      "mode": "100644",
+      "oid": "988f4e43e91fd9f0a1a3e11cb679b6f5a86dc85c"
+    },
+    "skins/奶油猫-2026-10-23/package/assets/sticker.png": {
+      "mode": "100644",
+      "oid": "668dcc43b3ec7317c07a3015dcfc01b29d93cbc1"
+    },
+    "skins/奶油猫-2026-10-23/package/assets/tab-ears.png": {
+      "mode": "100644",
+      "oid": "9e8c2edb3d89b9978d8b2605663e9b69453fd6d2"
+    },
+    "skins/奶油猫-2026-10-23/package/previews/card.png": {
+      "mode": "100644",
+      "oid": "2f3df15c7c2e7b14c88988cbe641fed62126b503"
+    },
+    "skins/奶油猫-2026-10-23/package/skin.json": {
+      "mode": "100644",
+      "oid": "059360ba3fc5a8ff94bbc33da6d3a45ce4083ca6"
+    },
+    "skins/奶油猫-2026-10-23/previews/dock-preview.png": {
+      "mode": "100644",
+      "oid": "165dacdc5c7dcd4cd2a3ca02b20480f3f2cef115"
+    },
+    "skins/奶油猫-2026-10-23/previews/hints.png": {
+      "mode": "100644",
+      "oid": "a38ff037207e0fd62bcbb20ad4e0a9ec80e1f57e"
+    },
+    "skins/奶油猫-2026-10-23/previews/package-render.png": {
+      "mode": "100644",
+      "oid": "96666b0eeb100bf911d01b6272a694d2e13ce35d"
+    },
+    "skins/奶油猫-2026-10-23/previews/palette.png": {
+      "mode": "100644",
+      "oid": "23b88ae62c8838bdb7369aa72d442651b5e76657"
+    },
+    "skins/奶油猫-2026-10-23/previews/switcher.png": {
+      "mode": "100644",
+      "oid": "3ce115a7bbacf12441c3f38b47b7c36ccfdb0b57"
+    },
+    "skins/奶油猫-2026-10-23/previews/tab-bar.png": {
+      "mode": "100644",
+      "oid": "6c771a395ad767e1127afe776b9c3cfcdd45a0f7"
+    },
+    "skins/奶油猫-2026-10-23/previews/toasts.png": {
+      "mode": "100644",
+      "oid": "e431c3a3d242495bc08fc507276a90a5b174a4ae"
+    },
+    "skins/手绘钢笔-2026-10-23/README.md": {
+      "mode": "100644",
+      "oid": "539beb01b05665d6575d610e307ea78ee14a83b6"
+    },
+    "skins/手绘钢笔-2026-10-23/package/README.md": {
+      "mode": "100644",
+      "oid": "7b342c0832c5c8a0cd9e9c2808609b0bab366a63"
+    },
+    "skins/手绘钢笔-2026-10-23/package/assets/bar.png": {
+      "mode": "100644",
+      "oid": "ee5dfee22d074cf09ffc6a2cd45085bc62efefd4"
+    },
+    "skins/手绘钢笔-2026-10-23/package/assets/box.png": {
+      "mode": "100644",
+      "oid": "67d7e5fcae8000e5f9fbbe4184f61091c8e01e16"
+    },
+    "skins/手绘钢笔-2026-10-23/package/assets/circle.png": {
+      "mode": "100644",
+      "oid": "f0ca633deba37e19c5944eda70ef6251180c92e1"
+    },
+    "skins/手绘钢笔-2026-10-23/package/assets/grain.png": {
+      "mode": "100644",
+      "oid": "aa75ef4c42c46b409184230f9a2bd7b256be4d3d"
+    },
+    "skins/手绘钢笔-2026-10-23/package/assets/hatch.png": {
+      "mode": "100644",
+      "oid": "02aa2259b429818ce6841dc2ecfe85566b02cca0"
+    },
+    "skins/手绘钢笔-2026-10-23/package/assets/key.png": {
+      "mode": "100644",
+      "oid": "0cf749fddf3220da92809f790bac9898442e9f49"
+    },
+    "skins/手绘钢笔-2026-10-23/package/assets/panel.png": {
+      "mode": "100644",
+      "oid": "6c2a10d97e82eaaa897127c4f515f62e40f543b2"
+    },
+    "skins/手绘钢笔-2026-10-23/package/assets/pencil.png": {
+      "mode": "100644",
+      "oid": "c3990297a0e55f8e83a096fce18994cd5c396111"
+    },
+    "skins/手绘钢笔-2026-10-23/package/assets/rule.png": {
+      "mode": "100644",
+      "oid": "d3fa7310205ad983c4e7663b429b616ee3e72147"
+    },
+    "skins/手绘钢笔-2026-10-23/package/assets/well.png": {
+      "mode": "100644",
+      "oid": "e2a354ec0c386cb90a1549958186d288029b36d7"
+    },
+    "skins/手绘钢笔-2026-10-23/package/previews/card.png": {
+      "mode": "100644",
+      "oid": "63c915ad59f0d039ef8ae791010af07e79b3483c"
+    },
+    "skins/手绘钢笔-2026-10-23/package/previews/dock-preview.png": {
+      "mode": "100644",
+      "oid": "ae94011bd4e186dc21e23ebcb59c950ec12f58ed"
+    },
+    "skins/手绘钢笔-2026-10-23/package/previews/hints.png": {
+      "mode": "100644",
+      "oid": "b06baf83ad16f0c3584ec81c653cef71a8334ffb"
+    },
+    "skins/手绘钢笔-2026-10-23/package/previews/palette.png": {
+      "mode": "100644",
+      "oid": "47eeca74b1d6ccc0dda5def3d45018f64465329d"
+    },
+    "skins/手绘钢笔-2026-10-23/package/previews/switcher.png": {
+      "mode": "100644",
+      "oid": "1430594e5cb7263df61be3a15fb13b52631bed08"
+    },
+    "skins/手绘钢笔-2026-10-23/package/previews/tab-bar.png": {
+      "mode": "100644",
+      "oid": "b1822e2218ca5319260ba56d97ec4a68014750fb"
+    },
+    "skins/手绘钢笔-2026-10-23/package/previews/toasts.png": {
+      "mode": "100644",
+      "oid": "72b34c52f2458947fbad96a6a5a022b4bbaacca5"
+    },
+    "skins/手绘钢笔-2026-10-23/package/skin.json": {
+      "mode": "100644",
+      "oid": "9896924a04f30539397b79e8a4052145ed8761d5"
+    },
+    "skins/手绘钢笔-2026-10-23/previews/package-render.png": {
+      "mode": "100644",
+      "oid": "4f706c12c9bf71820b129b79330881235b69904d"
+    },
+    "skins/手绘铅笔-2026-10-23/README.md": {
+      "mode": "100644",
+      "oid": "79f0b112e65af285373a3f5185861c22351b0d14"
+    },
+    "skins/手绘铅笔-2026-10-23/package/README.md": {
+      "mode": "100644",
+      "oid": "4ae10d7995d2ba94e610058bd357fc568d1b65c3"
+    },
+    "skins/手绘铅笔-2026-10-23/package/assets/barframe.png": {
+      "mode": "100644",
+      "oid": "f08067b7bae4275fe66b24a585e371dcf1f0cdd3"
+    },
+    "skins/手绘铅笔-2026-10-23/package/assets/box.png": {
+      "mode": "100644",
+      "oid": "b706eb138a39cb00cf70764709411a5d914aca7c"
+    },
+    "skins/手绘铅笔-2026-10-23/package/assets/circle.png": {
+      "mode": "100644",
+      "oid": "da057102b9fe1f67a34d8048b62f80c04688f26f"
+    },
+    "skins/手绘铅笔-2026-10-23/package/assets/frame.png": {
+      "mode": "100644",
+      "oid": "1be9f276a7173d3c87f7352907ae4d7d735f2c37"
+    },
+    "skins/手绘铅笔-2026-10-23/package/assets/grain.png": {
+      "mode": "100644",
+      "oid": "bbd8a92ea5a03c133727444d8053ee15bf958f67"
+    },
+    "skins/手绘铅笔-2026-10-23/package/assets/key.png": {
+      "mode": "100644",
+      "oid": "898c48d41e4b7a69cc8cdd798969ea77ee1c5134"
+    },
+    "skins/手绘铅笔-2026-10-23/package/assets/marker.png": {
+      "mode": "100644",
+      "oid": "c1634242564ce304bec95373744a815d22cfc0cb"
+    },
+    "skins/手绘铅笔-2026-10-23/package/assets/pencil.png": {
+      "mode": "100644",
+      "oid": "1f5518c66574b58fdbe24be08cd3b36f152d6de1"
+    },
+    "skins/手绘铅笔-2026-10-23/package/assets/rule.png": {
+      "mode": "100644",
+      "oid": "d5067d60bc95f247bd3645ec37f0ec7728b4d647"
+    },
+    "skins/手绘铅笔-2026-10-23/package/assets/tape.png": {
+      "mode": "100644",
+      "oid": "2f88d7a72ca91da95ca96cae3a6a439d90eaff2f"
+    },
+    "skins/手绘铅笔-2026-10-23/package/previews/card.png": {
+      "mode": "100644",
+      "oid": "c4f5c801fbff9ef1d609bb12a9ee0aa0986690bb"
+    },
+    "skins/手绘铅笔-2026-10-23/package/previews/dock-preview.png": {
+      "mode": "100644",
+      "oid": "a414267de588066ed7b347e686d05e954d1a1d1c"
+    },
+    "skins/手绘铅笔-2026-10-23/package/previews/hints.png": {
+      "mode": "100644",
+      "oid": "2de0f15b981d4033fc48262a26e8f2ac8773316e"
+    },
+    "skins/手绘铅笔-2026-10-23/package/previews/palette.png": {
+      "mode": "100644",
+      "oid": "55d9f86bf2cfa15f1a129ad690bca7e45d703001"
+    },
+    "skins/手绘铅笔-2026-10-23/package/previews/switcher.png": {
+      "mode": "100644",
+      "oid": "059373ae86e45ca4053e168086b04489f8e1598c"
+    },
+    "skins/手绘铅笔-2026-10-23/package/previews/tab-bar.png": {
+      "mode": "100644",
+      "oid": "6c1d6a3340029ed78df8957613bfc24232480d9d"
+    },
+    "skins/手绘铅笔-2026-10-23/package/previews/toasts.png": {
+      "mode": "100644",
+      "oid": "ecc569a930e12ae8996136bb4f30cac86cee84a7"
+    },
+    "skins/手绘铅笔-2026-10-23/package/skin.json": {
+      "mode": "100644",
+      "oid": "36bedf718c1e39eac0dfd381a21035971e0bc467"
+    },
+    "skins/手绘铅笔-2026-10-23/previews/package-render.png": {
+      "mode": "100644",
+      "oid": "ee277255b0da797afb8023768e0dd6db38d24c1e"
+    },
+    "skins/极夜企鹅-2026-10-23/README.md": {
+      "mode": "100644",
+      "oid": "64948adeee51b8f9d1fb7b71e4bd37c44a341f59"
+    },
+    "skins/极夜企鹅-2026-10-23/package/README.md": {
+      "mode": "100644",
+      "oid": "105814e53911b76b7af5defe856dd2a536000f1b"
+    },
+    "skins/极夜企鹅-2026-10-23/package/assets/badge.png": {
+      "mode": "100644",
+      "oid": "e15b9548b940ced6604c372178248a976aaeaacc"
+    },
+    "skins/极夜企鹅-2026-10-23/package/assets/key-feet.png": {
+      "mode": "100644",
+      "oid": "9e41f68f6ff30fab6a70a95596862dce1d1e7289"
+    },
+    "skins/极夜企鹅-2026-10-23/package/assets/sticker.png": {
+      "mode": "100644",
+      "oid": "d22696a81a1749db57179037e08a37ad433a6611"
+    },
+    "skins/极夜企鹅-2026-10-23/package/assets/tab-feet.png": {
+      "mode": "100644",
+      "oid": "98b8d4bf2c25b392ec667ff3fcf40e8b0b70c43d"
+    },
+    "skins/极夜企鹅-2026-10-23/package/previews/card.png": {
+      "mode": "100644",
+      "oid": "7241b7fb00616884bd3ba53bc1d3e0423c621614"
+    },
+    "skins/极夜企鹅-2026-10-23/package/skin.json": {
+      "mode": "100644",
+      "oid": "19723e8d58f8c3eaba6aab757a69ba56e244fc4d"
+    },
+    "skins/极夜企鹅-2026-10-23/previews/dock-preview.png": {
+      "mode": "100644",
+      "oid": "b890129c68130ad37b992d5d78204b6d1c6fa5e7"
+    },
+    "skins/极夜企鹅-2026-10-23/previews/hints.png": {
+      "mode": "100644",
+      "oid": "c6819acce43db28ab245633dac2fc42b367b7dbe"
+    },
+    "skins/极夜企鹅-2026-10-23/previews/package-render.png": {
+      "mode": "100644",
+      "oid": "8642249a975fb481366e06adb01c9e2c59b0c89f"
+    },
+    "skins/极夜企鹅-2026-10-23/previews/palette.png": {
+      "mode": "100644",
+      "oid": "4dd61aa4164f1a874126f58c16d94001b6a10885"
+    },
+    "skins/极夜企鹅-2026-10-23/previews/switcher.png": {
+      "mode": "100644",
+      "oid": "9169624e0b41c9315996b805d419994df5c3ddc0"
+    },
+    "skins/极夜企鹅-2026-10-23/previews/tab-bar.png": {
+      "mode": "100644",
+      "oid": "b8d27d3dd53925901b61dfbdb1cb24549528d61a"
+    },
+    "skins/极夜企鹅-2026-10-23/previews/toasts.png": {
+      "mode": "100644",
+      "oid": "9928b290a1e0d11070e74445592d88355d90e04b"
+    },
+    "skins/极简-2026-10-22/README.md": {
+      "mode": "100644",
+      "oid": "701b853ab41f87c2ba89c0f50065031baf7af0ce"
+    },
+    "skins/极简-2026-10-22/minimal.untangle-theme.json": {
+      "mode": "100644",
+      "oid": "b5336a935d38c53e52df2041d007e2641bac6023"
+    },
+    "skins/极简-2026-10-22/previews/dock-preview.png": {
+      "mode": "100644",
+      "oid": "c4c66bd6143355d9b62bca4b80689569d9449665"
+    },
+    "skins/极简-2026-10-22/previews/hints.png": {
+      "mode": "100644",
+      "oid": "0fcf6530254122e3ff787efb3c94dd0a33b473ba"
+    },
+    "skins/极简-2026-10-22/previews/palette.png": {
+      "mode": "100644",
+      "oid": "751f561a2c9e118342c66caa1752dce9d5cadcd7"
+    },
+    "skins/极简-2026-10-22/previews/switcher.png": {
+      "mode": "100644",
+      "oid": "cab4b078f8d425393370ffea7391f651e43e8cad"
+    },
+    "skins/极简-2026-10-22/previews/tab-bar.png": {
+      "mode": "100644",
+      "oid": "e7ef4b31579c943e05700686ac03c6bbdfed1867"
+    },
+    "skins/极简-2026-10-22/previews/toasts.png": {
+      "mode": "100644",
+      "oid": "5279d6794dd43bccaf9de26b75dc9370fe7b67c6"
+    },
+    "skins/柴犬-2026-10-23/README.md": {
+      "mode": "100644",
+      "oid": "f4268e220733c97469b9f8bc3a6c82ee4463429c"
+    },
+    "skins/柴犬-2026-10-23/package/README.md": {
+      "mode": "100644",
+      "oid": "07e52c90b42201422d558d4f0395f0f1ce447134"
+    },
+    "skins/柴犬-2026-10-23/package/assets/ears.png": {
+      "mode": "100644",
+      "oid": "e6afc4b99a175d22d76aa2e6afb2677262ff9482"
+    },
+    "skins/柴犬-2026-10-23/package/assets/sticker.png": {
+      "mode": "100644",
+      "oid": "adcfb2f44a33db3684f5ec37557aa50856a1e464"
+    },
+    "skins/柴犬-2026-10-23/package/assets/tab-ears.png": {
+      "mode": "100644",
+      "oid": "07b329b815de5ef830f0c23a2a3f0d58e0e67001"
+    },
+    "skins/柴犬-2026-10-23/package/assets/tail.png": {
+      "mode": "100644",
+      "oid": "d0e401844c29828f7224cf5cecb71d8dc1de4953"
+    },
+    "skins/柴犬-2026-10-23/package/previews/card.png": {
+      "mode": "100644",
+      "oid": "dcfb54cb8a5e66801ead18210d3f335572f3bc14"
+    },
+    "skins/柴犬-2026-10-23/package/skin.json": {
+      "mode": "100644",
+      "oid": "0f4bc2fba19596e9c0635407cb6afdc2889e167a"
+    },
+    "skins/柴犬-2026-10-23/previews/dock-preview.png": {
+      "mode": "100644",
+      "oid": "a7ecf7416036c245976dbfd19ee2b4504953581d"
+    },
+    "skins/柴犬-2026-10-23/previews/hints.png": {
+      "mode": "100644",
+      "oid": "8eec1b89fdbe564544d5744d72d40ba8607d24bf"
+    },
+    "skins/柴犬-2026-10-23/previews/package-render.png": {
+      "mode": "100644",
+      "oid": "8f46f812f239f4d0dee2660a711143a2bb372b90"
+    },
+    "skins/柴犬-2026-10-23/previews/palette.png": {
+      "mode": "100644",
+      "oid": "9e33eddb03556c53d10ba4f090660219985b28f8"
+    },
+    "skins/柴犬-2026-10-23/previews/switcher.png": {
+      "mode": "100644",
+      "oid": "199c3ad69d855937e5b8b5fcf8bc559d22a3ca35"
+    },
+    "skins/柴犬-2026-10-23/previews/tab-bar.png": {
+      "mode": "100644",
+      "oid": "864f287e3f64fb592f4d2c8fbd1054b007630fa0"
+    },
+    "skins/柴犬-2026-10-23/previews/toasts.png": {
+      "mode": "100644",
+      "oid": "ea9d5adb59a75050ffa3f959edc5126cddb936c2"
+    },
+    "skins/液态玻璃深色透镜-2026-10-26/README.md": {
+      "mode": "100644",
+      "oid": "95555d755fc70e5e0bf0be9f9dfde3e6cbfb5a31"
+    },
+    "skins/液态玻璃深色透镜-2026-10-26/package/README.md": {
+      "mode": "100644",
+      "oid": "702549e976197d9fbb7e5e45753eda1c571d5b4c"
+    },
+    "skins/液态玻璃深色透镜-2026-10-26/package/previews/card.png": {
+      "mode": "100644",
+      "oid": "f0f527cff021ddfd53113f5873b1d5d90cc3320b"
+    },
+    "skins/液态玻璃深色透镜-2026-10-26/package/skin.json": {
+      "mode": "100644",
+      "oid": "809e0a317e1585fbd04d1337680329c2646a7570"
+    },
+    "skins/液态玻璃深色透镜-2026-10-26/previews/dock-preview.png": {
+      "mode": "100644",
+      "oid": "3a7a75e953b5a1906a48e5d54b8795938b4f71a8"
+    },
+    "skins/液态玻璃深色透镜-2026-10-26/previews/hints.png": {
+      "mode": "100644",
+      "oid": "0545c2bc992442c623e1f0c6b1fa3d8ddb866166"
+    },
+    "skins/液态玻璃深色透镜-2026-10-26/previews/package-render.png": {
+      "mode": "100644",
+      "oid": "3e768585211e97b8fc381d45f37e364dfff41eab"
+    },
+    "skins/液态玻璃深色透镜-2026-10-26/previews/palette.png": {
+      "mode": "100644",
+      "oid": "f6a10d1b85e0320691f6a4f8d9528e45422905d4"
+    },
+    "skins/液态玻璃深色透镜-2026-10-26/previews/switcher.png": {
+      "mode": "100644",
+      "oid": "bf4727be44c799ff7288507d9aa86b638499e730"
+    },
+    "skins/液态玻璃深色透镜-2026-10-26/previews/tab-bar.png": {
+      "mode": "100644",
+      "oid": "2946d366a6f39530ea0b723b31f43d54e291973e"
+    },
+    "skins/液态玻璃深色透镜-2026-10-26/previews/toasts.png": {
+      "mode": "100644",
+      "oid": "4119aa277393d82ce663da412823cee1246fbb63"
+    },
+    "skins/液态玻璃透镜-2026-10-26/README.md": {
+      "mode": "100644",
+      "oid": "6464a20849204e063e92a6ee2fe917c826839f5b"
+    },
+    "skins/液态玻璃透镜-2026-10-26/package/README.md": {
+      "mode": "100644",
+      "oid": "f46e6d7e252a7bf62141f3600420754b8918e9aa"
+    },
+    "skins/液态玻璃透镜-2026-10-26/package/previews/card.png": {
+      "mode": "100644",
+      "oid": "37354902f352a10d03f799c4b928c0f1aa762b89"
+    },
+    "skins/液态玻璃透镜-2026-10-26/package/skin.json": {
+      "mode": "100644",
+      "oid": "f9d4cd843cae270b12bec2bbfe9fe75593fd3450"
+    },
+    "skins/液态玻璃透镜-2026-10-26/previews/dock-preview.png": {
+      "mode": "100644",
+      "oid": "986cc90a2c457b843998abf0aac88cc44a1397c4"
+    },
+    "skins/液态玻璃透镜-2026-10-26/previews/hints.png": {
+      "mode": "100644",
+      "oid": "09b39c5962f3dee81be7c71f587c772b207fb879"
+    },
+    "skins/液态玻璃透镜-2026-10-26/previews/package-render.png": {
+      "mode": "100644",
+      "oid": "a7733cea18f5ff6e8ac3ee27ae7fc3d6a00e3159"
+    },
+    "skins/液态玻璃透镜-2026-10-26/previews/palette.png": {
+      "mode": "100644",
+      "oid": "9bf21ab7c5b9ed069b56e56bebe5423132d4314c"
+    },
+    "skins/液态玻璃透镜-2026-10-26/previews/switcher.png": {
+      "mode": "100644",
+      "oid": "64dfe4bb864855fa04ca4ae13c969cad38d260ac"
+    },
+    "skins/液态玻璃透镜-2026-10-26/previews/tab-bar.png": {
+      "mode": "100644",
+      "oid": "247614a79a0761e236434de883e301e893c3e8aa"
+    },
+    "skins/液态玻璃透镜-2026-10-26/previews/toasts.png": {
+      "mode": "100644",
+      "oid": "d0d0966f0baaab212e9349f478cca5dd9867a145"
+    },
+    "skins/焦糖兔-2026-10-23/README.md": {
+      "mode": "100644",
+      "oid": "08b2dc0c25a2a29e831b1f67a06c109c9faa0474"
+    },
+    "skins/焦糖兔-2026-10-23/package/README.md": {
+      "mode": "100644",
+      "oid": "4064c099e825bc0b27fa98288431df2d99536621"
+    },
+    "skins/焦糖兔-2026-10-23/package/assets/ears.png": {
+      "mode": "100644",
+      "oid": "47f3811c819e5e07ad38e14348befbb5c651d839"
+    },
+    "skins/焦糖兔-2026-10-23/package/assets/key-ears.png": {
+      "mode": "100644",
+      "oid": "2a7f55bb1f569c83af14193ab9de00c7ff769df7"
+    },
+    "skins/焦糖兔-2026-10-23/package/assets/row-ears.png": {
+      "mode": "100644",
+      "oid": "ed5a621b50b1189d2130266f9cf80477526fbb72"
+    },
+    "skins/焦糖兔-2026-10-23/package/assets/sticker.png": {
+      "mode": "100644",
+      "oid": "36699a35c27c84dd7152d6bb7e1871c01fc022d6"
+    },
+    "skins/焦糖兔-2026-10-23/package/assets/tab-ears.png": {
+      "mode": "100644",
+      "oid": "07e13ee5e2fa31b9d4cf0c16b869f5ea684e4a2e"
+    },
+    "skins/焦糖兔-2026-10-23/package/previews/card.png": {
+      "mode": "100644",
+      "oid": "fdc3bb494e85a98c6a68d42416b84c915e9a4ade"
+    },
+    "skins/焦糖兔-2026-10-23/package/skin.json": {
+      "mode": "100644",
+      "oid": "b78c19ffbaafcd3ca377a2e562269a5c8787c23a"
+    },
+    "skins/焦糖兔-2026-10-23/previews/dock-preview.png": {
+      "mode": "100644",
+      "oid": "d635633cb043abb49a5be5b06e93bbbbd4f9cd5a"
+    },
+    "skins/焦糖兔-2026-10-23/previews/hints.png": {
+      "mode": "100644",
+      "oid": "922bcd540f56fdd1eb5eaf599f00df49b42cefef"
+    },
+    "skins/焦糖兔-2026-10-23/previews/package-render.png": {
+      "mode": "100644",
+      "oid": "9ed1facf3a8c2767ae0274b020d2b635e2a4d179"
+    },
+    "skins/焦糖兔-2026-10-23/previews/palette.png": {
+      "mode": "100644",
+      "oid": "75f8e0f533b65172c582ce545905f3bdb11ab259"
+    },
+    "skins/焦糖兔-2026-10-23/previews/switcher.png": {
+      "mode": "100644",
+      "oid": "c25732d3a4fbb51328e1957cf8d1bf960e595e59"
+    },
+    "skins/焦糖兔-2026-10-23/previews/tab-bar.png": {
+      "mode": "100644",
+      "oid": "78f36e8a815aec266108c17bee1dab5fa549d705"
+    },
+    "skins/焦糖兔-2026-10-23/previews/toasts.png": {
+      "mode": "100644",
+      "oid": "37868454bc89ce239324b51b5f56e0536a318a72"
+    },
+    "skins/玻璃-2026-10-22/README.md": {
+      "mode": "100644",
+      "oid": "7474568c492521c3b69335522d207f063ea3f71e"
+    },
+    "skins/玻璃-2026-10-22/glass.untangle-theme.json": {
+      "mode": "100644",
+      "oid": "06007053899e54e05dbe4baf9c6eca136c70017b"
+    },
+    "skins/玻璃-2026-10-22/previews/dock-preview.png": {
+      "mode": "100644",
+      "oid": "b4703a9bf502304084a2c3182330fccdee4bdcdc"
+    },
+    "skins/玻璃-2026-10-22/previews/hints.png": {
+      "mode": "100644",
+      "oid": "d4c10c595ae13989b7c784f034c708b473548d1a"
+    },
+    "skins/玻璃-2026-10-22/previews/palette.png": {
+      "mode": "100644",
+      "oid": "37374f5ea94457e4518571ef9556f289b254835c"
+    },
+    "skins/玻璃-2026-10-22/previews/switcher.png": {
+      "mode": "100644",
+      "oid": "556107b7fbb0e21018ed2314af6d70817ce70881"
+    },
+    "skins/玻璃-2026-10-22/previews/tab-bar.png": {
+      "mode": "100644",
+      "oid": "845de35842826a1701dd4230dac74b574d2740b8"
+    },
+    "skins/玻璃-2026-10-22/previews/toasts.png": {
+      "mode": "100644",
+      "oid": "727fbb6aa04049ef4ddc00014f7d26a40c0a3cec"
+    },
+    "skins/竹林熊猫-2026-10-23/README.md": {
+      "mode": "100644",
+      "oid": "166194648819238c721b69e11bbb38a43c7691d0"
+    },
+    "skins/竹林熊猫-2026-10-23/package/README.md": {
+      "mode": "100644",
+      "oid": "79c69b6d4772621f31952acd275e9f3d7c20206a"
+    },
+    "skins/竹林熊猫-2026-10-23/package/assets/sticker.png": {
+      "mode": "100644",
+      "oid": "08ae45deb7bb3532e8820ee89b62cbc2adfc8799"
+    },
+    "skins/竹林熊猫-2026-10-23/package/previews/card.png": {
+      "mode": "100644",
+      "oid": "7742e671e6072cacd15bdfcaf56f3d3e067db2c4"
+    },
+    "skins/竹林熊猫-2026-10-23/package/skin.json": {
+      "mode": "100644",
+      "oid": "61e8eb49c92833ea9fa49f75ebdbef1870b411aa"
+    },
+    "skins/竹林熊猫-2026-10-23/previews/dock-preview.png": {
+      "mode": "100644",
+      "oid": "2ad893d281f33bdadaf810ca7f2d5462be8ce2f8"
+    },
+    "skins/竹林熊猫-2026-10-23/previews/hints.png": {
+      "mode": "100644",
+      "oid": "b5a7e02d349199aeedab69f2ac24b414a4b40a59"
+    },
+    "skins/竹林熊猫-2026-10-23/previews/package-render.png": {
+      "mode": "100644",
+      "oid": "cf8d64aa3c74282651da5d8d19df7e0d13d3afb8"
+    },
+    "skins/竹林熊猫-2026-10-23/previews/palette.png": {
+      "mode": "100644",
+      "oid": "847fc38c1c734b60d82b17387111fd8ee2897cc8"
+    },
+    "skins/竹林熊猫-2026-10-23/previews/switcher.png": {
+      "mode": "100644",
+      "oid": "89be3076c486330b9ce4d7f266b46275784361e9"
+    },
+    "skins/竹林熊猫-2026-10-23/previews/tab-bar.png": {
+      "mode": "100644",
+      "oid": "9644c5eecca16cfc5ff60375159cc0bb68d63b72"
+    },
+    "skins/竹林熊猫-2026-10-23/previews/toasts.png": {
+      "mode": "100644",
+      "oid": "9df4aa6c968644b880d24536c8158ce53db70a31"
+    },
+    "skins/草莓兔-2026-10-23/README.md": {
+      "mode": "100644",
+      "oid": "3c6c7e493c88fbaf05001796b8f686f878ced46c"
+    },
+    "skins/草莓兔-2026-10-23/package/README.md": {
+      "mode": "100644",
+      "oid": "b24619b1d88abbd5c064415ac7955a705ab2b5e1"
+    },
+    "skins/草莓兔-2026-10-23/package/assets/ears.png": {
+      "mode": "100644",
+      "oid": "1841595a8c97095bed4aee9cd004c8746056c9e8"
+    },
+    "skins/草莓兔-2026-10-23/package/assets/key-ears.png": {
+      "mode": "100644",
+      "oid": "f2073f8fe97b591ee9a084b984cb73c18c4feecd"
+    },
+    "skins/草莓兔-2026-10-23/package/assets/row-ears.png": {
+      "mode": "100644",
+      "oid": "2a8bdc61295e595707620526c6ff4a866776c483"
+    },
+    "skins/草莓兔-2026-10-23/package/assets/sticker.png": {
+      "mode": "100644",
+      "oid": "0dc338adc3bb79e1ebe36e27ec15104909540002"
+    },
+    "skins/草莓兔-2026-10-23/package/assets/tab-ears.png": {
+      "mode": "100644",
+      "oid": "fbf75256b2a98ea39f8c98c453b63c86bb84a645"
+    },
+    "skins/草莓兔-2026-10-23/package/previews/card.png": {
+      "mode": "100644",
+      "oid": "5e3852882d8332ab3fadf1bf595ef21718e6f09b"
+    },
+    "skins/草莓兔-2026-10-23/package/skin.json": {
+      "mode": "100644",
+      "oid": "97a5654dadc78333e0ef77e0117f25ab7dd1f860"
+    },
+    "skins/草莓兔-2026-10-23/previews/dock-preview.png": {
+      "mode": "100644",
+      "oid": "be4baf66f1df2c1c7f0d93630f95a93c54ddc68c"
+    },
+    "skins/草莓兔-2026-10-23/previews/hints.png": {
+      "mode": "100644",
+      "oid": "46778cca178f208544dc9cdba02f1dcf9358a2ba"
+    },
+    "skins/草莓兔-2026-10-23/previews/package-render.png": {
+      "mode": "100644",
+      "oid": "6d714557bdca37bd3cdda6259ed7a38b08067816"
+    },
+    "skins/草莓兔-2026-10-23/previews/palette.png": {
+      "mode": "100644",
+      "oid": "c974e6f8dad35ed1bcb07a1ef48827f25c0504ba"
+    },
+    "skins/草莓兔-2026-10-23/previews/switcher.png": {
+      "mode": "100644",
+      "oid": "2ccdcba16d2f9f8d2545cbb0813e9bd12f5a15a3"
+    },
+    "skins/草莓兔-2026-10-23/previews/tab-bar.png": {
+      "mode": "100644",
+      "oid": "4ebcc5039c6f3d53dff7f835b853c781f9b342db"
+    },
+    "skins/草莓兔-2026-10-23/previews/toasts.png": {
+      "mode": "100644",
+      "oid": "dc621b4bac187a70d9c4760b391e8d0e378b96a8"
+    },
+    "skins/薰衣草兔-2026-10-23/README.md": {
+      "mode": "100644",
+      "oid": "cad22afaa9954db88208de3aca9384044c07fdf5"
+    },
+    "skins/薰衣草兔-2026-10-23/package/README.md": {
+      "mode": "100644",
+      "oid": "64f20db49ee8f480ddb479cad80e5fc9addbc078"
+    },
+    "skins/薰衣草兔-2026-10-23/package/assets/badge.png": {
+      "mode": "100644",
+      "oid": "f9041bb3027973d003a30fcd1c667a86aaeecbc9"
+    },
+    "skins/薰衣草兔-2026-10-23/package/assets/key-ears.png": {
+      "mode": "100644",
+      "oid": "49e666b1d8e929e1907f9f1c1677d717d210f36d"
+    },
+    "skins/薰衣草兔-2026-10-23/package/assets/row-ears.png": {
+      "mode": "100644",
+      "oid": "7195a2f694df52f44faa115a273231d76fd15038"
+    },
+    "skins/薰衣草兔-2026-10-23/package/assets/sticker.png": {
+      "mode": "100644",
+      "oid": "a3305f9d03ae21409991d5884279a5082a2c9d19"
+    },
+    "skins/薰衣草兔-2026-10-23/package/assets/tab-ears.png": {
+      "mode": "100644",
+      "oid": "4d1061817c25a9d6ed7a9a5b1fd4e0c9afffc3cc"
+    },
+    "skins/薰衣草兔-2026-10-23/package/previews/card.png": {
+      "mode": "100644",
+      "oid": "7fd2a9a82da4fa499b03c61676333407aaef40d2"
+    },
+    "skins/薰衣草兔-2026-10-23/package/skin.json": {
+      "mode": "100644",
+      "oid": "7162f44400f2c67156c114f754ffce3fdf3fbd3f"
+    },
+    "skins/薰衣草兔-2026-10-23/previews/dock-preview.png": {
+      "mode": "100644",
+      "oid": "a4d60a336a505ce3a5bf96b06e46d937ca79a5c7"
+    },
+    "skins/薰衣草兔-2026-10-23/previews/hints.png": {
+      "mode": "100644",
+      "oid": "78e2bbb5f3399d4a54070b767d98bc442caa2dc5"
+    },
+    "skins/薰衣草兔-2026-10-23/previews/package-render.png": {
+      "mode": "100644",
+      "oid": "1422b337fdc507ec3e06005f3675555858d72b23"
+    },
+    "skins/薰衣草兔-2026-10-23/previews/palette.png": {
+      "mode": "100644",
+      "oid": "b78723e84c80d45e57042ed6a2105aaedac0c1c1"
+    },
+    "skins/薰衣草兔-2026-10-23/previews/switcher.png": {
+      "mode": "100644",
+      "oid": "8e8d90a94e56201f20bc9c3442043481872acf41"
+    },
+    "skins/薰衣草兔-2026-10-23/previews/tab-bar.png": {
+      "mode": "100644",
+      "oid": "ca2fafc535ecad2bdbb0e6bdb870469a9c5d48d5"
+    },
+    "skins/薰衣草兔-2026-10-23/previews/toasts.png": {
+      "mode": "100644",
+      "oid": "03eeac95f33b49f6ba94410aec57214825353712"
+    },
+    "skins/蜂蜜小熊-2026-10-23/README.md": {
+      "mode": "100644",
+      "oid": "92e6b5f60cc45d3b99fd1d119ef7d5723f892cd7"
+    },
+    "skins/蜂蜜小熊-2026-10-23/package/README.md": {
+      "mode": "100644",
+      "oid": "5d14cc8710bdcd8e471e8359bcec44f28cd2369a"
+    },
+    "skins/蜂蜜小熊-2026-10-23/package/assets/comb.png": {
+      "mode": "100644",
+      "oid": "59aba1261276f9e1c29694ea9aa066114ab2f037"
+    },
+    "skins/蜂蜜小熊-2026-10-23/package/assets/glaze.png": {
+      "mode": "100644",
+      "oid": "e423e3af3c8000f4c36e59a64dd0cc1f368206d5"
+    },
+    "skins/蜂蜜小熊-2026-10-23/package/assets/sticker.png": {
+      "mode": "100644",
+      "oid": "baa89a9c5455acfb0fe205e9ce98052c4f6bd1e7"
+    },
+    "skins/蜂蜜小熊-2026-10-23/package/previews/card.png": {
+      "mode": "100644",
+      "oid": "e11c7aea1f5dc8d4c149270168087b462e58975a"
+    },
+    "skins/蜂蜜小熊-2026-10-23/package/skin.json": {
+      "mode": "100644",
+      "oid": "d91285a0dc852eb70068fe540ee727a3cc0d368e"
+    },
+    "skins/蜂蜜小熊-2026-10-23/previews/dock-preview.png": {
+      "mode": "100644",
+      "oid": "9ae6abbb45eea5cc5f6d70a68ad7f77d0a251a29"
+    },
+    "skins/蜂蜜小熊-2026-10-23/previews/hints.png": {
+      "mode": "100644",
+      "oid": "d6f3f3d1e7561e7b838648be5b0fd4a5771ccd8f"
+    },
+    "skins/蜂蜜小熊-2026-10-23/previews/package-render.png": {
+      "mode": "100644",
+      "oid": "c33f57bc001b3e82729c2c723abb136ad26d2b77"
+    },
+    "skins/蜂蜜小熊-2026-10-23/previews/palette.png": {
+      "mode": "100644",
+      "oid": "be2f0e3c680b02eb4606c627b1aadc99f4e430f4"
+    },
+    "skins/蜂蜜小熊-2026-10-23/previews/switcher.png": {
+      "mode": "100644",
+      "oid": "04bae42e1ad58825fce98a14edc1fde2e3301ec0"
+    },
+    "skins/蜂蜜小熊-2026-10-23/previews/tab-bar.png": {
+      "mode": "100644",
+      "oid": "d85feffda8ccebd7c332720cbdebb5aafee1ae20"
+    },
+    "skins/蜂蜜小熊-2026-10-23/previews/toasts.png": {
+      "mode": "100644",
+      "oid": "70d9060a72db9cdc687d8f127ab26a90adb2fbf9"
+    },
+    "skins/调研-2026-10-23.md": {
+      "mode": "100644",
+      "oid": "9a3592e66a716c3ec92da8a9bf8201aa77dcae00"
+    },
+    "skins/调研-可爱风格-2026-10-23.md": {
+      "mode": "100644",
+      "oid": "e40e16464856c83662afe62a5a3d713aac0e207c"
+    },
+    "skins/调研-黑白手绘-2026-10-23.md": {
+      "mode": "100644",
+      "oid": "c4ac41becf01c32f7bd1adfacf48305d81f56d68"
+    },
+    "skins/赛博朋克-2026-10-23/README.md": {
+      "mode": "100644",
+      "oid": "15d25343dfb8caad7c4ad90934ecda19cd56d4ec"
+    },
+    "skins/赛博朋克-2026-10-23/cyberpunk.untangle-theme.json": {
+      "mode": "100644",
+      "oid": "8dba188d5f16587b5851e865a25ed3dd6ded55a6"
+    },
+    "skins/赛博朋克-2026-10-23/package/README.md": {
+      "mode": "100644",
+      "oid": "358bf8d37f4b645445113c998127b2dce24ab43c"
+    },
+    "skins/赛博朋克-2026-10-23/package/previews/card.png": {
+      "mode": "100644",
+      "oid": "6ad89f950975150140fe4f523568159e64f92d31"
+    },
+    "skins/赛博朋克-2026-10-23/package/previews/dock-preview.png": {
+      "mode": "100644",
+      "oid": "a7e39b6c9fdecee1be4c959c1e04947f6395d22a"
+    },
+    "skins/赛博朋克-2026-10-23/package/previews/hints.png": {
+      "mode": "100644",
+      "oid": "1ce2f4e876c7b730c1c1a2358103ed3dce08ccc5"
+    },
+    "skins/赛博朋克-2026-10-23/package/previews/palette.png": {
+      "mode": "100644",
+      "oid": "f8e9bd2d1b3e06afe4474b9efe5959b58974328e"
+    },
+    "skins/赛博朋克-2026-10-23/package/previews/switcher.png": {
+      "mode": "100644",
+      "oid": "aaf5ef42dc5b2ad41cfbff2d016bc3e92998a1bc"
+    },
+    "skins/赛博朋克-2026-10-23/package/previews/tab-bar.png": {
+      "mode": "100644",
+      "oid": "94025754bee251958f73ee8fd314daa1dee4981f"
+    },
+    "skins/赛博朋克-2026-10-23/package/previews/toasts.png": {
+      "mode": "100644",
+      "oid": "0e06993700b014818259660cb84bffe9a4f44deb"
+    },
+    "skins/赛博朋克-2026-10-23/package/skin.json": {
+      "mode": "100644",
+      "oid": "375d9fb2a26dd0c7e40b70fc0115e0a0c4e65c44"
+    },
+    "skins/赛博朋克-2026-10-23/previews/dock-preview.png": {
+      "mode": "100644",
+      "oid": "a7e39b6c9fdecee1be4c959c1e04947f6395d22a"
+    },
+    "skins/赛博朋克-2026-10-23/previews/hints.png": {
+      "mode": "100644",
+      "oid": "1ce2f4e876c7b730c1c1a2358103ed3dce08ccc5"
+    },
+    "skins/赛博朋克-2026-10-23/previews/package-render.png": {
+      "mode": "100644",
+      "oid": "5620dd54b0b072ed6b6012deba63abdb0d103077"
+    },
+    "skins/赛博朋克-2026-10-23/previews/palette.png": {
+      "mode": "100644",
+      "oid": "f8e9bd2d1b3e06afe4474b9efe5959b58974328e"
+    },
+    "skins/赛博朋克-2026-10-23/previews/switcher.png": {
+      "mode": "100644",
+      "oid": "aaf5ef42dc5b2ad41cfbff2d016bc3e92998a1bc"
+    },
+    "skins/赛博朋克-2026-10-23/previews/tab-bar.png": {
+      "mode": "100644",
+      "oid": "94025754bee251958f73ee8fd314daa1dee4981f"
+    },
+    "skins/赛博朋克-2026-10-23/previews/toasts.png": {
+      "mode": "100644",
+      "oid": "0e06993700b014818259660cb84bffe9a4f44deb"
     }
   }
 }

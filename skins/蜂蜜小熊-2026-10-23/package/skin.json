@@ -1,0 +1,760 @@
+{
+  "format": "untangle-skin",
+  "formatVersion": 1,
+  "id": "io.untangle.honey-bear",
+  "version": "1.0.0",
+  "name": {
+    "zh-Hans": "蜂蜜小熊",
+    "en": "Honey Bear"
+  },
+  "author": "Untangle",
+  "license": "CC0-1.0",
+  "description": {
+    "zh-Hans": "奶油、蜂蜜黄和焦糖棕：选中卡片冒出一对圆耳，面板上沿淌着蜂蜜，底纹是淡淡的蜂巢。",
+    "en": "Cream, honey and caramel: round ears on the selected card, honey along each panel's top, faint honeycomb."
+  },
+  "appearance": "light",
+  "tokens": {
+    "color": {
+      "panel": "#FFF9EA",
+      "edge": "#E6C68B",
+      "ink": "#4A311F",
+      "muted": "#7D6146",
+      "card": "#FFFFFF",
+      "cardEdge": "#F0E1C3",
+      "cardShade": "#B4823c21",
+      "well": "#FBF1DC",
+      "accent": "#C98516",
+      "sel": "#FFF0C9",
+      "secondary": "#B98A5B",
+      "hoverTint": "#CB9D6E2a",
+      "bar": "#FCF0D4",
+      "tab": "#FFFFFF",
+      "tabEdge": "#E6C68B",
+      "chip": "#FFE9AE",
+      "chipEdge": "#D9AC5F",
+      "chipBottom": "#C98A2A",
+      "field": "#FFFFFF",
+      "fieldEdge": "#E6C68B",
+      "rowSel": "#FFF0C9",
+      "ear": "#985F34",
+      "earIn": "#E4BC8A",
+      "honey": "#F1AE3A",
+      "honeyHi": "#FFD679",
+      "comb": "#EBD29A80",
+      "cardInk": "#4A311F",
+      "cardMuted": "#7D6146",
+      "chipInk": "#4A311F",
+      "fieldInk": "#4A311F",
+      "cardHi": "#ffffffb3"
+    },
+    "font": {
+      "ui": {
+        "system": true,
+        "design": "rounded"
+      }
+    },
+    "image": {
+      "comb": "assets/comb.png",
+      "glaze": "assets/glaze.png",
+      "sticker": "assets/sticker.png"
+    }
+  },
+  "editable": [
+    {
+      "token": "color.accent",
+      "label": {
+        "zh-Hans": "选中色",
+        "en": "Selection"
+      }
+    },
+    {
+      "token": "color.secondary",
+      "label": {
+        "zh-Hans": "悬停色",
+        "en": "Hover"
+      }
+    },
+    {
+      "token": "color.ear",
+      "label": {
+        "zh-Hans": "耳朵",
+        "en": "Ears"
+      }
+    }
+  ],
+  "roles": {
+    "panel": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 18
+      },
+      "layers": [
+        {
+          "type": "fill",
+          "color": "$color.panel"
+        },
+        {
+          "type": "image",
+          "src": "$image.comb",
+          "mode": "tile",
+          "scale": 0.5
+        },
+        {
+          "type": "stroke",
+          "color": "$color.edge",
+          "width": 1.5
+        },
+        {
+          "type": "image",
+          "src": "$image.glaze",
+          "mode": "tile",
+          "scale": 0.5
+        }
+      ],
+      "contrast": {
+        "replace": [
+          {
+            "type": "fill",
+            "color": "$color.panel"
+          },
+          {
+            "type": "stroke",
+            "color": "$color.edge",
+            "width": 2.5
+          },
+          {
+            "type": "image",
+            "src": "$image.glaze",
+            "mode": "tile",
+            "scale": 0.5
+          }
+        ]
+      }
+    },
+    "panel.hints": {
+      "add": [
+        {
+          "type": "image",
+          "src": "$image.sticker",
+          "mode": "nineSlice",
+          "slice": [
+            0,
+            36,
+            36,
+            0
+          ],
+          "scale": 0.5,
+          "inset": 0,
+          "clip": false,
+          "shape": {
+            "kind": "rect"
+          }
+        }
+      ]
+    },
+    "tabBar": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 16
+      },
+      "layers": [
+        {
+          "type": "fill",
+          "color": "$color.bar"
+        },
+        {
+          "type": "stroke",
+          "color": "$color.edge",
+          "width": 1.5
+        }
+      ]
+    },
+    "tab": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 13
+      },
+      "layers": [],
+      "states": {
+        "hover": {
+          "transition": "hover",
+          "add": [
+            {
+              "type": "fill",
+              "color": "$color.hoverTint",
+              "inset": [
+                3,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "incoming": {
+          "add": [
+            {
+              "type": "fill",
+              "color": {
+                "color": "$color.accent",
+                "alpha": 0.12
+              },
+              "inset": [
+                3,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "type": "stroke",
+              "color": "$color.accent",
+              "width": 1.5,
+              "inset": [
+                3,
+                0,
+                0,
+                0
+              ],
+              "dash": [
+                4,
+                3
+              ]
+            }
+          ]
+        },
+        "active": {
+          "transition": "select",
+          "add": [
+            {
+              "type": "box",
+              "anchor": "topLeading",
+              "at": [
+                11.2,
+                1.2
+              ],
+              "size": [
+                9.6,
+                9.6
+              ],
+              "color": "$color.ear",
+              "shape": {
+                "kind": "rounded",
+                "radius": 4.8
+              },
+              "inset": -3,
+              "clip": false,
+              "animate": {
+                "name": "pop",
+                "on": "enter"
+              }
+            },
+            {
+              "type": "box",
+              "anchor": "topTrailing",
+              "at": [
+                11.2,
+                1.2
+              ],
+              "size": [
+                9.6,
+                9.6
+              ],
+              "color": "$color.ear",
+              "shape": {
+                "kind": "rounded",
+                "radius": 4.8
+              },
+              "inset": -3,
+              "clip": false,
+              "animate": {
+                "name": "pop",
+                "on": "enter"
+              }
+            },
+            {
+              "type": "box",
+              "anchor": "topLeading",
+              "at": [
+                13.8,
+                4.4
+              ],
+              "size": [
+                4.4,
+                4.4
+              ],
+              "color": "$color.earIn",
+              "shape": {
+                "kind": "rounded",
+                "radius": 2.2
+              },
+              "inset": -3,
+              "clip": false,
+              "animate": {
+                "name": "pop",
+                "on": "enter"
+              }
+            },
+            {
+              "type": "box",
+              "anchor": "topTrailing",
+              "at": [
+                13.8,
+                4.4
+              ],
+              "size": [
+                4.4,
+                4.4
+              ],
+              "color": "$color.earIn",
+              "shape": {
+                "kind": "rounded",
+                "radius": 2.2
+              },
+              "inset": -3,
+              "clip": false,
+              "animate": {
+                "name": "pop",
+                "on": "enter"
+              }
+            },
+            {
+              "type": "fill",
+              "color": "$color.tab",
+              "inset": [
+                3,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "type": "stroke",
+              "color": "$color.tabEdge",
+              "width": 1,
+              "inset": [
+                3,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "card": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 14
+      },
+      "layers": [
+        {
+          "type": "fill",
+          "color": "$color.card",
+          "inset": [
+            6,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "shadow",
+          "color": "$color.cardHi",
+          "radius": 0.5,
+          "offset": [
+            0,
+            1.5
+          ],
+          "inner": true,
+          "inset": [
+            6,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "shadow",
+          "color": "$color.cardShade",
+          "radius": 3,
+          "offset": [
+            0,
+            -2
+          ],
+          "inner": true,
+          "inset": [
+            6,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "stroke",
+          "color": "$color.cardEdge",
+          "width": 1,
+          "inset": [
+            6,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "states": {
+        "hover": {
+          "transition": "hover",
+          "add": [
+            {
+              "type": "fill",
+              "color": "$color.hoverTint",
+              "inset": [
+                6,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "type": "stroke",
+              "color": "$color.secondary",
+              "width": 1.5,
+              "inset": [
+                6,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "selected": {
+          "transition": "select",
+          "add": [
+            {
+              "type": "box",
+              "anchor": "topLeading",
+              "at": [
+                11,
+                0
+              ],
+              "size": [
+                12,
+                12
+              ],
+              "color": "$color.ear",
+              "shape": {
+                "kind": "rounded",
+                "radius": 6.0
+              },
+              "inset": 0,
+              "clip": false,
+              "animate": {
+                "name": "pop",
+                "on": "enter"
+              }
+            },
+            {
+              "type": "box",
+              "anchor": "topTrailing",
+              "at": [
+                11,
+                0
+              ],
+              "size": [
+                12,
+                12
+              ],
+              "color": "$color.ear",
+              "shape": {
+                "kind": "rounded",
+                "radius": 6.0
+              },
+              "inset": 0,
+              "clip": false,
+              "animate": {
+                "name": "pop",
+                "on": "enter"
+              }
+            },
+            {
+              "type": "box",
+              "anchor": "topLeading",
+              "at": [
+                14,
+                4
+              ],
+              "size": [
+                6,
+                6
+              ],
+              "color": "$color.earIn",
+              "shape": {
+                "kind": "rounded",
+                "radius": 3.0
+              },
+              "inset": 0,
+              "clip": false,
+              "animate": {
+                "name": "pop",
+                "on": "enter"
+              }
+            },
+            {
+              "type": "box",
+              "anchor": "topTrailing",
+              "at": [
+                14,
+                4
+              ],
+              "size": [
+                6,
+                6
+              ],
+              "color": "$color.earIn",
+              "shape": {
+                "kind": "rounded",
+                "radius": 3.0
+              },
+              "inset": 0,
+              "clip": false,
+              "animate": {
+                "name": "pop",
+                "on": "enter"
+              }
+            },
+            {
+              "type": "fill",
+              "color": "$color.sel",
+              "inset": [
+                6,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "type": "stroke",
+              "color": "$color.accent",
+              "width": 2,
+              "inset": [
+                6,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "well": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 9
+      },
+      "layers": [
+        {
+          "type": "fill",
+          "color": "$color.well"
+        }
+      ]
+    },
+    "field": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 12
+      },
+      "layers": [
+        {
+          "type": "fill",
+          "color": "$color.field",
+          "inset": [
+            8,
+            8,
+            9,
+            8
+          ]
+        },
+        {
+          "type": "stroke",
+          "color": "$color.fieldEdge",
+          "width": 1.25,
+          "inset": [
+            8,
+            8,
+            9,
+            8
+          ]
+        }
+      ]
+    },
+    "row": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 12
+      },
+      "layers": [],
+      "states": {
+        "selected": {
+          "transition": "select",
+          "add": [
+            {
+              "type": "fill",
+              "color": "$color.rowSel"
+            },
+            {
+              "type": "stroke",
+              "color": "$color.accent",
+              "width": 1.5
+            }
+          ]
+        }
+      }
+    },
+    "chip": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 7
+      },
+      "layers": [
+        {
+          "type": "fill",
+          "color": "$color.chip"
+        },
+        {
+          "type": "stroke",
+          "color": "$color.chipEdge",
+          "width": 1.25
+        },
+        {
+          "type": "shadow",
+          "color": "$color.chipBottom",
+          "radius": 0,
+          "offset": [
+            0,
+            -2.5
+          ],
+          "inner": true
+        }
+      ]
+    },
+    "control": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 9
+      },
+      "layers": [
+        {
+          "type": "fill",
+          "color": {
+            "color": "$color.cardInk",
+            "alpha": 0.1
+          }
+        }
+      ],
+      "text": {
+        "title": {
+          "color": "$color.cardInk"
+        }
+      },
+      "states": {
+        "hover": {
+          "transition": "hover",
+          "replace": [
+            {
+              "type": "fill",
+              "color": {
+                "color": "$color.accent",
+                "alpha": 0.25
+              }
+            }
+          ]
+        }
+      }
+    },
+    "dropTarget": {
+      "shape": {
+        "kind": "rounded",
+        "radius": 16
+      },
+      "layers": [
+        {
+          "type": "stroke",
+          "color": "$color.accent",
+          "width": 2
+        }
+      ]
+    }
+  },
+  "text": {
+    "title": {
+      "font": "$font.ui",
+      "color": "$color.ink"
+    },
+    "body": {
+      "font": "$font.ui",
+      "color": "$color.ink"
+    },
+    "secondary": {
+      "font": "$font.ui",
+      "color": "$color.muted"
+    },
+    "key": {
+      "font": "$font.ui",
+      "color": "$color.chipInk"
+    },
+    "field": {
+      "font": "$font.ui",
+      "color": "$color.fieldInk"
+    }
+  },
+  "motion": {
+    "transitions": {
+      "select": {
+        "curve": "spring",
+        "duration": 0.34,
+        "bounce": 0.25,
+        "slide": true
+      },
+      "hover": {
+        "curve": "smooth",
+        "duration": 0.12
+      }
+    },
+    "animations": {
+      "pop": {
+        "duration": 0.38,
+        "keyframes": [
+          {
+            "t": 0,
+            "offset": [
+              0,
+              5
+            ],
+            "opacity": 0
+          },
+          {
+            "t": 0.6,
+            "offset": [
+              0,
+              -1.5
+            ],
+            "opacity": 1
+          },
+          {
+            "t": 1,
+            "offset": [
+              0,
+              0
+            ],
+            "opacity": 1
+          }
+        ]
+      }
+    }
+  }
+}
