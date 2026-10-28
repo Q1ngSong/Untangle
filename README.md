@@ -18,6 +18,7 @@
   <a href="https://github.com/Q1ngSong/Untangle/releases"><img src="docs/assets/badge-releases.svg" alt="All releases" height="26"></a>
   <a href="#quick-start"><img src="docs/assets/badge-quick-start.svg" alt="Quick start" height="26"></a>
   <a href="docs/COMMANDS.md"><img src="docs/assets/badge-commands.svg" alt="Command reference" height="26"></a>
+  <a href="docs/SUPPORT.md"><img src="docs/assets/badge-sponsor.svg" alt="Support Untangle" height="26"></a>
 </p>
 
 ## What's inside

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="26" viewBox="0 0 90 26" role="img" aria-label="支持 Untangle">
+  <title>支持 Untangle</title>
+  <rect width="90" height="26" rx="5" fill="#1c2030"/>
+  <rect x=".5" y=".5" width="89" height="25" rx="4.5" fill="none" stroke="#ffffff" stroke-opacity=".18"/>
+  <path d="M8 14S2 10.1 2 5.9C2 2.6 6 .9 8 4c2-3.1 6-1.4 6 1.9C14 10.1 8 14 8 14Z" transform="translate(8 5)" fill="#f781a6"/>
+  <text x="32" y="17" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#fff">支持项目</text>
+</svg>

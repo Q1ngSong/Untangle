@@ -2,6 +2,10 @@
   "schema": 1,
   "version": "0.0.1",
   "files": {
+    ".github/FUNDING.yml": {
+      "mode": "100644",
+      "oid": "34e14757a8b21062420b3aa9b3a332b471b24cf6"
+    },
     ".github/workflows/pages.yml": {
       "mode": "100644",
       "oid": "f00103bfef7c39790d545e181de591a247676fd5"
@@ -60,7 +64,7 @@
     },
     "README.md": {
       "mode": "100644",
-      "oid": "5fb5088b095300146061d926b6791952245ec47f"
+      "oid": "58beb5dcbcc028fb93b75cb60cc3e71a81a08060"
     },
     "Sources/App/AppDelegate.swift": {
       "mode": "100644",
@@ -1476,7 +1480,11 @@
     },
     "docs/README.zh-CN.md": {
       "mode": "100644",
-      "oid": "c96b8474d07144a0bf31761f5c101da50b1746db"
+      "oid": "7254135976ac5d866eea2209bf59054ddeb8e9fc"
+    },
+    "docs/SUPPORT.md": {
+      "mode": "100644",
+      "oid": "64377cc37c9e905f76fda2f6f502335a7b8134f9"
     },
     "docs/assets/badge-commands.svg": {
       "mode": "100644",
@@ -1501,6 +1509,14 @@
     "docs/assets/badge-releases.svg": {
       "mode": "100644",
       "oid": "7464a7ecce7cff80fc8af1bd2271f302f1f5ba9d"
+    },
+    "docs/assets/badge-sponsor.svg": {
+      "mode": "100644",
+      "oid": "82dc6788aee713dec3fd79fbf5e3579e05c54b10"
+    },
+    "docs/assets/badge-sponsor.zh-CN.svg": {
+      "mode": "100644",
+      "oid": "6e75252bb982b41e2995be1e3ffd0a4d9eca68c0"
     },
     "docs/assets/badge-swift.svg": {
       "mode": "100644",
@@ -1552,7 +1568,7 @@
     },
     "index.html": {
       "mode": "100644",
-      "oid": "2983332d9bb72cf06428fd52d59614d82781ef16"
+      "oid": "0e26a14ddb70d829b9c5f47defabb365c11ded43"
     },
     "scripts/build-app.sh": {
       "mode": "100755",
@@ -1588,7 +1604,7 @@
     },
     "site/index.html": {
       "mode": "100644",
-      "oid": "37713dce571673462e1baf9948b733b86fd921cd"
+      "oid": "0e013765c0ee448b77fb717fe042d2445729a104"
     },
     "site/main.js": {
       "mode": "100644",

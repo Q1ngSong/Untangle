@@ -18,6 +18,7 @@
   <a href="https://github.com/Q1ngSong/Untangle/releases"><img src="assets/badge-releases.svg" alt="All releases" height="26"></a>
   <a href="#快速开始"><img src="assets/badge-quick-start.svg" alt="Quick start" height="26"></a>
   <a href="COMMANDS.md"><img src="assets/badge-commands.svg" alt="Command reference" height="26"></a>
+  <a href="SUPPORT.md"><img src="assets/badge-sponsor.zh-CN.svg" alt="支持 Untangle" height="26"></a>
 </p>
 
 ## 功能一览
